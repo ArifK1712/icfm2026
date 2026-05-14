@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -111,7 +111,7 @@ function WhyAttend() {
     },
   ]
 
-  useEffect(() => {
+useLayoutEffect(() => {
   const section = sectionRef.current
   const track = trackRef.current
 
@@ -119,39 +119,36 @@ function WhyAttend() {
 
   const ctx = gsap.context(() => {
     ScrollTrigger.matchMedia({
-      '(min-width: 992px)': function () {
-        const containerWidth = section.offsetWidth
-        const lastCard = track.lastElementChild
-
-        const moveDistance =
-          lastCard.offsetLeft -
-          (containerWidth - lastCard.offsetWidth) / 2
-
-        const scrollDistance = Math.min(
-          Math.max(moveDistance * 0.45, 1200),
-          3200
+      '(min-width: 992px)': () => {
+        const moveDistance = Math.max(
+          0,
+          track.scrollWidth - section.offsetWidth
         )
 
-        gsap.to(track, {
+        const animation = gsap.to(track, {
           x: -moveDistance,
           ease: 'none',
-          scrollTrigger: {
-            trigger: section,
-            start: 'top top',
-            end: `+=${scrollDistance}`,
-            scrub: 0.35,
-            pin: true,
-            anticipatePin: 1,
-            onUpdate: (self) => {
-              if (progressRef.current) {
-                progressRef.current.style.width = `${self.progress * 100}%`
-              }
-            },
+        })
+
+        ScrollTrigger.create({
+          id: 'whyAttendPin',
+          trigger: section,
+          start: 'top top',
+          end: `+=${Math.max(moveDistance, 1200)}`,
+          scrub: 0.35,
+          pin: true,
+          anticipatePin: 1,
+          animation,
+          invalidateOnRefresh: true,
+          onUpdate: (self) => {
+            if (progressRef.current) {
+              progressRef.current.style.width = `${self.progress * 100}%`
+            }
           },
         })
       },
 
-      '(max-width: 991px)': function () {
+      '(max-width: 991px)': () => {
         gsap.set(track, { clearProps: 'transform' })
 
         if (progressRef.current) {
@@ -161,7 +158,13 @@ function WhyAttend() {
     })
   }, section)
 
-  return () => ctx.revert()
+  return () => {
+    ScrollTrigger.getById('whyAttendPin')?.kill(true)
+    gsap.killTweensOf(track)
+    gsap.set(track, { clearProps: 'all' })
+    ctx.revert()
+    ScrollTrigger.refresh()
+  }
 }, [])
 
   return (

@@ -15,14 +15,9 @@ function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Logo */}
           <div>
-            <h4 className="text-3xl font-black text-white">
-              ICFM
-              <span className="text-teal-400">2026</span>
-            </h4>
 
-            <p className="mt-4 max-w-sm leading-8 text-white/60">
-              International Conference for Community Health & Primary
-              Healthcare.
+            <p className="max-w-sm leading-8 text-white/60">
+              International Family Medicine Symposium on Family Medicine and Home Healthcare 2026
             </p>
           </div>
 

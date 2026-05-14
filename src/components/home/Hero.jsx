@@ -51,27 +51,26 @@ function Hero() {
     return () => clearInterval(timer);
   }, []);
 
-
   useEffect(() => {
-  if (!headingRef.current) return;
+    if (!headingRef.current) return;
 
-  const words = headingRef.current.querySelectorAll(".gsap-word");
+    const words = headingRef.current.querySelectorAll(".gsap-word");
 
-  gsap.fromTo(
-    words,
-    {
-      y: 80,
-      opacity: 0,
-    },
-    {
-      y: 0,
-      opacity: 1,
-      duration: 1,
-      stagger: 0.15,
-      ease: "power4.out",
-    }
-  );
-}, []);
+    gsap.fromTo(
+      words,
+      {
+        y: 80,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.15,
+        ease: "power4.out",
+      },
+    );
+  }, []);
 
   return (
     <section
@@ -151,7 +150,7 @@ function Hero() {
           px-4
         "
       >
-        <div className="grid items-center gap-0 lg:grid-cols-2">
+        <div className="grid items-center lg:grid-cols-2">
           {/* Left Content */}
           <div>
             {/* Kicker */}
@@ -174,26 +173,21 @@ function Hero() {
 
             {/* Title */}
             <h1
-  ref={headingRef}
-  className="font-black leading-[1.1] text-6xl"
->
-  <span className="gsap-word inline-block">Advancing</span>{" "}
-
-  <span
-    className="
+              ref={headingRef}
+              className="font-black leading-[1.1] text-5xl max-w-xl"
+            >
+              <span
+                className="
       gsap-word inline-block
       bg-linear-to-r from-white via-cyan-300 to-teal-400
       bg-size-[200%_200%]
       bg-clip-text text-transparent
     "
-  >
-    Community Health
-  </span>{" "}
-
-  <span className="gsap-word inline-block">
-    & Primary Healthcare
-  </span>
-</h1>
+              >
+                International Family Medicine Symposium on Family Medicine and
+                Home Healthcare 2026
+              </span>
+            </h1>
 
             {/* Text */}
             <p className="mt-6">
@@ -266,9 +260,7 @@ backdrop-blur-xl
                       </div>
 
                       <div>
-                        <h4 className="text-xl">
-                          5 October
-                        </h4>
+                        <h4 className="text-xl">5 October</h4>
                         <p className="flex items-center gap-2 text-sm font-bold text-cyan-100">
                           <Mic2 size={15} />
                           Pre-conference Workshops
@@ -285,9 +277,7 @@ backdrop-blur-xl
                       </div>
 
                       <div>
-                        <h4 className="text-xl">
-                          5–7 October 2026
-                        </h4>
+                        <h4 className="text-xl">5–7 October 2026</h4>
                         <p className="flex items-center gap-2 text-sm font-bold text-cyan-100">
                           <Users strokeWidth={1} size={15} />
                           Conference

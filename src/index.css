@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  
+
+  --animate-marquee: marquee 10s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes floatBadge {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+@layer components {
+
+  body {
+    @apply text-blue-950;
+    font-family: 'Public Sans', sans-serif;
+  }
+  h2{
+    @apply text-4xl text-blue-950 font-black tracking-[-1px] md:text-5xl
+  }
+  h3{
+   @apply text-3xl font-bold
+  }
+  h4{
+   @apply text-2xl font-bold
+  }
+  h6{
+    @apply text-blue-950 font-bold
+  }
+  p{
+    @apply text-lg leading-7 text-slate-400
+  }
+  .subtitle{
+    @apply mb-3 text-sm font-semibold uppercase tracking-[2px] text-teal-400
+  }
+  .btn{
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-lg font-semibold transition-all duration-300 hover:-translate-y-1
+  }
+  .btn-main {
+    @apply 
+    relative overflow-hidden    
+    bg-linear-to-r from-teal-500 to-cyan-500    
+     text-white
+    shadow-lg shadow-teal-500/30    
+    hover:shadow-xl hover:shadow-teal-500/40;
+  }
+
+  .btn-main::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 120%;
+    top: -10%;
+    left: -70px;
+    background: rgba(255,255,255,0.4);
+    transform: skewX(-20deg);
+    transition: 0.55s ease;
+  }
+
+  .btn-main:hover::before {
+    left: 120%;
+  }
+
+  .motion-card {
+    @apply relative h-full overflow-hidden rounded-[30px] border border-slate-900/5 bg-white p-7 shadow-[0_18px_55px_rgba(6,26,53,0.08)] transition-all duration-300 hover:-translate-y-[10px] hover:shadow-[0_28px_70px_rgba(6,26,53,0.14)];
+  }
+
+  .motion-card::before {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    right: -55px;
+    top: -55px;
+    background: radial-gradient(circle, rgba(0,194,184,0.13), transparent 70%);
+    transition: 0.35s ease;
+  }
+
+  .motion-card:hover::before {
+    transform: scale(1.45);
+  }
+
+  .icon-box {
+    @apply mb-6 flex h-15.5 w-15.5 items-center justify-center rounded-[22px] bg-linear-to-br from-teal-500/15 to-cyan-400/15 text-teal-500 transition-all duration-300;
+  }
+
+  .motion-card:hover .icon-box {
+    transform: rotate(-8deg) scale(1.08);
+  }
+
+  .sponsor-card{
+    @apply relative border overflow-hidden rounded-[28px] bg-white min-h-[150px] min-w-90 flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:border-teal-500/30 hover:shadow-[0_10px_70px_rgba(6,26,53,0.14)]
+  }
+
+  .key-sponsor-card {
+    @apply border-teal-500/30;
+  }
+  .strategic-sponsor-card{
+    @apply border-teal-500/30;
+  }
+  .gold-sponsor-card {
+    @apply border-yellow-500/40 bg-gradient-to-b from-white to-yellow-50;
+  }
+  
+  .silver-sponsor-card {
+    @apply border border-slate-400/20;
+  }
+
+  .exhibitor-card {
+    @apply border-teal-500/30;
+  }
+  
+}

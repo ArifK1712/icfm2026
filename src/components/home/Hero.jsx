@@ -174,7 +174,7 @@ function Hero() {
             {/* Title */}
             <h1
               ref={headingRef}
-              className="font-black leading-[1.1] text-5xl max-w-xl"
+              className="font-black leading-[1.1] text-6xl max-w-xl"
             >
               <span
                 className="

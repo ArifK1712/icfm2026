@@ -1,3 +1,4 @@
+import { Link} from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import { Hospital, Users } from 'lucide-react'
 import gsap from 'gsap'
@@ -104,9 +105,9 @@ function About() {
                 </p>
               </div>
             </div>
-            <a href="#" className="btn btn-main mt-8">
+            <Link to="/about" className="btn btn-main mt-8">
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       </div>

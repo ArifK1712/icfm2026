@@ -185,6 +185,7 @@ function Partners() {
                     <img
                       src={item.image}
                       alt={item.alt}
+                      loading="lazy"
                       className="
                         relative z-10
                         max-h-35

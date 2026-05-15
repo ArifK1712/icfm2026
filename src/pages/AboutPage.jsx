@@ -1,6 +1,7 @@
 import InnerPageHero from "../components/InnerPageHero";
 import { HeartPulse, Users, Lightbulb, Globe2 } from "lucide-react";
 import CTA from "../components/home/CTA";
+import healthcareConference from "../assets/images/healthcare_conference.jpg";
 
 function AboutPage() {
   return (
@@ -109,8 +110,9 @@ function AboutPage() {
           "
               >
                 <img
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80"
+                  src={healthcareConference}
                   alt="Healthcare Conference"
+                  loading="lazy"
                   className="
               h-135 w-full
               object-cover

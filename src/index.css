@@ -34,6 +34,9 @@
     @apply text-blue-950;
     font-family: 'Public Sans', sans-serif;
   }
+  h1{
+    @apply font-black leading-[1.1] text-6xl
+  }
   h2{
     @apply text-4xl text-blue-950 font-black tracking-[-1px] md:text-5xl
   }

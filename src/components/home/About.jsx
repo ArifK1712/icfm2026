@@ -61,6 +61,7 @@ function About() {
           <div ref={imageRef} className="relative">
             <img
               src={aboutImg}
+              loading="lazy"
               alt="Conference audience"
               className="
                 w-full h-150 rounded-[38px] object-cover

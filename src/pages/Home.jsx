@@ -1,7 +1,3 @@
-import { CalendarDays, MapPin, Sparkles, Hospital, Users, Mic, Building2, Presentation } from "lucide-react";
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Hero from '../components/home/Hero'
 import WhyAttend from '../components/home/WhyAttend'
 import Marquee from '../components/home/Marquee'

@@ -48,6 +48,7 @@ function Venue() {
             >
               <img
                 src={evenevenue}
+                loading="lazy"
                 alt="Venue hotel"
                 className="
                   h-95 w-full object-cover

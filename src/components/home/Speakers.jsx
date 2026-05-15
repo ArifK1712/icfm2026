@@ -133,6 +133,7 @@ useEffect(() => {
               <div className="relative overflow-hidden rounded-3xl">
                 <img
                   src={speaker.image}
+                  loading="lazy"
                   alt={speaker.name}
                   className="
                     h-65 w-full object-cover

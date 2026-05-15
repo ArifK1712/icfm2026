@@ -47,9 +47,9 @@ function InnerPageHero({ subtitle, title }) {
           {subtitle}
         </div>
 
-        <h2 className="bg-linear-to-r from-teal-300 via-cyan-600 to-teal-500 bg-size-[200%_200%] bg-clip-text text-transparent animate-gradient">
+        <h1 className="bg-linear-to-r from-teal-300 via-cyan-600 to-teal-500 bg-size-[200%_200%] bg-clip-text text-transparent animate-gradient">
           {title}
-        </h2>
+        </h1>
       </div>
     </section>
   );

@@ -1,20 +1,20 @@
 import { Sparkles, CalendarDays, Mic2, Users } from "lucide-react";
 import gsap from "gsap";
 import { useEffect, useState, useRef } from "react";
-import heroBg from "../../assets/images/homehero.jpg";
+import heroBg from "../../assets/images/homehero.webp";
 
-import slide1 from "../../assets/images/gallery/1.jpg";
-import slide2 from "../../assets/images/gallery/2.jpg";
-import slide3 from "../../assets/images/gallery/3.jpg";
-import slide4 from "../../assets/images/gallery/4.jpg";
+import slide1 from "../../assets/images/gallery/1.avif";
+import slide2 from "../../assets/images/gallery/2.avif";
+import slide3 from "../../assets/images/gallery/3.avif";
+import slide4 from "../../assets/images/gallery/4.avif";
+import slide5 from "../../assets/images/gallery/5.avif";
 
-function Hero() {
-  const slides = [slide1, slide2, slide3, slide4];
+const slides = [slide1, slide2, slide3, slide4, slide5];
+const eventDate = new Date("2026-10-05T00:00:00").getTime();
+
+function Hero() {  
   const [activeSlide, setActiveSlide] = useState(0);
-  const titleRef = useRef(null);
   const headingRef = useRef(null);
-
-  const eventDate = new Date("2026-10-05T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -174,7 +174,7 @@ function Hero() {
             {/* Title */}
             <h1
               ref={headingRef}
-              className="font-black leading-[1.1] text-6xl max-w-xl"
+              className="max-w-xl"
             >
               <span
                 className="
@@ -247,6 +247,7 @@ backdrop-blur-xl
                 >
                   <img
                     src={slide}
+                    loading="lazy"
                     alt="Conference"
                     className="h-full w-full object-cover rounded-4xl"
                   />

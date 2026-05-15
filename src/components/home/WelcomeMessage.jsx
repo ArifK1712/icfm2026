@@ -106,6 +106,7 @@ function WelcomeMessage() {
             <div ref={chairRef} className="text-center">
               <img
                 src={welcomeImg}
+                loading="lazy"
                 alt="Conference Chair"
                 className="
                   mx-auto h-55 w-55

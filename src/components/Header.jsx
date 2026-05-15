@@ -23,7 +23,7 @@ function Header() {
         <div className="min-w-full max-w-7xl mx-auto px-4">          
           <div className="flex items-center justify-between min-h-22">
             <Link to="/">
-              <img src={logo} className="max-h-8 md:max-h-18 object-cover" alt="" />
+              <img src={logo} className="max-h-8 md:max-h-18 object-cover" alt="5th ICFM Logo" />
             </Link>
             <ul className="hidden lg:flex items-center">
               {navItems.map((item) => (
@@ -58,10 +58,11 @@ function Header() {
                 </Link>
               </li>
             </ul>
-            <img src={otherlogos} className="max-h-6 md:max-h-10 object-cover" alt="" />
+            <img src={otherlogos} className="max-h-6 md:max-h-10 object-cover" alt="5th ICFM Logo" />
             <button
               onClick={() => setMobileMenu(true)}
               className="lg:hidden text-[#061a35]"
+              aria-label="Open menu"
             >
               <Menu size={28} />
             </button>
@@ -97,6 +98,7 @@ function Header() {
           <button
             onClick={() => setMobileMenu(false)}
             className="text-[#061a35]"
+            aria-label="Close menu"
           >
             <X size={26} />
           </button>

@@ -46,6 +46,9 @@
   h4{
    @apply text-2xl font-bold
   }
+  h5{
+    @apply text-xl font-bold text-blue-950
+  }
   h6{
     @apply text-blue-950 font-bold
   }

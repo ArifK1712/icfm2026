@@ -54,7 +54,7 @@ function SpeakerCard({ speaker, cardRef }) {
 
       {/* Content */}
       <div className="relative z-10 p-5">
-        <h5 className="mb-1 text-lg font-bold text-[#061a35]">
+        <h5 className="mb-1">
           {speaker.name}
         </h5>
 

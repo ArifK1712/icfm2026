@@ -2,7 +2,6 @@ import speaker1 from '../assets/images/speakers/1.jpg'
 import speaker2 from '../assets/images/speakers/2.jpg'
 import speaker3 from '../assets/images/speakers/3.jpg'
 import speaker4 from '../assets/images/speakers/4.jpg'
-import speaker5 from '../assets/images/speakers/4.jpg'
 
 // Add more speaker image imports here as needed
 // import speaker5 from '../assets/images/speakers/5.jpg'

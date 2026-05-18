@@ -1,19 +1,12 @@
 import { Link } from 'react-router-dom'
+import footerLogo from "../assets/images/mci-alrowad.png"
 
 function Footer() {
   const conferenceLinks = [
     { label: 'About', path: '/about' },
     { label: 'Committee', path: '/committee' },
-    { label: 'Speakers', path: '/speakers' },
-    { label: 'Program', path: '/program' },
+    { label: 'Submit Abstract', path: '/call-for-abstract' },
     { label: 'Registration', path: '/registration' },
-  ]
-
-  const participateLinks = [
-    { label: 'Submit Abstract', path: '/submit-abstract' },
-    { label: 'Workshops', path: '/workshops' },
-    { label: 'Sponsorship', path: '/sponsorship' },
-    { label: 'Exhibition', path: '/exhibition' },
   ]
 
   return (
@@ -31,7 +24,7 @@ function Footer() {
 
           {/* Conference */}
           <div>
-            <h5 className="mb-5 text-xl font-black text-white">
+            <h5 className="mb-5  text-white">
               Conference
             </h5>
 
@@ -51,33 +44,9 @@ function Footer() {
               ))}
             </div>
           </div>
-
-          {/* Participate */}
-          <div>
-            <h5 className="mb-5 text-xl font-black text-white">
-              Participate
-            </h5>
-
-            <div className="space-y-3">
-              {participateLinks.map((item) => (
-                <Link
-                  key={item.label}
-                  to={item.path}
-                  className="
-                    block transition-all duration-300
-                    hover:translate-x-1
-                    hover:text-teal-400
-                  "
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
           {/* Contact */}
           <div>
-            <h5 className="mb-5 text-xl font-black text-white">
+            <h5 className="mb-5 text-white">
               Contact
             </h5>
 
@@ -101,6 +70,18 @@ function Footer() {
               </p>
             </div>
           </div>
+
+          {/* Participate */}
+          <div>
+            <h5 className="mb-5 text-white">
+              Conference Managers
+            </h5>
+              <img
+                src={footerLogo}
+                alt="Partner Logo"
+                className="max-h-20 w-auto object-contain"
+              />
+          </div>
         </div>
 
         {/* Divider */}
@@ -109,29 +90,12 @@ function Footer() {
         {/* Bottom */}
         <div
           className="
-            flex flex-col gap-3 text-sm text-white/50
-            md:flex-row md:items-center md:justify-between
+            flex gap-3 text-sm text-white/50 justify-center
           "
         >
           <div>© 2026 ICFM Conference. All rights reserved.</div>
 
-          <div className="flex flex-wrap gap-2">
-            <Link
-              to="/privacy-policy"
-              className="transition-all duration-300 hover:text-teal-400"
-            >
-              Privacy Policy
-            </Link>
-
-            <span>·</span>
-
-            <Link
-              to="/terms-conditions"
-              className="transition-all duration-300 hover:text-teal-400"
-            >
-              Terms & Conditions
-            </Link>
-          </div>
+          
         </div>
       </div>
     </footer>

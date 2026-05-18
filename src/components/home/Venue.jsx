@@ -1,3 +1,4 @@
+import { Link} from 'react-router-dom'
 import { MapPin } from "lucide-react";
 import evenevenue from '../../assets/images/venue.jpg'
 
@@ -26,13 +27,9 @@ function Venue() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <a href="#" className="btn btn-main">
+              <Link target='_blank' to="https://www.google.com/maps/dir//Fairmont+Riyadh,+Area,+Business+Gate,+Qurtubah,+Riyadh+11552,+Saudi+Arabia/@26.9063311,75.7411663,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3e2efc5ababc7065:0xbd4b4b5828b1d31a!2m2!1d46.7182893!2d24.8082207?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" className="btn btn-main">
                 Get Directions
-              </a>
-
-              <a href="#" className="btn">
-                View Accommodation
-              </a>
+              </Link>
             </div>
           </div>
           <div>
@@ -62,7 +59,7 @@ function Venue() {
 
                 <p className="flex items-center">
                   <MapPin size={18} className="mr-2 text-teal-300" />
-                  Add Google Map embed here
+                  Area, Business Gate, Qurtubah, Riyadh 11552, Saudi Arabia
                 </p>
               </div>
             </div>

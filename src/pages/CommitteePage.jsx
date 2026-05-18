@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import InnerPageHero from '../components/InnerPageHero'
+//import InnerPageHero from '../components/InnerPageHero'
 import CommitteeCard from '../components/committee/CommitteeCard'
 import committeeMembers from '../data/committee'
 
@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 function CommitteePage() {
   const sectionRef = useRef(null)
-  const cardsRef = useRef([])
+  const cardsRef = useRef(new Map())
 
   const groupedCommittee = useMemo(() => {
     const groups = {}
@@ -46,7 +46,7 @@ function CommitteePage() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        cardsRef.current,
+      Array.from(cardsRef.current.values()),
         {
           opacity: 0,
           y: 90,
@@ -77,10 +77,9 @@ function CommitteePage() {
 
   return (
     <>
-      <InnerPageHero
-        subtitle="Home / Committee"
+      {/* <InnerPageHero
         title="Our Committee"
-      />
+      /> */}
 
       <section
         ref={sectionRef}
@@ -112,8 +111,14 @@ function CommitteePage() {
                       key={`${group.category}-${member.id}`}
                       member={member}
                       cardRef={(el) => {
-                        cardsRef.current[currentIndex] = el
-                      }}
+  const key = `${group.category}-${member.id}`
+
+  if (el) {
+    cardsRef.current.set(key, el)
+  } else {
+    cardsRef.current.delete(key)
+  }
+}}
                     />
                   )
                 })}

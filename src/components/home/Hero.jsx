@@ -12,7 +12,7 @@ import slide5 from "../../assets/images/gallery/5.avif";
 const slides = [slide1, slide2, slide3, slide4, slide5];
 const eventDate = new Date("2026-10-05T00:00:00").getTime();
 
-function Hero() {  
+function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
   const headingRef = useRef(null);
   const [timeLeft, setTimeLeft] = useState({
@@ -172,10 +172,7 @@ function Hero() {
             </div>
 
             {/* Title */}
-            <h1
-              ref={headingRef}
-              className="max-w-xl"
-            >
+            <h1 ref={headingRef} className="lg:pr-15">
               <span
                 className="
       gsap-word inline-block
@@ -195,7 +192,7 @@ function Hero() {
               researchers, healthcare leaders, innovators and policy makers
               through workshops, keynotes, networking and research exchange.
             </p>
-            <div className="mt-10 grid max-w-lg grid-cols-4 gap-3">
+            <div className="mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-4 gap-2">
               {[
                 { label: "Days", value: timeLeft.days },
                 { label: "Hours", value: timeLeft.hours },
@@ -225,7 +222,7 @@ backdrop-blur-xl
             </div>
           </div>
           <div className="relative min-h-110 sm:min-h-165">
-            <div className="absolute right-0 left-0 top-10 h-80 w-80 sm:h-140 sm:w-190 mx-auto">
+            <div className="absolute right-0 left-0 top-10 w-full h-120 lg:h-120 lg:w-120 xl:h-140 xl:w-180 mx-auto">
               {slides.map((slide, index) => (
                 <div
                   key={index}
@@ -247,22 +244,21 @@ backdrop-blur-xl
                 >
                   <img
                     src={slide}
-                    loading="lazy"
                     alt="Conference"
                     className="h-full w-full object-cover rounded-4xl"
                   />
 
                   <div className="absolute inset-0 bg-linear-to-t from-[#061a35]/90 via-[#061a35]/20 to-transparent" />
 
-                  <div className="absolute -left-5 -top-5 z-40 animate-[floatBadge_3s_ease-in-out_infinite]">
-                    <div className="flex items-center gap-4 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
+                  <div className="absolute left-0 lg:-left-5 -top-5 z-40 animate-[floatBadge_3s_ease-in-out_infinite]">
+                    <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
                       <div className="flex items-center justify-center rounded-xl text-teal-500">
                         <CalendarDays size={24} />
                       </div>
 
                       <div>
-                        <h4 className="text-xl">5 October</h4>
-                        <p className="flex items-center gap-2 text-sm font-bold text-cyan-100">
+                        <h4 className="text-xs sm:text-xl">5 October</h4>
+                        <p className="flex items-center gap-2 text-xs sm:text-sm text-cyan-100">
                           <Mic2 size={15} />
                           Pre-conference Workshops
                         </p>
@@ -270,16 +266,32 @@ backdrop-blur-xl
                     </div>
                   </div>
 
+                  <div className="absolute left-0 sm:-left-5 -bottom-5 z-40 animate-[floatBadge_3s_ease-in-out_infinite]">
+                    <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
+                      <div className="flex items-center justify-center rounded-xl text-teal-500">
+                        <CalendarDays size={24} />
+                      </div>
+
+                      <div>
+                        <h4 className="text-xs sm:text-xl">6-7 October</h4>
+                        <p className="flex items-center gap-2 text-xs sm:text-sm  text-cyan-100">
+                          <Mic2 size={15} />
+                          Conference
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
                   {/* Floating Date Badge - Bottom Left */}
-                  <div className="absolute -bottom-5 -right-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
-                    <div className="flex items-center gap-4 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
+                  <div className="absolute right-0 sm:-right-5 -bottom-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
+                    <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
                       <div className="flex items-center justify-center rounded-xl text-teal-500">
                         <CalendarDays strokeWidth={1} size={24} />
                       </div>
 
                       <div>
-                        <h4 className="text-xl">5–7 October 2026</h4>
-                        <p className="flex items-center gap-2 text-sm font-bold text-cyan-100">
+                        <h4 className="text-xs sm:text-xl">5–7 October 2026</h4>
+                        <p className="flex items-center gap-2 text-xs sm:text-sm  text-cyan-100">
                           <Users strokeWidth={1} size={15} />
                           Conference
                         </p>

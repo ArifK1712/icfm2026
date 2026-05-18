@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function CTA() {
   return (
     <section className="py-20">
@@ -14,11 +16,11 @@ function CTA() {
               Register today and be part of a future-focused
               healthcare conference.
             </p>
-            <a
-              href="#registration"
+            <Link
+              to="/registration"
               className="btn btn-main">
               Register Now
-            </a>
+            </Link>
 
           </div>
 

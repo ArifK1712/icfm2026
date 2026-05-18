@@ -34,8 +34,8 @@ const committeeMembers = [
     categories: [
       {
         name: 'Organizing Committee',
-        categoryOrder: 2,
-        pageOrder: 1,
+        categoryOrder: 1,
+        pageOrder: 2,
       },
     ],
   },
@@ -49,8 +49,8 @@ const committeeMembers = [
     categories: [
       {
         name: 'Organizing Committee',
-        categoryOrder: 3,
-        pageOrder: 1,
+        categoryOrder: 1,
+        pageOrder: 3,
       },
     ],
   },
@@ -64,56 +64,56 @@ const committeeMembers = [
     categories: [
       {
         name: 'Organizing Committee',
-        categoryOrder: 4,
-        pageOrder: 1,
+        categoryOrder: 1,
+        pageOrder: 4,
       },
     ],
   },
-  {
-    id: 5,
-    image: member5,
-    name: 'Dr. Committee Five',
-    role: 'Advisory Board Member',
-    organization: 'Healthcare Advisory Board',
+{
+  id: 5,
+  image: member5,
+  name: 'Dr. Committee Five',
+  role: 'Advisory Board Member',
+  organization: 'Healthcare Advisory Board',
 
-    categories: [
-      {
-        name: 'Scientific Committee',
-        categoryOrder: 4,
-        pageOrder: 1,
-      },
-    ],
-  },
-  {
-    id: 6,
-    image: member6,
-    name: 'Dr. Committee Six',
-    role: 'Advisory Board Member',
-    organization: 'Healthcare Advisory Board',
+  categories: [
+    {
+      name: 'Scientific Committee',
+      categoryOrder: 2,
+      pageOrder: 1,
+    },
+  ],
+},
+{
+  id: 6,
+  image: member6,
+  name: 'Dr. Committee Six',
+  role: 'Advisory Board Member',
+  organization: 'Healthcare Advisory Board',
 
-    categories: [
-      {
-        name: 'Scientific Committee',
-        categoryOrder: 4,
-        pageOrder: 1,
-      },
-    ],
-  },
-  {
-    id: 7,
-    image: member7,
-    name: 'Dr. Committee Seven',
-    role: 'Advisory Board Member',
-    organization: 'Healthcare Advisory Board',
+  categories: [
+    {
+      name: 'Scientific Committee',
+      categoryOrder: 2,
+      pageOrder: 2,
+    },
+  ],
+},
+{
+  id: 7,
+  image: member7,
+  name: 'Dr. Committee Seven',
+  role: 'Advisory Board Member',
+  organization: 'Healthcare Advisory Board',
 
-    categories: [
-      {
-        name: 'Scientific Committee',
-        categoryOrder: 4,
-        pageOrder: 1,
-      },
-    ],
-  },
+  categories: [
+    {
+      name: 'Scientific Committee',
+      categoryOrder: 2,
+      pageOrder: 3,
+    },
+  ],
+},
 ]
 
 export default committeeMembers

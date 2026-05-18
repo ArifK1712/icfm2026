@@ -7,7 +7,7 @@ import Speakers from '../components/home/Speakers'
 import EventHighlights from '../components/home/EventHighlights'
 import Partners from '../components/home/Partners'
 import Venue from '../components/home/Venue'
-import CTA from '../components/home/CTA'
+import CTA from '../components/CTA'
 
 
 function Home() {

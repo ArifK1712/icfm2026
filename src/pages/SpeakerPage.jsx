@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import InnerPageHero from '../components/InnerPageHero'
+//import InnerPageHero from '../components/InnerPageHero'
 import SpeakerCard from '../components/speakers/SpeakerCard'
 import speakers from '../data/speakers'
 
@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 function SpeakerPage() {
   const sectionRef = useRef(null)
-  const cardsRef = useRef([])
+  const cardsRef = useRef(new Map())
 
 const groupedSpeakers = useMemo(() => {
   const groups = {}
@@ -46,7 +46,7 @@ const groupedSpeakers = useMemo(() => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        cardsRef.current,
+        Array.from(cardsRef.current.values()),
         {
           opacity: 0,
           y: 120,
@@ -79,10 +79,9 @@ const groupedSpeakers = useMemo(() => {
 
   return (
     <>
-      <InnerPageHero
-        subtitle="Home / Speakers"
+      {/* <InnerPageHero
         title="Our Speakers"
-      />
+      /> */}
 
       <section
         ref={sectionRef}
@@ -117,8 +116,14 @@ const groupedSpeakers = useMemo(() => {
                       key={speaker.id}
                       speaker={speaker}
                       cardRef={(el) => {
-                        cardsRef.current[currentIndex] = el
-                      }}
+  const key = `${group.category}-${speaker.id}`
+
+  if (el) {
+    cardsRef.current.set(key, el)
+  } else {
+    cardsRef.current.delete(key)
+  }
+}}
                     />
                   )
                 })}

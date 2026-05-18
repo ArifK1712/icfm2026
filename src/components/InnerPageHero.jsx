@@ -1,57 +1,45 @@
-function InnerPageHero({ subtitle, title }) {
+function InnerPageHero({ title }) {
   return (
-    <section
-      className="
-        relative overflow-hidden
-        bg-[linear-gradient(180deg,#f8fffe_0%,#eef8ff_100%)]
-        py-15
-      "
-    >
-      <div className="absolute inset-0 opacity-40 bg-[linear-gradient(rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.03)_1px,transparent_1px)] bg-size-[54px_54px]" />
-      {/* Left Glow */}
+    <section className="sticky top-30 z-30 py-4">
+  <div className="relative z-10 mx-auto max-w-7xl px-4 text-center">
+    <div className="relative inline-flex items-center justify-center">
       <div
         className="
-    absolute -top-24 -left-24
-    h-72 w-72
-    rounded-full
-    bg-teal-300/20
-    blur-3xl
-  "
+          absolute inset-0
+          scale-110 rounded-full
+        "
       />
 
-      {/* Right Glow */}
-      <div
+      {/* Glass Title */}
+      <h4
         className="
-    absolute -bottom-24 -right-24
-    h-80 w-80
-    rounded-full
-    bg-cyan-300/20
-    blur-3xl
-  "
-      />
-      <div className="relative z-10 mx-auto max-w-7xl px-4 text-center">
-        <div
+          relative overflow-hidden
+          rounded-full
+          text-white
+          px-7 py-3
+          bg-[radial-gradient(circle_at_12%_20%,rgba(0,194,184,0.24),transparent_26%),radial-gradient(circle_at_88%_70%,rgba(71,215,255,0.18),transparent_28%),linear-gradient(135deg,#061a35,#09294f_55%,#061a35)]
+        "
+      >
+       
+        {/* Gradient shimmer layer */}
+        <span
           className="
-              mb-5 inline-flex items-center
-              rounded-full
-              border border-teal-500/10
-              bg-white/80
-              px-5 py-2
-              text-sm font-bold
-              tracking-[1px]
-              text-teal-600
-              shadow-lg shadow-teal-500/5
-              backdrop-blur-xl
-            "
-        >
-          {subtitle}
-        </div>
+            pointer-events-none absolute inset-0
+            bg-linear-to-r
+            from-teal-300/25 via-cyan-400/25 to-teal-500/25
+            bg-size-[200%_200%]
+            animate-gradient
+          "
+        />
 
-        <h1 className="bg-linear-to-r from-teal-300 via-cyan-600 to-teal-500 bg-size-[200%_200%] bg-clip-text text-transparent animate-gradient">
+        {/* Title Text */}
+        <span className="relative z-10 font-bold tracking-wide">
           {title}
-        </h1>
-      </div>
-    </section>
+        </span>
+      </h4>
+    </div>
+  </div>
+</section>
   );
 }
 

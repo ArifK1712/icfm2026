@@ -1,12 +1,12 @@
-import InnerPageHero from "../components/InnerPageHero";
+//import InnerPageHero from "../components/InnerPageHero";
 import { HeartPulse, Users, Lightbulb, Globe2 } from "lucide-react";
-import CTA from "../components/home/CTA";
+import CTA from "../components/CTA";
 import healthcareConference from "../assets/images/healthcare_conference.jpg";
 
 function AboutPage() {
   return (
     <>
-      <InnerPageHero subtitle="Home / About" title="About 5th ICFM" />
+      {/* <InnerPageHero title="About 5th ICFM" /> */}
 
       <section className="py-20 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4">

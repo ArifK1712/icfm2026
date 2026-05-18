@@ -1,9 +1,9 @@
 //import InnerPageHero from "../components/InnerPageHero";
 
-function RegistrationPage() {
+function AbstractPage() {
   return (
     <>
-      {/* <InnerPageHero title="Registration 5th ICFM" /> */}
+      {/* <InnerPageHero title="Call for Abstract" /> */}    
       <h2 className="text-center h-100 flex items-center justify-center">
         Coming Soon...
       </h2>
@@ -11,4 +11,4 @@ function RegistrationPage() {
   );
 }
 
-export default RegistrationPage;
+export default AbstractPage;

@@ -1,78 +1,93 @@
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
-import otherlogos from '../assets/images/other-logos.png'
-import logo from '../assets/images/logo.png'
-import { Link, NavLink } from 'react-router-dom'
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import otherlogos from "../assets/images/other-logos.png";
+import logo from "../assets/images/logo.png";
 
 function Header() {
-  const [mobileMenu, setMobileMenu] = useState(false)
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const navItems = [
-    { label: 'Home', path: '/' },
-    { label: 'About', path: '/about' },
-    { label: 'Committee', path: '/committee' },
-    { label: 'Speakers', path: '/speakers' },
-    { label: 'Program', path: '/program' },
-    { label: 'Registration', path: '/registration' },
-    { label: 'Submit Abstract', path: '/call-for-abstract' },
-  ]
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about" },
+    { label: "Committee", path: "/committee" },
+    { label: "Speakers", path: "/speakers" },
+    { label: "Program", path: "/program" },
+    { label: "Registration", path: "/registration" },
+    { label: "Submit Abstract", path: "/call-for-abstract" },
+  ];
 
   return (
     <>
-      <nav className="bg-white/90 backdrop-blur-3xl shadow-[0_12px_35px_rgba(6,26,53,0.08)] transition-all duration-300 sticky top-0 z-50">        
-        <div className="min-w-full max-w-7xl mx-auto px-4">          
+      <nav className="bg-white/90 backdrop-blur-3xl shadow-[0_12px_35px_rgba(6,26,53,0.08)] transition-all duration-300 sticky top-0 z-50">
+        <div className="min-w-full max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between min-h-15 md:min-h-20">
             <Link to="/">
-              <img src={logo} className="max-h-8 md:max-h-18 object-cover" alt="5th ICFM Logo" />
+              <img
+                src={logo}
+                className="max-h-8 md:max-h-18 object-cover"
+                alt="5th ICFM Logo"
+              />
             </Link>
+
+            {/* Desktop Navigation */}
             <ul className="hidden lg:flex items-center">
               {navItems.map((item) => (
-                 <li key={item.label}>
+                <li key={item.label}>
                   <NavLink
-  to={item.path}
-  end={item.path === '/'}
-  className={({ isActive }) => `
-    relative xl:mx-0.75 px-2 py-2
-    text-sm xl:text-lg transition-colors duration-300
-    ${isActive ? 'text-[#0aa6a6]' : 'text-[#344054]'}
-
-    after:content-['']
-    after:absolute
-    after:left-2.5
-    after:right-2.5
-    after:bottom-0.75
-    after:h-0.5
-    after:bg-[#0aa6a6]
-    after:transition-transform
-    after:duration-300
-
-    ${
-      isActive
-        ? 'after:scale-x-100 after:origin-left'
-        : 'after:scale-x-0 after:origin-right hover:after:scale-x-100 hover:after:origin-left'
-    }
-  `}
->
-  {item.label}
-</NavLink>
+                    to={item.path}
+                    end={item.path === "/"}
+                    className={({ isActive }) => `
+                      relative xl:mx-0.75 px-2 py-2 text-nowrap
+                      text-sm xl:text-lg transition-colors duration-300
+                      ${isActive ? "text-[#0aa6a6]" : "text-[#344054]"}
+                      after:content-['']
+                      after:absolute
+                      after:left-2.5
+                      after:right-2.5
+                      after:bottom-0.75
+                      after:h-0.5
+                      after:bg-[#0aa6a6]
+                      after:transition-transform
+                      after:duration-300
+                      ${
+                        isActive
+                          ? "after:scale-x-100 after:origin-left"
+                          : "after:scale-x-0 after:origin-right hover:after:scale-x-100 hover:after:origin-left"
+                      }
+                    `}
+                  >
+                    {item.label}
+                  </NavLink>
                 </li>
               ))}
 
               <li className="ml-3">
-                <NavLink to="/contact" className="btn btn-main" onClick={() => setMobileMenu(false)}>
+                <NavLink
+                  to="/contact"
+                  className="btn btn-main"
+                  onClick={() => setMobileMenu(false)}
+                >
                   Contact
                 </NavLink>
               </li>
             </ul>
-            <img src={otherlogos} className="max-h-6 xl:max-h-10 object-cover" alt="5th ICFM Logo" />
+
+            <img
+              src={otherlogos}
+              className="max-h-6 xl:max-h-10 object-cover"
+              alt="Other Logos"
+            />
+
+            {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenu(true)}
-              className="lg:hidden text-blue-900 cursor-pointer"
+              className="lg:hidden text-green-950 cursor-pointer"
               aria-label="Open menu"
             >
               <Menu size={28} />
             </button>
-          </div>          
+          </div>
         </div>
       </nav>
 
@@ -81,8 +96,9 @@ function Header() {
         onClick={() => setMobileMenu(false)}
         className={`
           fixed inset-0 bg-black/40 z-40 transition-all duration-300
-          ${mobileMenu ? 'opacity-100 visible' : 'opacity-0 invisible'}
+          ${mobileMenu ? "opacity-100 visible" : "opacity-0 invisible"}
         `}
+        aria-hidden="true"
       />
 
       {/* Mobile Sidebar */}
@@ -91,26 +107,29 @@ function Header() {
           fixed top-0 left-0 h-full w-full
           bg-white z-50 shadow-2xl
           transition-all duration-300
-          ${mobileMenu ? 'translate-x-0' : '-translate-x-full'}
+          ${mobileMenu ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-
         {/* Sidebar Header */}
         <div className="flex items-center justify-between p-5 border-b border-slate-100">
           <NavLink to="/" onClick={() => setMobileMenu(false)}>
-            <img src={logo} className="max-h-8 md:max-h-18 object-cover" alt="5th ICFM Logo" />
+            <img
+              src={logo}
+              className="max-h-8 md:max-h-18 object-cover"
+              alt="5th ICFM Logo"
+            />
           </NavLink>
 
           <button
             onClick={() => setMobileMenu(false)}
-            className="text-blue-950"
+            className="text-green-950"
             aria-label="Close menu"
           >
             <X size={26} />
           </button>
         </div>
 
-        {/* Mobile Nav */}
+        {/* Mobile Nav Links */}
         <ul className="p-5 space-y-4">
           {navItems.map((item) => (
             <li key={item.label}>
@@ -125,15 +144,18 @@ function Header() {
           ))}
 
           <li className="pt-3">
-            <NavLink to="/contact" className="btn btn-main w-full" onClick={() => setMobileMenu(false)}>
+            <NavLink
+              to="/contact"
+              className="btn btn-main w-full text-center"
+              onClick={() => setMobileMenu(false)}
+            >
               Contact
             </NavLink>
           </li>
         </ul>
-
       </div>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

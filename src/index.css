@@ -31,14 +31,14 @@
 @layer components {
 
   body {
-    @apply text-blue-950;
+    @apply text-green-950;
     font-family: 'Public Sans', sans-serif;
   }
   h1{
-    @apply font-black leading-[1.1] text-4xl md:text-6xl lg:text-5xl
+    @apply font-black leading-[1.1] text-4xl md:text-5xl lg:text-6xl
   }
   h2{
-    @apply text-4xl md:text-5xl text-blue-950 font-black tracking-[-1px] 
+    @apply text-4xl md:text-5xl text-green-950 font-black tracking-[-1px] 
   }
   h3{
    @apply text-3xl font-bold
@@ -47,10 +47,10 @@
    @apply text-2xl font-bold
   }
   h5{
-    @apply text-xl font-bold text-blue-950
+    @apply text-xl font-bold text-green-950
   }
   h6{
-    @apply text-blue-950 font-bold
+    @apply text-green-950 font-bold
   }
   p{
     @apply text-lg leading-7 text-slate-400
@@ -59,7 +59,7 @@
     @apply mb-3 text-sm font-semibold uppercase tracking-[2px] text-teal-400
   }
   .btn{
-    @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-lg font-semibold transition-all duration-300 hover:-translate-y-1
+    @apply inline-flex items-center justify-center rounded-full px-6 py-2 xl:py-3 text-lg font-semibold transition-all duration-300 hover:-translate-y-1
   }
   .btn-main {
     @apply 

@@ -25,8 +25,8 @@ function ContactPage() {
     },
     {
       icon: MapPin,
-      title: "Conference Venue",
-      text: "Riyadh, Saudi Arabia",
+      title: "Riyadh, Saudi Arabia",
+      text: "Area, Business Gate, Qurtubah, Riyadh 11552, Saudi Arabia",
     },
   ];
 

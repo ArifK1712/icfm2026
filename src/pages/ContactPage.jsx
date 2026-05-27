@@ -18,12 +18,6 @@ function ContactPage() {
       link: "mailto:ajay.gupta@wearemci.com",
     },
     {
-      icon: Phone,
-      title: "Call Us",
-      text: "+966 000 000 000",
-      link: "tel:+966000000000",
-    },
-    {
       icon: MapPin,
       title: "Fairmont Riyadh, Saudi Arabia",
       text: "Area, Business Gate, Qurtubah, Riyadh 11552, Saudi Arabia",

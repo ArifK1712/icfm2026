@@ -59,15 +59,6 @@ function Footer() {
                   ajay.gupta@wearemci.com
                 </a>
               </p>
-
-              <p className="flex items-center text-white/70">
-                <a
-                  href="tel:+966000000000"
-                  className="transition-all duration-300 hover:text-teal-400"
-                >
-                  +966 000 000 000
-                </a>
-              </p>
             </div>
           </div>
 

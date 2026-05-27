@@ -13,8 +13,9 @@ import CommitteePage from './pages/CommitteePage'
 import ProgramPage from './pages/ProgramPage'
 import RegistrationPage from './pages/RegistrationPage'
 import AbstractPage from './pages/AbstractPage'
-import ContactPage from './pages/ContactPage'
 import Sponsorship from './pages/Sponsorship'
+import ContactPage from './pages/ContactPage'
+import Accommodation from './pages/Accommodation'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/program" element={<ProgramPage />} />
           <Route path="/registration" element={<RegistrationPage />} />
           <Route path="/call-for-abstract" element={<AbstractPage />} />
+          <Route path="/accommodation" element={<Accommodation />} />
           <Route path="/sponsorship" element={<Sponsorship />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>

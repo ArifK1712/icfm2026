@@ -11,6 +11,8 @@ import {
   BadgeCheck,
 } from "lucide-react";
 
+import { Link } from 'react-router-dom'
+
 function AbstractPage() {
   const importantDates = [
     {
@@ -349,9 +351,9 @@ function AbstractPage() {
           </div>
 
           <div className="mt-10 text-center">
-            <a href="#" className="btn btn-main">
+            <Link to="https://abstract.congenie.com/abstract/icfm2026/abstract/login.php" target="_blank" className="btn btn-main">
               Submit Abstract
-            </a>
+            </Link>
           </div>
         </div>
       </section>

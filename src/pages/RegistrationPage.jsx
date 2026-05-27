@@ -11,6 +11,8 @@ import {
   UserRound,
 } from "lucide-react";
 
+import { Link } from 'react-router-dom'
+
 function RegistrationPage() {
   const registrationFees = [
     {
@@ -98,9 +100,9 @@ function RegistrationPage() {
           <div className="mt-8 rounded-3xl bg-white p-6 ">
             <p>
               For any assistance, please write to the conference secretariat at{" "}
-              <a href="mailto:ajay.gupta@wearemci.com" className="text-teal-500 underline">
+              <Link to="mailto:ajay.gupta@wearemci.com" className="text-teal-500 underline">
                 ajay.gupta@wearemci.com
-              </a>
+              </Link>
             </p>
           </div>
         </div>
@@ -116,7 +118,7 @@ function RegistrationPage() {
 
           <div className="overflow-hidden rounded-3xl bg-white ">
             <div className="overflow-x-auto">
-              <table className="w-full min-w-[850px] border-collapse">
+              <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-[#062a4f] text-white">
                     <th className="p-5 text-left">Registration Category</th>
@@ -214,9 +216,9 @@ function RegistrationPage() {
                 obtaining a visa for entering KSA to participate in the
                 International Conference on Community Health & Primary
                 Healthcare. To obtain the Invitation letter please write us at{" "}
-                <a href="mailto:ajay.gupta@wearemci.com" className="text-teal-500 underline">
+                <Link to="mailto:ajay.gupta@wearemci.com" className="text-teal-500 underline">
                   ajay.gupta@wearemci.com
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -251,9 +253,9 @@ function RegistrationPage() {
           <div className="mt-8 rounded-3xl border border-slate-100 bg-slate-50 p-6">
             <p>
               All cancellations and requests for refund must be in writing at{" "}
-              <a href="mailto:ajay.gupta@wearemci.com" className="text-teal-500 underline">
+              <Link to="mailto:ajay.gupta@wearemci.com" className="text-teal-500 underline">
                 ajay.gupta@wearemci.com
-              </a>
+              </Link>
             </p>
           </div>
         </div>
@@ -298,17 +300,17 @@ function RegistrationPage() {
 
             <p>
               Letters and credentials are to be sent via email to{" "}
-              <a href="mailto:ajay.gupta@wearemci.com" className="text-teal-500 underline">
+              <Link to="mailto:ajay.gupta@wearemci.com" className="text-teal-500 underline">
                 ajay.gupta@wearemci.com
-              </a>
+              </Link>
               .
             </p>
           </div>
 
           <div className="mt-10 text-center">
-            <a href="#" className="btn btn-main">
+            <Link to="https://confkt.congenie.com/main-form/" target="_blank" className="btn btn-main">
               Register Now
-            </a>
+            </Link>
           </div>
         </div>
       </section>

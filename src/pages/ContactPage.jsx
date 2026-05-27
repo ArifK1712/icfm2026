@@ -245,26 +245,6 @@ function ContactPage() {
                     </div>
                   </div>
 
-                  {/* Subject */}
-                  <div>
-                    <label className="mb-2 block text-sm font-bold text-[#061a35]">
-                      Subject
-                    </label>
-
-                    <input
-                      type="text"
-                      placeholder="How can we help you?"
-                      className="
-                        w-full rounded-2xl border border-slate-200 bg-white/90
-                        px-4 py-4 text-[#061a35]
-                        outline-none transition-all duration-300
-                        placeholder:text-slate-400
-                        focus:border-teal-400
-                        focus:shadow-[0_0_0_4px_rgba(20,184,166,0.12)]
-                      "
-                    />
-                  </div>
-
                   {/* Message */}
                   <div>
                     <label className="mb-2 block text-sm font-bold text-[#061a35]">
@@ -276,7 +256,6 @@ function ContactPage() {
                         size={19}
                         className="absolute left-4 top-5 text-teal-500"
                       />
-
                       <textarea
                         rows="6"
                         placeholder="Write your message..."

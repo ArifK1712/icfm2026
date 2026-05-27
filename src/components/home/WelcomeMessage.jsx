@@ -86,7 +86,7 @@ function WelcomeMessage() {
   };
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden py-20">
+    <section ref={sectionRef} className="relative overflow-hidden pt-0 py-20">
       <div className="min-w-[70%] max-w-7xl mx-auto px-4">
         <div
           ref={cardRef}
@@ -156,7 +156,7 @@ function WelcomeMessage() {
 
               <ul
                 ref={addItemRef}
-                className="mb-4 list-disc text-slate-400 space-y-2 pl-3 text-lg"
+                className="mb-4 list-disc text-slate-400 space-y-2 pl-4 text-lg"
               >
                 <li>
                   High-level scientific presentations by international and
@@ -201,7 +201,7 @@ function WelcomeMessage() {
 
               <div
                 ref={addItemRef}
-                className="mt-6 flex flex-wrap items-center gap-6"
+                className="mt-6 flex flex-wrap justify-between items-center gap-6"
               >
                 <div>
                   <p className="mb-1">Yours sincerely,</p>

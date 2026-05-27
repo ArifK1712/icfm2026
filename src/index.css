@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  
-
   --animate-marquee: marquee 10s linear infinite;
 
   @keyframes marquee {
@@ -29,6 +27,20 @@
 }
 
 @layer components {
+
+  @keyframes glassShine {
+    0% {
+      background-position: 200% 0;
+    }
+
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  .animate-glassShine {
+    animation: glassShine 4s linear infinite;
+  }
 
   body {
     @apply text-green-950;

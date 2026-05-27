@@ -18,7 +18,7 @@ function Venue() {
             <div className="mb-3 subtitle">Venue</div>
 
             <h2 className="text-4xl font-black tracking-[-1px] text-white md:text-5xl">
-              Fairmont Riyadh
+              Fairmont Riyadh, Saudi Arabia
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-white/65">

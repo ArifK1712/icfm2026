@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import BackToTop from './components/BackToTop'
+import CmeBadge from './components/CmeBadge'
 
 import Home from './pages/Home'
 import AboutPage from './pages/AboutPage'
@@ -13,6 +14,7 @@ import ProgramPage from './pages/ProgramPage'
 import RegistrationPage from './pages/RegistrationPage'
 import AbstractPage from './pages/AbstractPage'
 import ContactPage from './pages/ContactPage'
+import Sponsorship from './pages/Sponsorship'
 
 function App() {
   return (
@@ -28,10 +30,12 @@ function App() {
           <Route path="/program" element={<ProgramPage />} />
           <Route path="/registration" element={<RegistrationPage />} />
           <Route path="/call-for-abstract" element={<AbstractPage />} />
+          <Route path="/sponsorship" element={<Sponsorship />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
       <Footer />
+      <CmeBadge />
       <BackToTop />
     </div>
   )

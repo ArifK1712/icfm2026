@@ -80,10 +80,10 @@ function CommitteePage() {
       {/* <InnerPageHero
         title="Our Committee"
       /> */}
-
+      <h2 class="text-center h-100 flex items-center justify-center">Coming Soon...</h2>
       <section
         ref={sectionRef}
-        className="bg-white py-20"
+        className="bg-white py-20 hidden"
       >
         <div className="mx-auto min-w-[70%] max-w-7xl px-4">
           {groupedCommittee.map((group) => (

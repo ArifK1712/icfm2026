@@ -82,11 +82,11 @@ const groupedSpeakers = useMemo(() => {
       {/* <InnerPageHero
         title="Our Speakers"
       /> */}
-
+      <h2 class="text-center h-100 flex items-center justify-center">Coming Soon...</h2>
       <section
         ref={sectionRef}
         id="speakers"
-        className="bg-white py-20"
+        className="bg-white py-20 hidden"
       >
         <div className="min-w-[70%] max-w-7xl mx-auto px-4">
           {groupedSpeakers.map((group) => (

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+
 import otherlogos from "../assets/images/other-logos.png";
 import logo from "../assets/images/logo.png";
 
@@ -11,10 +12,26 @@ function Header() {
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
     { label: "Committee", path: "/committee" },
-    { label: "Speakers", path: "/speakers" },
-    { label: "Program", path: "/program" },
+    {
+      label: "Scientific Information",
+      dropdown: [
+        {
+          label: "Preliminary Timetable",
+          path: "/program",
+        },
+        {
+          label: "Faculty List",
+          path: "/speakers",
+        },
+        {
+          label: "Call for Abstracts",
+          path: "/call-for-abstract",
+        },
+      ],
+    },
     { label: "Registration", path: "/registration" },
-    { label: "Submit Abstract", path: "/call-for-abstract" },
+    { label: "Accommodation", path: "/accommodation" },
+    { label: "Sponsorship & Exhibition", path: "/sponsorship" },
   ];
 
   return (
@@ -33,39 +50,89 @@ function Header() {
             {/* Desktop Navigation */}
             <ul className="hidden lg:flex items-center">
               {navItems.map((item) => (
-                <li key={item.label}>
-                  <NavLink
-                    to={item.path}
-                    end={item.path === "/"}
-                    className={({ isActive }) => `
-                      relative xl:mx-0.75 px-2 py-2 text-nowrap
-                      text-sm xl:text-lg transition-colors duration-300
-                      ${isActive ? "text-[#0aa6a6]" : "text-[#344054]"}
-                      after:content-['']
-                      after:absolute
-                      after:left-2.5
-                      after:right-2.5
-                      after:bottom-0.75
-                      after:h-0.5
-                      after:bg-[#0aa6a6]
-                      after:transition-transform
-                      after:duration-300
-                      ${
-                        isActive
-                          ? "after:scale-x-100 after:origin-left"
-                          : "after:scale-x-0 after:origin-right hover:after:scale-x-100 hover:after:origin-left"
-                      }
-                    `}
-                  >
-                    {item.label}
-                  </NavLink>
+                <li key={item.label} className="relative group">
+                  {item.dropdown ? (
+                    <>
+                      <button
+                        type="button"
+                        className="
+                          relative  px-2 py-2 text-nowrap
+                          text-sm xl:text-[16px] transition-colors duration-300
+                          text-[#344054] hover:text-[#0aa6a6]
+                          flex items-center gap-1
+                        "
+                      >
+                        {item.label}
+
+                        <ChevronDown
+                          size={16}
+                          className="transition-transform duration-300 group-hover:rotate-180"
+                        />
+                      </button>
+
+                      <ul
+                        className="
+                          absolute left-0 top-full mt-2 w-80
+                          rounded-xl bg-white shadow-xl border border-slate-100
+                          opacity-0 invisible translate-y-2
+                          group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                          transition-all duration-300
+                          overflow-hidden z-50
+                        "
+                      >
+                        {item.dropdown.map((dropItem) => (
+                          <li key={dropItem.label}>
+                            <NavLink
+                              to={dropItem.path}
+                              className={({ isActive }) => `
+                                block px-4 py-3 text-sm transition-colors duration-300
+                                ${
+                                  isActive
+                                    ? "bg-teal-50 text-[#0aa6a6]"
+                                    : "text-[#344054] hover:bg-teal-50 hover:text-[#0aa6a6]"
+                                }
+                              `}
+                            >
+                              {dropItem.label}
+                            </NavLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  ) : (
+                    <NavLink
+                      to={item.path}
+                      end={item.path === "/"}
+                      className={({ isActive }) => `
+                        relative  px-2 py-2 text-nowrap
+                        text-sm xl:text-[16px] transition-colors duration-300
+                        ${isActive ? "text-[#0aa6a6]" : "text-[#344054]"}
+                        after:content-['']
+                        after:absolute
+                        after:left-2.5
+                        after:right-2.5
+                        after:bottom-0.75
+                        after:h-0.5
+                        after:bg-[#0aa6a6]
+                        after:transition-transform
+                        after:duration-300
+                        ${
+                          isActive
+                            ? "after:scale-x-100 after:origin-left"
+                            : "after:scale-x-0 after:origin-right hover:after:scale-x-100 hover:after:origin-left"
+                        }
+                      `}
+                    >
+                      {item.label}
+                    </NavLink>
+                  )}
                 </li>
               ))}
 
               <li className="ml-3">
                 <NavLink
                   to="/contact"
-                  className="btn btn-main"
+                  className="btn btn-main py-2 text-sm xl:text-[16px]"
                   onClick={() => setMobileMenu(false)}
                 >
                   Contact
@@ -133,13 +200,35 @@ function Header() {
         <ul className="p-5 space-y-4">
           {navItems.map((item) => (
             <li key={item.label}>
-              <NavLink
-                to={item.path}
-                className="block text-[15px] font-semibold text-[#344054] hover:text-teal-500 transition"
-                onClick={() => setMobileMenu(false)}
-              >
-                {item.label}
-              </NavLink>
+              {item.dropdown ? (
+                <div>
+                  <p className="mb-3 text-[15px] font-bold text-[#0aa6a6]">
+                    {item.label}
+                  </p>
+
+                  <ul className="ml-3 space-y-3 border-l border-slate-200 pl-4">
+                    {item.dropdown.map((dropItem) => (
+                      <li key={dropItem.label}>
+                        <NavLink
+                          to={dropItem.path}
+                          className="block text-[14px] font-semibold text-[#344054] hover:text-teal-500 transition"
+                          onClick={() => setMobileMenu(false)}
+                        >
+                          {dropItem.label}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <NavLink
+                  to={item.path}
+                  className="block text-[15px] font-semibold text-[#344054] hover:text-teal-500 transition"
+                  onClick={() => setMobileMenu(false)}
+                >
+                  {item.label}
+                </NavLink>
+              )}
             </li>
           ))}
 

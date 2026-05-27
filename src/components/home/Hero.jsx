@@ -167,7 +167,7 @@ function Hero() {
               <Sparkles size={16} />
 
               <span className="text-sm font-extrabold">
-                International Medical Conference
+                Saudi Society of Family and Community Medicine (SSFCM)
               </span>
             </div>
 
@@ -181,8 +181,7 @@ function Hero() {
       bg-clip-text text-transparent
     "
               >
-                International Family Medicine Symposium on Family Medicine and
-                Home Healthcare 2026
+                EMPOWERING LIVES, SHAPING FUTURE CARE
               </span>
             </h1>
 
@@ -192,7 +191,7 @@ function Hero() {
               researchers, healthcare leaders, innovators and policy makers
               through workshops, keynotes, networking and research exchange.
             </p>
-            <div className="mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-4 gap-2">
+            <div className="mt-10 grid max-w-md grid-cols-2 sm:grid-cols-4 gap-2">
               {[
                 { label: "Days", value: timeLeft.days },
                 { label: "Hours", value: timeLeft.hours },
@@ -257,7 +256,7 @@ backdrop-blur-xl
                       </div>
 
                       <div>
-                        <h4 className="text-xs sm:text-xl">5 October</h4>
+                        <h4 className="text-xs sm:text-xl">5-7 October 2026</h4>
                         <p className="flex items-center gap-2 text-xs sm:text-sm text-cyan-100">
                           <Mic2 size={15} />
                           Pre-conference Workshops
@@ -266,14 +265,14 @@ backdrop-blur-xl
                     </div>
                   </div>
 
-                  <div className="absolute left-0 sm:-left-5 -bottom-5 z-40 animate-[floatBadge_3s_ease-in-out_infinite]">
+                  <div className="absolute right-0 sm:-right-5 -bottom-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
                     <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
                       <div className="flex items-center justify-center rounded-xl text-teal-500">
                         <CalendarDays size={24} />
                       </div>
 
                       <div>
-                        <h4 className="text-xs sm:text-xl">6-7 October</h4>
+                        <h4 className="text-xs sm:text-xl">6-7 October 2026</h4>
                         <p className="flex items-center gap-2 text-xs sm:text-sm  text-cyan-100">
                           <Mic2 size={15} />
                           Conference
@@ -283,7 +282,7 @@ backdrop-blur-xl
                   </div>
 
                   {/* Floating Date Badge - Bottom Left */}
-                  <div className="absolute right-0 sm:-right-5 -bottom-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
+                  {/* <div className="absolute right-0 sm:-right-5 -bottom-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
                     <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
                       <div className="flex items-center justify-center rounded-xl text-teal-500">
                         <CalendarDays strokeWidth={1} size={24} />
@@ -297,7 +296,7 @@ backdrop-blur-xl
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>

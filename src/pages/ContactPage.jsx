@@ -14,8 +14,8 @@ function ContactPage() {
     {
       icon: Mail,
       title: "Email Us",
-      text: "info@example.com",
-      link: "mailto:info@example.com",
+      text: "ajay.gupta@wearemci.com",
+      link: "mailto:ajay.gupta@wearemci.com",
     },
     {
       icon: Phone,
@@ -25,7 +25,7 @@ function ContactPage() {
     },
     {
       icon: MapPin,
-      title: "Riyadh, Saudi Arabia",
+      title: "Fairmont Riyadh, Saudi Arabia",
       text: "Area, Business Gate, Qurtubah, Riyadh 11552, Saudi Arabia",
     },
   ];

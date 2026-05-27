@@ -53,10 +53,10 @@ function Footer() {
             <div className="space-y-4">
               <p className="flex items-center text-white/70">
                 <a
-                  href="mailto:info@example.com"
+                  href="mailto:ajay.gupta@wearemci.com"
                   className="transition-all duration-300 hover:text-teal-400"
                 >
-                  info@example.com
+                  ajay.gupta@wearemci.com
                 </a>
               </p>
 
@@ -93,7 +93,7 @@ function Footer() {
             flex gap-3 text-sm text-white/50 justify-center
           "
         >
-          <div>© 2026 ICFM Conference. All rights reserved.</div>
+          <div>© 2026 SSFCM Conference. All rights reserved.</div>
 
           
         </div>

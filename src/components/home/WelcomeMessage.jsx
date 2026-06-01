@@ -115,12 +115,9 @@ function WelcomeMessage() {
             </div> */}
 
             <div className="space-y-3">
-              <div ref={addItemRef} className="subtitle text-center">
-                Invitation
-              </div>
 
               <h2 ref={addItemRef} className="mb-6 text-white text-center">
-                Welcome Message
+                Invitation
               </h2>
 
               <p className="font-bold" ref={addItemRef}>

@@ -67,7 +67,7 @@ function StackedCardsSection() {
           });
 
           tl.to(cardElements[1], {
-            y: 35,
+            y: 0,
             opacity: 1,
             scale: 1,
             rotateX: 0,
@@ -78,7 +78,7 @@ function StackedCardsSection() {
           tl.to(
             cardElements[0],
             {
-              y: -35,
+              y: 0,
               scale: 0.96,
               opacity: 1,
               duration: 1,
@@ -88,7 +88,7 @@ function StackedCardsSection() {
           );
 
           tl.to(cardElements[2], {
-            y: 70,
+            y: 0,
             opacity: 1,
             scale: 1,
             rotateX: 0,
@@ -99,7 +99,7 @@ function StackedCardsSection() {
           tl.to(
             cardElements[1],
             {
-              y: 15,
+              y: 0,
               scale: 0.97,
               opacity: 1,
               duration: 1,
@@ -111,7 +111,7 @@ function StackedCardsSection() {
           tl.to(
             cardElements[0],
             {
-              y: -70,
+              y: 0,
               scale: 0.93,
               opacity: 1,
               duration: 1,

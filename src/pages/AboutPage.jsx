@@ -125,19 +125,13 @@ function AboutPage() {
           <div className="relative">
             <div>
               {[
-                {
-                  year: "2019",
-                  stat: "1,000+ Delegates",
+                {             
                   text: `The First International Conference on Family Medicine (ICFM) was organized by Prince Sultan Military Medical City (PSMMC), Department of Family and Community Medicine, from 23–25 April 2019 at the Hilton Riyadh Hotel & Residences, Saudi Arabia. The conference was held under the theme “Raising the Standard in Primary Care” and encompassed a wide range of disciplines within Family Medicine. The event was highly successful, attracting over 1,000 delegates.`,
                 },
-                {
-                  year: "2020",
-                  stat: "2,000+ Delegates",
+                {                 
                   text: `The Second ICFM was conducted virtually in December 2020 and received an overwhelming response, with more than 2,000 delegates in attendance. The conference focused on the theme “Innovations in Primary Care.” Subsequently, the Third and Fourth ICFM were hosted at the Fairmont Hotel, Riyadh, further strengthening the conference’s reputation as a leading platform for Family Medicine professionals.`,
                 },
                 {
-                  year: "2026",
-                  stat: "6–8 October",
                   text: `This year, the conference will be held jointly under the auspices of the Saudi Society of Family and Community Medicine (SSFCM), in collaboration with the longstanding host, Prince Sultan Military Medical City (PSMMC). United by a shared commitment to advancing healthcare, the conference serves as a vital forum for the dissemination and exchange of knowledge.`,
                 },
               ].map((item, index) => (
@@ -185,41 +179,9 @@ function AboutPage() {
                     <div
                       className="
                         relative z-10 grid gap-6
-                        lg:grid-cols-[220px_1fr]
                         lg:items-center
                       "
                     >
-                      {/* Left Journey Info */}
-                      <div
-                        className="
-                          rounded-3xl
-                          bg-linear-to-br from-teal-50 to-cyan-50
-                          p-5
-                          text-center
-                        "
-                      >
-                        <div
-                          className="
-                            mx-auto mb-4 flex h-16 w-16
-                            items-center justify-center
-                            rounded-full
-                            bg-linear-to-r from-teal-400 to-cyan-500
-                            text-lg font-black text-white
-                            shadow-[0_14px_30px_rgba(20,184,166,0.25)]
-                            transition-all duration-500
-                            group-hover:rotate-6
-                            group-hover:scale-110
-                          "
-                        >
-                          {String(index + 1).padStart(2, "0")}
-                        </div>
-
-                        <h5 className="mb-2">{item.year}</h5>
-
-                        <div className="subtitle">
-                          {item.stat}
-                        </div>
-                      </div>
 
                       {/* Right Content */}
                       <div>

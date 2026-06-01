@@ -120,7 +120,7 @@ function WelcomeMessage() {
               </div>
 
               <h2 ref={addItemRef} className="mb-6 text-white text-center">
-                Welcome to SSFCM 2026
+                Welcome Message
               </h2>
 
               <p className="font-bold" ref={addItemRef}>

@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import BackToTop from './components/BackToTop'
-import CmeBadge from './components/CmeBadge'
+//import CmeBadge from './components/CmeBadge'
 
 import Home from './pages/Home'
 import AboutPage from './pages/AboutPage'
@@ -37,7 +37,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-      <CmeBadge />
+      {/* <CmeBadge /> */}
       <BackToTop />
     </div>
   )

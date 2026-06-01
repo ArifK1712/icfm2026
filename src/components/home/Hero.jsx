@@ -153,10 +153,25 @@ function Hero() {
         <div className="grid items-center lg:grid-cols-2">
           {/* Left Content */}
           <div>
+            
+
+            {/* Title */}
+            <h1 ref={headingRef} className="lg:pr-15 text-6xl">
+              <span
+                className="
+      gsap-word inline-block
+      bg-linear-to-r from-white via-cyan-300 to-teal-400
+      bg-size-[200%_200%]
+      bg-clip-text text-transparent
+    "
+              >
+                International Family Medicine Symposium on Family Medicine and Home Healthcare 2026
+              </span>
+            </h1>
             {/* Kicker */}
             <div
               className="
-                mb-6 inline-flex items-center gap-2
+                mt-6 inline-flex items-center gap-2
                 rounded-full
                 border border-white/20
                 bg-white/10
@@ -167,30 +182,10 @@ function Hero() {
               <Sparkles size={16} />
 
               <span className="text-sm font-extrabold">
-                Saudi Society of Family and Community Medicine (SSFCM)
-              </span>
-            </div>
-
-            {/* Title */}
-            <h1 ref={headingRef} className="lg:pr-15">
-              <span
-                className="
-      gsap-word inline-block
-      bg-linear-to-r from-white via-cyan-300 to-teal-400
-      bg-size-[200%_200%]
-      bg-clip-text text-transparent
-    "
-              >
                 EMPOWERING LIVES, SHAPING FUTURE CARE
               </span>
-            </h1>
-
+            </div>
             {/* Text */}
-            <p className="mt-6">
-              A premium scientific experience connecting clinicians,
-              researchers, healthcare leaders, innovators and policy makers
-              through workshops, keynotes, networking and research exchange.
-            </p>
             <div className="mt-10 grid max-w-md grid-cols-2 sm:grid-cols-4 gap-2">
               {[
                 { label: "Days", value: timeLeft.days },
@@ -265,7 +260,7 @@ backdrop-blur-xl
                     </div>
                   </div>
 
-                  <div className="absolute right-0 sm:-right-5 -bottom-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
+                  <div className="absolute right-0 sm:-right-5 -top-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
                     <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
                       <div className="flex items-center justify-center rounded-xl text-teal-500">
                         <CalendarDays size={24} />

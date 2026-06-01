@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { Hospital, Users } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import aboutImg from "../../assets/images/aboutImg.jpg";
+import aboutImg from "../../assets/images/5th-icfm-logo.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,8 +64,7 @@ function About() {
               loading="lazy"
               alt="Conference audience"
               className="
-                w-full h-150 rounded-[38px] object-cover
-                shadow-[0_25px_65px_rgba(6,26,53,0.18)]
+                w-full h-150 rounded-[38px] object-contain
               "
             />
           </div>

@@ -1,27 +1,22 @@
 function Marquee() {
-  const items = [
-    'Register Now',
-    'Scientific Program',
-    'Submit Abstract',
-    'Workshops',
-    'Sponsorship',
-    'Riyadh 2026',
-  ]
+  const text =
+    'Important Dates: Abstract Submission closes on 30 July 2026 • Early Bird Registration ends on 11 August 2026.'
 
   return (
     <section className="overflow-hidden bg-teal-500 text-white">
       <div className="flex w-max animate-marquee">
-        {[...items, ...items].map((item, index) => (
+        {[...Array(8)].map((_, index) => (
           <div
             key={index}
             className="
-              whitespace-nowrap
-              px-8 py-4
+              flex shrink-0 items-center
+              whitespace-nowrap py-4
               text-sm font-black uppercase
               tracking-[1px]
             "
           >
-            {item}
+            <span>{text}</span>
+            <span className="mx-6 opacity-70">•</span>
           </div>
         ))}
       </div>

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --animate-marquee: marquee 10s linear infinite;
+  --animate-marquee: marquee 50s linear infinite;
 
   @keyframes marquee {
     from {

@@ -256,7 +256,7 @@ backdrop-blur-xl
                       </div>
 
                       <div>
-                        <h4 className="text-xs sm:text-xl">5-7 October 2026</h4>
+                        <h4 className="text-xs sm:text-xl">5 October 2026</h4>
                         <p className="flex items-center gap-2 text-xs sm:text-sm text-cyan-100">
                           <Mic2 size={15} />
                           Pre-conference Workshops

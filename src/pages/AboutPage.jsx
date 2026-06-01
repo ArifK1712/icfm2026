@@ -1,183 +1,458 @@
-//import InnerPageHero from "../components/InnerPageHero";
-import { HeartPulse, Users, Lightbulb, Globe2 } from "lucide-react";
-import CTA from "../components/CTA";
-import healthcareConference from "../assets/images/healthcare_conference.jpg";
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import psmmcLogo from "../assets/images/psmmc-logo.png";
+import ssfcmLogo from "../assets/images/ssfcm-logo.png";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function AboutPage() {
+  const aboutPageRef = useRef(null);
+  const headingRef = useRef(null);
+  const journeyCardsRef = useRef([]);
+  const partnerCardsRef = useRef([]);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      // Heading animation
+      gsap.fromTo(
+        headingRef.current,
+        {
+          opacity: 0,
+          y: 50,
+          filter: "blur(12px)",
+        },
+        {
+          opacity: 1,
+          y: 0,
+          filter: "blur(0px)",
+          duration: 0.8,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: headingRef.current,
+            start: "top 85%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+
+      // Journey cards animation
+      gsap.fromTo(
+        journeyCardsRef.current,
+        {
+          opacity: 0,
+          y: 80,
+          scale: 0.94,
+          filter: "blur(10px)",
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          filter: "blur(0px)",
+          duration: 0.8,
+          stagger: 0.18,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: journeyCardsRef.current[0],
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+
+      // Partner cards animation
+      gsap.fromTo(
+        partnerCardsRef.current,
+        {
+          opacity: 0,
+          y: 90,
+          scale: 0.92,
+          rotateX: 8,
+          filter: "blur(12px)",
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          rotateX: 0,
+          filter: "blur(0px)",
+          duration: 0.9,
+          stagger: 0.22,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: partnerCardsRef.current[0],
+            start: "top 78%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    }, aboutPageRef);
+
+    return () => {
+      ctx.revert();
+      ScrollTrigger.refresh();
+    };
+  }, []);
+
   return (
-    <>
-      {/* <InnerPageHero title="About 5th ICFM" /> */}
+    <div ref={aboutPageRef}>
+      {/* Section 1: About Conference */}
+      <section className="relative overflow-hidden bg-white py-10 lg:py-16">
+        <div className="absolute inset-0 bg-cover bg-center opacity-[0.08]" />
 
-      <section className="py-20 bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div
+          className="
+            absolute inset-0 opacity-70
+            bg-[linear-gradient(rgba(15,23,42,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.035)_1px,transparent_1px)]
+            bg-size-[58px_58px]
+          "
+        />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4">
+          {/* Top Heading */}
+          <div
+            className="mb-10 flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between"
+          >
             <div>
-              <div className="subtitle">About The Symposium</div>
-              <h2 className="mb-6">Advancing family medicine and home healthcare</h2>
-              <p className="text-slate-500 mb-4">
-                The 5th International Family Medicine Symposium brings together
-                healthcare professionals, experts, researchers, and
-                organizations to exchange knowledge and practical insights in
-                family medicine and home healthcare.
-              </p>
-              <p className="text-slate-500">
-                The symposium focuses on clinical excellence, patient-centered
-                care, innovation, prevention, and future-ready healthcare
-                delivery models.
-              </p>
+              <div className="subtitle">Conference Journey</div>
+              <h2>About Conference</h2>
             </div>
+          </div>
 
-            <div className="relative">
+          {/* Journey Cards */}
+          <div className="relative">
+            <div>
+              {[
+                {
+                  year: "2019",
+                  stat: "1,000+ Delegates",
+                  text: `The First International Conference on Family Medicine (ICFM) was organized by Prince Sultan Military Medical City (PSMMC), Department of Family and Community Medicine, from 23–25 April 2019 at the Hilton Riyadh Hotel & Residences, Saudi Arabia. The conference was held under the theme “Raising the Standard in Primary Care” and encompassed a wide range of disciplines within Family Medicine. The event was highly successful, attracting over 1,000 delegates.`,
+                },
+                {
+                  year: "2020",
+                  stat: "2,000+ Delegates",
+                  text: `The Second ICFM was conducted virtually in December 2020 and received an overwhelming response, with more than 2,000 delegates in attendance. The conference focused on the theme “Innovations in Primary Care.” Subsequently, the Third and Fourth ICFM were hosted at the Fairmont Hotel, Riyadh, further strengthening the conference’s reputation as a leading platform for Family Medicine professionals.`,
+                },
+                {
+                  year: "2026",
+                  stat: "6–8 October",
+                  text: `This year, the conference will be held jointly under the auspices of the Saudi Society of Family and Community Medicine (SSFCM), in collaboration with the longstanding host, Prince Sultan Military Medical City (PSMMC). United by a shared commitment to advancing healthcare, the conference serves as a vital forum for the dissemination and exchange of knowledge.`,
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="relative"
+                >
+                  {/* Row Card */}
+                  <div
+                    className="
+                      group relative overflow-hidden
+                      rounded-4xl
+                      border border-teal-500/15
+                      bg-white/90
+                      p-5
+                      backdrop-blur-2xl
+                      transition-all duration-300
+                      hover:border-teal-400/40
+                      hover:shadow-[0_20px_65px_rgba(6,26,53,0.08)]
+                      md:p-7
+                    "
+                  >
+                    {/* Card Glow */}
+                    <div
+                      className="
+                        absolute -right-20 -top-20
+                        h-56 w-56 rounded-full
+                        bg-[radial-gradient(circle,rgba(20,184,166,0.14),transparent_70%)]
+                        transition-all duration-300
+                        group-hover:scale-125
+                      "
+                    />
 
-              <div className="relative rounded-4xl bg-linear-to-br from-teal-50 to-cyan-50 p-8">
-                <div className="grid gap-5 sm:grid-cols-2">
-                  {[
-                    { icon: HeartPulse, title: "Clinical Care" },
-                    { icon: Users, title: "Expert Network" },
-                    { icon: Lightbulb, title: "Innovation" },
-                    { icon: Globe2, title: "Global Exchange" },
-                  ].map((item, index) => {
-                    const Icon = item.icon;
+                    {/* Subtle Shine */}
+                    <div
+                      className="
+                        pointer-events-none absolute inset-0
+                        -translate-x-full
+                        bg-[linear-gradient(110deg,transparent_20%,rgba(255,255,255,0.45)_45%,transparent_75%)]
+                        transition-transform duration-700
+                        group-hover:translate-x-full
+                      "
+                    />
 
-                    return (
+                    <div
+                      className="
+                        relative z-10 grid gap-6
+                        lg:grid-cols-[220px_1fr]
+                        lg:items-center
+                      "
+                    >
+                      {/* Left Journey Info */}
                       <div
-                        key={index}
-                        className="motion-card group"
+                        className="
+                          rounded-3xl
+                          bg-linear-to-br from-teal-50 to-cyan-50
+                          p-5
+                          text-center
+                        "
                       >
-                        <div className="icon-box">
-                          <Icon size={30} strokeWidth={1.5} />
+                        <div
+                          className="
+                            mx-auto mb-4 flex h-16 w-16
+                            items-center justify-center
+                            rounded-full
+                            bg-linear-to-r from-teal-400 to-cyan-500
+                            text-lg font-black text-white
+                            shadow-[0_14px_30px_rgba(20,184,166,0.25)]
+                            transition-all duration-500
+                            group-hover:rotate-6
+                            group-hover:scale-110
+                          "
+                        >
+                          {String(index + 1).padStart(2, "0")}
                         </div>
 
-                        <h6 className="mb-2">{item.title}</h6>
+                        <h5 className="mb-2">{item.year}</h5>
+
+                        <div className="subtitle">
+                          {item.stat}
+                        </div>
                       </div>
-                    );
-                  })}
+
+                      {/* Right Content */}
+                      <div>
+                        <p>{item.text}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Journey Connector */}
+                  {index !== 2 && (
+                    <div
+                      className="
+                        mx-auto h-10 w-px
+                        bg-linear-to-b from-teal-400 to-cyan-400
+                      "
+                    />
+                  )}
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
+
+      {/* Section 2: PSMMC / Society */}
       <section
-        className="relative overflow-hidden bg-[radial-gradient(circle_at_15%_20%,rgba(20,184,166,0.16),transparent_28%),radial-gradient(circle_at_85%_30%,rgba(34,211,238,0.12),transparent_26%),linear-gradient(135deg,#061a35,#09294f_58%,#061a35)]
-    py-24 text-white
-  "
+        className="
+          relative overflow-hidden
+          py-20
+        "
       >
-        {/* Grid */}
+        {/* Grid Pattern */}
         <div
           className="
-      absolute inset-0 opacity-20
-      bg-[linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)]
-      bg-size-[58px_58px]
-    "
+            absolute inset-0 opacity-20
+            bg-[linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)]
+            bg-size-[58px_58px]
+          "
         />
 
-        {/* Glow */}
+        {/* Floating Glows */}
         <div
           className="
-      absolute -top-24 -left-24
-      h-80 w-80
-      rounded-full
-      bg-teal-400/10
-      blur-3xl
-      animate-[floatGlow_12s_ease-in-out_infinite]
-    "
+            absolute -left-24 top-16
+            h-80 w-80 rounded-full
+            bg-teal-400/15 blur-3xl
+            animate-[floatGlow_12s_ease-in-out_infinite]
+          "
         />
 
         <div
           className="
-      absolute -bottom-24 -right-24
-      h-96 w-96
-      rounded-full
-      bg-cyan-400/10
-      blur-3xl
-      animate-[floatGlow_16s_ease-in-out_infinite_reverse]
-    "
+            absolute -right-24 bottom-10
+            h-96 w-96 rounded-full
+            bg-cyan-400/15 blur-3xl
+            animate-[floatGlow_16s_ease-in-out_infinite_reverse]
+          "
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
-          <div className="grid items-center gap-16 lg:grid-cols-2">
-            {/* Content */}
-            {/* Image */}
-            <div className="relative">
-              {/* Main Image */}
+        <div className="relative z-10 mx-auto max-w-7xl px-4">
+          <div className="grid gap-8 lg:grid-cols-2">
+            {/* Card 1: PSMMC */}
+            <div
+              ref={(el) => {
+                partnerCardsRef.current[0] = el;
+              }}
+              className="
+                group relative flex h-full flex-col overflow-hidden
+                rounded-4xl
+                border border-white/12
+                bg-[radial-gradient(circle_at_12%_20%,rgba(0,194,184,0.24),transparent_26%),radial-gradient(circle_at_88%_70%,rgba(71,215,255,0.18),transparent_28%),linear-gradient(135deg,#061a35,#09294f_55%,#061a35)]
+                p-7
+                backdrop-blur-2xl
+                transition-all duration-500
+                hover:-translate-y-2
+                hover:scale-[1.01]
+                hover:border-teal-300/35
+                hover:shadow-[0_34px_95px_rgba(0,0,0,0.30)]
+                md:p-9
+              "
+            >
+              {/* Card Glow */}
               <div
                 className="
-            relative overflow-hidden
-            rounded-[38px]
-            border border-white/10
-            shadow-[0_30px_80px_rgba(0,0,0,0.35)]
-          "
-              >
+                  absolute -right-24 -top-24
+                  h-72 w-72 rounded-full
+                  bg-[radial-gradient(circle,rgba(20,184,166,0.22),transparent_70%)]
+                  transition-all duration-300
+                  group-hover:scale-125
+                "
+              />
+
+              {/* Shine Effect */}
+              <div
+                className="
+                  pointer-events-none absolute inset-0
+                  -translate-x-full
+                  bg-[linear-gradient(110deg,transparent_20%,rgba(255,255,255,0.12)_45%,transparent_75%)]
+                  transition-transform duration-700
+                  group-hover:translate-x-full
+                "
+              />
+
+              {/* Logo Box */}
+              <div className="relative z-10 mb-8 flex items-center justify-center p-0">
                 <img
-                  src={healthcareConference}
-                  alt="Healthcare Conference"
+                  src={psmmcLogo}
+                  alt="Prince Sultan Military Medical City"
                   loading="lazy"
+                  decoding="async"
                   className="
-              h-135 w-full
-              object-cover
-            "
+                    max-h-40 w-auto object-contain
+                    transition-all duration-500
+                    group-hover:-translate-y-1
+                    group-hover:scale-105
+                  "
                 />
               </div>
 
-              {/* Floating Glass Card */}
-              <div
-                className="
-            absolute -bottom-8 left-8
-            rounded-[28px]
-            border border-white/10
-            bg-white/10
-            px-7 py-5
-            backdrop-blur-2xl
-            shadow-[0_20px_60px_rgba(0,0,0,0.28)]
-          "
-              >
-                <h3 className="text-4xl font-black text-teal-300">500+</h3>
+              {/* Text */}
+              <div className="relative z-10 flex-1 text-center">
+                <h3 className="mb-5 text-3xl font-black text-white">
+                  PSMMC
+                </h3>
 
-                <p
-                  className="
-              mt-1 text-sm
-              font-semibold uppercase
-              tracking-[2px]
-              text-white/70
-            "
-                >
-                  Expected Participants
+                <p className="text-justify text-white/70 [text-align-last:center]">
+                  Prince Sultan Military Medical City provides healthcare
+                  services at the primary, secondary, and specialized levels in
+                  accordance with international quality standards for employees
+                  of the Ministry of Defense, their families, and other eligible
+                  groups. This is achieved through providing a distinguished
+                  work environment, attracting top human resources, and
+                  promoting a culture of teamwork, professional development, and
+                  scientific research.
                 </p>
               </div>
-            </div>
-            <div>
-              <div className="subtitle">Building Better Healthcare</div>
 
-              <h2 className="mb-6 text-white">
-                Creating meaningful healthcare collaboration and innovation
-              </h2>
-
-              <p className="mb-5 text-white/70">
-                The symposium provides a dynamic platform for healthcare
-                professionals, researchers, policy makers, and organizations to
-                discuss emerging trends and real-world healthcare challenges.
-              </p>
-
-              <p className="mb-5 text-white/70">
-                Through keynote sessions, workshops, scientific discussions, and
-                collaborative networking opportunities, participants gain
-                practical knowledge and valuable professional connections.
-              </p>
-
-              <p className="text-white/70">
-                Our mission is to strengthen family medicine and home healthcare
-                practices while promoting innovation, sustainability, and
-                patient-focused care models across the healthcare ecosystem.
-              </p>
+              {/* Bottom Accent */}
+              <div
+                className="
+                  mt-8 h-1.5 w-full rounded-full
+                  bg-linear-to-r from-teal-400 via-cyan-400 to-teal-500
+                "
+              />
             </div>
 
-            
+            {/* Card 2: Society */}
+            <div
+              ref={(el) => {
+                partnerCardsRef.current[1] = el;
+              }}
+              className="
+                group relative flex h-full flex-col overflow-hidden
+                rounded-4xl
+                border border-white/12
+                bg-[radial-gradient(circle_at_12%_20%,rgba(0,194,184,0.24),transparent_26%),radial-gradient(circle_at_88%_70%,rgba(71,215,255,0.18),transparent_28%),linear-gradient(135deg,#061a35,#09294f_55%,#061a35)]
+                p-7
+                backdrop-blur-2xl
+                transition-all duration-500
+                hover:-translate-y-2
+                hover:scale-[1.01]
+                hover:border-cyan-300/35
+                hover:shadow-[0_34px_95px_rgba(0,0,0,0.30)]
+                md:p-9
+              "
+            >
+              {/* Card Glow */}
+              <div
+                className="
+                  absolute -right-24 -top-24
+                  h-72 w-72 rounded-full
+                  bg-[radial-gradient(circle,rgba(71,215,255,0.22),transparent_70%)]
+                  transition-all duration-300
+                  group-hover:scale-125
+                "
+              />
+
+              {/* Shine Effect */}
+              <div
+                className="
+                  pointer-events-none absolute inset-0
+                  -translate-x-full
+                  bg-[linear-gradient(110deg,transparent_20%,rgba(255,255,255,0.12)_45%,transparent_75%)]
+                  transition-transform duration-700
+                  group-hover:translate-x-full
+                "
+              />
+
+              {/* Logo Box */}
+              <div className="relative z-10 mb-8 flex items-center justify-center p-0">
+                <img
+                  src={ssfcmLogo}
+                  alt="Saudi Society of Family and Community Medicine"
+                  loading="lazy"
+                  decoding="async"
+                  className="
+                    max-h-40 w-auto object-contain
+                    transition-all duration-500
+                    group-hover:-translate-y-1
+                    group-hover:scale-105
+                  "
+                />
+              </div>
+
+              {/* Text */}
+              <div className="relative z-10 flex-1 text-center">
+                <h3 className="mb-5 text-3xl font-black text-white">
+                  About the Society
+                </h3>
+
+                <p className="text-justify text-white/70 [text-align-last:center]">
+                  Saudi Society of Family and Community Medicine was established
+                  under the umbrella of King Faisal University in 1411H. The
+                  Honorary President of the Society is His Royal Highness Prince
+                  Talal bin Abdulaziz Al Saud. The Society has 12 branches
+                  across the Kingdom of Saudi Arabia, aiming to fulfill its
+                  mission of developing family medicine, community medicine, and
+                  primary healthcare services throughout the Kingdom.
+                </p>
+              </div>
+
+              {/* Bottom Accent */}
+              <div
+                className="
+                  mt-8 h-1.5 w-full rounded-full
+                  bg-linear-to-r from-cyan-400 via-teal-400 to-cyan-500
+                "
+              />
+            </div>
           </div>
         </div>
       </section>
-      <CTA />
-    </>
+    </div>
   );
 }
 

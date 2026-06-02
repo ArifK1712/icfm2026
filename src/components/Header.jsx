@@ -48,7 +48,7 @@ function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <ul className="hidden lg:flex items-center">
+            <ul className="hidden xl:flex items-center">
               {navItems.map((item) => (
                 <li key={item.label} className="relative group">
                   {item.dropdown ? (
@@ -142,14 +142,14 @@ function Header() {
 
             <img
               src={otherlogos}
-              className="max-h-6 xl:max-h-10 object-cover"
+              className="max-h-6 sm:max-h-9 2xl:max-h-10 object-cover"
               alt="Other Logos"
             />
 
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenu(true)}
-              className="lg:hidden text-green-950 cursor-pointer"
+              className="xl:hidden text-green-950 cursor-pointer"
               aria-label="Open menu"
             >
               <Menu size={28} />

@@ -150,13 +150,11 @@ function Hero() {
           px-4
         "
       >
-        <div className="grid items-center lg:grid-cols-2">
+        <div className="grid items-center xl:grid-cols-2">
           {/* Left Content */}
           <div>
-            
-
             {/* Title */}
-            <h1 ref={headingRef} className="lg:pr-15 text-6xl">
+            <h1 ref={headingRef} className="lg:pr-15">
               <span
                 className="
       gsap-word inline-block
@@ -165,7 +163,8 @@ function Hero() {
       bg-clip-text text-transparent
     "
               >
-                International Family Medicine Symposium on Family Medicine and Home Healthcare 2026
+                International Family Medicine Symposium on Family Medicine and
+                Home Healthcare 2026
               </span>
             </h1>
             {/* Kicker */}
@@ -216,7 +215,7 @@ backdrop-blur-xl
             </div>
           </div>
           <div className="relative min-h-110 sm:min-h-165">
-            <div className="absolute right-0 left-0 top-10 w-full h-120 lg:h-120 lg:w-120 xl:h-140 xl:w-180 mx-auto">
+            <div className="absolute right-0 left-0 top-10 w-full h-120 lg:h-140 xl:h-140 2xl:w-180 mx-auto">
               {slides.map((slide, index) => (
                 <div
                   key={index}
@@ -260,7 +259,7 @@ backdrop-blur-xl
                     </div>
                   </div>
 
-                  <div className="absolute right-0 sm:-right-5 -top-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
+                  <div className="absolute right-0 lg:-right-5 -bottom-5 sm:-top-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
                     <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
                       <div className="flex items-center justify-center rounded-xl text-teal-500">
                         <CalendarDays size={24} />

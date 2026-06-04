@@ -54,7 +54,7 @@ function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="overflow-x-hiddenpy-20"
+      className="overflow-x-hidden py-20"
     >
       <div className="min-w-[70%] max-w-7xl mx-auto px-4">
         <div className="grid items-center gap-12 lg:grid-cols-2">

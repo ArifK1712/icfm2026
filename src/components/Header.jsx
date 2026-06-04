@@ -149,7 +149,7 @@ function Header() {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenu(true)}
-              className="xl:hidden text-green-950 cursor-pointer"
+              className="xl:hidden text-white cursor-pointer"
               aria-label="Open menu"
             >
               <Menu size={28} />
@@ -172,7 +172,7 @@ function Header() {
       <div
         className={`
           fixed top-0 left-0 h-full w-full
-          bg-white z-50 shadow-2xl
+        bg-[#061a35] z-50 shadow-2xl
           transition-all duration-300
           ${mobileMenu ? "translate-x-0" : "-translate-x-full"}
         `}
@@ -189,7 +189,7 @@ function Header() {
 
           <button
             onClick={() => setMobileMenu(false)}
-            className="text-green-950"
+            className="text-white"
             aria-label="Close menu"
           >
             <X size={26} />

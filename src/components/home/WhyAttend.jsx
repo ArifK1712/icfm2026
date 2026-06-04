@@ -174,7 +174,6 @@ useLayoutEffect(() => {
       id="why-attend"
       className="
         relative overflow-hidden
-        bg-[radial-gradient(circle_at_12%_18%,rgba(0,194,184,0.22),transparent_28%),radial-gradient(circle_at_90%_24%,rgba(71,215,255,0.16),transparent_26%),linear-gradient(135deg,#061a35,#09294f_58%,#061a35)]
         py-20 text-white
         lg:h-screen lg:py-0
       "

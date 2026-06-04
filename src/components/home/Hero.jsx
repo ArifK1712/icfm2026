@@ -1,7 +1,6 @@
-import { Sparkles, CalendarDays, Mic2, Users } from "lucide-react";
+import { CalendarDays, Mic2 } from "lucide-react";
 import gsap from "gsap";
 import { useEffect, useState, useRef } from "react";
-import heroBg from "../../assets/images/homehero.webp";
 
 import slide1 from "../../assets/images/gallery/1.avif";
 import slide2 from "../../assets/images/gallery/2.avif";
@@ -15,6 +14,7 @@ const eventDate = new Date("2026-10-05T00:00:00").getTime();
 function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
   const headingRef = useRef(null);
+
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -25,7 +25,7 @@ function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    }, 4500);
 
     return () => clearInterval(interval);
   }, []);
@@ -75,117 +75,216 @@ function Hero() {
   return (
     <section
       id="home"
-      className="
-        relative flex min-h-screen
-        items-center overflow-hidden
-        py-32.5 text-white
-      "
+      className="relative min-h-screen overflow-hidden bg-[#061a35] text-white"
     >
-      {/* Background */}
+      {/* Full Background Slider */}
+      <div className="absolute inset-0">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`
+              absolute inset-0 bg-cover bg-center bg-no-repeat
+              transition-all duration-[1800ms] ease-out
+              ${
+                activeSlide === index
+                  ? "opacity-100 scale-105"
+                  : "opacity-0 scale-110"
+              }
+            `}
+            style={{
+              backgroundImage: `url(${slide})`,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Dark Readability Overlay */}
       <div
         className="
           absolute inset-0
-          bg-cover bg-center
+          bg-[linear-gradient(90deg,rgba(6,26,53,0.98)_0%,rgba(6,26,53,0.88)_38%,rgba(6,26,53,0.55)_68%,rgba(6,26,53,0.82)_100%)]
         "
-        style={{
-          backgroundImage: `url(${heroBg})`,
-        }}
       />
 
-      {/* Dark Overlay */}
+      {/* Bottom Depth Overlay */}
       <div
         className="
           absolute inset-0
-          bg-[linear-gradient(125deg,rgba(6,26,53,0.98),rgba(9,41,79,0.94))]
+          bg-[linear-gradient(to_top,rgba(6,26,53,0.98)_0%,rgba(6,26,53,0.70)_28%,transparent_64%)]
         "
       />
 
-      {/* Left Glow */}
+      {/* Animated Gradient Mood */}
       <div
         className="
-          absolute -left-10 -top-10
-          min-h-180 min-w-180
-          rounded-full
-          bg-teal-400/20
-          blur-3xl
+          absolute inset-0 animate-gradientFlow
+          bg-[linear-gradient(120deg,rgba(34,211,200,0.22),transparent_30%,rgba(71,215,255,0.15)_52%,transparent_72%,rgba(3,156,152,0.22))]
+          bg-[length:220%_220%]
         "
       />
 
-      {/* Right Glow */}
+      {/* Moving Grid */}
       <div
         className="
-          absolute -right-10 -top-10
-          h-180 w-180
-          rounded-full
-          bg-cyan-400/20
-          blur-3xl
+          absolute inset-0 opacity-[0.12] animate-gridMove
+          bg-[linear-gradient(rgba(255,255,255,0.14)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.14)_1px,transparent_1px)]
+          bg-[size:68px_68px]
         "
       />
 
-      {/* Grid Pattern */}
-      <div
-        className="
-          absolute inset-0 opacity-30
-          bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)]
-          bg-size-[58px_58px]
-        "
-      />
+      {/* Scan Light */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div
+          className="
+            absolute -left-1/2 top-0 h-full w-1/2 animate-scanLight
+            bg-[linear-gradient(90deg,transparent,rgba(34,211,200,0.12),rgba(255,255,255,0.10),transparent)]
+            blur-xl
+          "
+        />
+      </div>
 
-      {/* Circle Border */}
-      <div
-        className="
-          absolute -bottom-65 -right-65
-          h-190 w-190
-          animate-spin rounded-full
-          border border-white/10
-          [animation-duration:24s]
-        "
-      />
+      {/* Floating Glow Blobs */}
+      <div className="absolute left-[8%] top-[12%] h-72 w-72 rounded-full bg-teal-400/24 blur-[95px] animate-blobFloatOne" />
+      <div className="absolute right-[10%] top-[14%] h-80 w-80 rounded-full bg-cyan-400/20 blur-[105px] animate-blobFloatTwo" />
+      <div className="absolute bottom-[2%] left-[42%] h-96 w-96 rounded-full bg-[#039c98]/22 blur-[120px] animate-blobFloatThree" />
 
+      {/* ECG Line */}
+      <div className="pointer-events-none absolute left-0 top-[62%] hidden w-full opacity-30 lg:block">
+        <svg
+          viewBox="0 0 1200 120"
+          className="h-28 w-full animate-ecgMove"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 70 H140 L165 70 L180 42 L198 96 L222 34 L245 70 H390 L420 70 L438 50 L460 86 L486 28 L512 70 H720 L746 70 L764 48 L786 90 L812 36 L840 70 H1200"
+            stroke="rgba(34,211,200,0.7)"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
+
+      {/* Floating Particles */}
+      <div className="pointer-events-none absolute inset-0">
+        <span className="hero-particle left-[12%] top-[22%] animate-particleOne" />
+        <span className="hero-particle left-[24%] top-[72%] animate-particleTwo" />
+        <span className="hero-particle left-[48%] top-[18%] animate-particleThree" />
+        <span className="hero-particle right-[18%] top-[30%] animate-particleFour" />
+        <span className="hero-particle right-[26%] bottom-[18%] animate-particleFive" />
+        <span className="hero-particle right-[8%] bottom-[42%] animate-particleSix" />
+      </div>
+
+      {/* Main Content Without Background Box */}
       <div
         className="
-          relative z-10
-          mx-auto w-full
-          min-w-[70%] max-w-7xl
-          px-4
+          relative z-10 mx-auto flex min-h-screen w-full max-w-[1540px]
+          items-center px-4 py-24
+          sm:px-6 sm:py-28
+          lg:px-8 xl:py-32
         "
       >
-        <div className="grid items-center xl:grid-cols-2">
-          {/* Left Content */}
-          <div>
-            {/* Title */}
-            <h1 ref={headingRef} className="lg:pr-15">
-              <span
-                className="
-      gsap-word inline-block
-      bg-linear-to-r from-white via-cyan-300 to-teal-400
-      bg-size-[200%_200%]
-      bg-clip-text text-transparent
-    "
-              >
-                International Family Medicine Symposium on Family Medicine and
-                Home Healthcare 2026
-              </span>
-            </h1>
-            {/* Kicker */}
-            <div
+        <div className="w-full max-w-6xl">
+          {/* Badge */}
+
+          {/* Title */}
+          <h1
+            ref={headingRef}
+            className="
+              max-w-[1080px]
+              text-[42px] font-black leading-[0.98]
+              tracking-[-2px]
+              sm:text-[58px]
+              md:text-[68px]
+              lg:text-[78px]
+              xl:text-[92px]
+              drop-shadow-[0_28px_70px_rgba(0,0,0,0.70)]
+            "
+          >
+            <span
               className="
-                mt-6 inline-flex items-center gap-2
-                rounded-full
-                border border-white/20
-                bg-white/10
-                px-4 py-2
-                backdrop-blur-xl
+                gsap-word inline-block
+                bg-gradient-to-br from-white via-cyan-100 to-teal-300
+                bg-clip-text text-transparent
               "
             >
-              <Sparkles size={16} />
+              International Family Medicine Symposium on Family Medicine and
+              Home Healthcare 2026
+            </span>
+          </h1>
+          <div
+            className="
+              my-5 inline-flex items-center gap-2 rounded-full
+              border border-white/15 bg-white/10 px-4 py-2.5
+              shadow-[0_20px_55px_rgba(0,0,0,0.22)]
+              backdrop-blur-2xl
+            "
+          >
+            <h3
+              className="font-extrabold 
+                text-teal-400 px-2
+              "
+            >
+              EMPOWERING LIVES, SHAPING FUTURE CARE
+            </h3>
+          </div>
+          {/* Date Cards */}
+          <div className="mt-5 grid max-w-3xl gap-3 md:grid-cols-2">
+            <div
+              className="
+                flex items-center gap-3 rounded-3xl
+                border border-white/12 bg-white/10 p-4
+                shadow-[0_20px_60px_rgba(0,0,0,0.26)]
+                backdrop-blur-2xl
+              "
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-[#22d3c8]">
+                <CalendarDays size={23} />
+              </div>
 
-              <span className="text-sm font-extrabold">
-                EMPOWERING LIVES, SHAPING FUTURE CARE
-              </span>
+              <div>
+                <h4 className="text-lg font-black text-white">
+                  5 October 2026
+                </h4>
+                <p className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-cyan-100">
+                  <Mic2 size={14} />
+                  Pre-conference Workshops
+                </p>
+              </div>
             </div>
-            {/* Text */}
-            <div className="mt-10 grid max-w-md grid-cols-2 sm:grid-cols-4 gap-2">
+
+            <div
+              className="
+                flex items-center gap-3 rounded-3xl
+                border border-white/12 bg-white/10 p-4
+                shadow-[0_20px_60px_rgba(0,0,0,0.26)]
+                backdrop-blur-2xl
+              "
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-[#22d3c8]">
+                <CalendarDays size={23} />
+              </div>
+
+              <div>
+                <h4 className="text-lg font-black text-white">
+                  6-7 October 2026
+                </h4>
+                <p className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-cyan-100">
+                  <Mic2 size={14} />
+                  Conference
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Countdown */}
+          <div
+            className="
+              mt-6 max-w-3xl 
+            "
+          >
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
               {[
                 { label: "Days", value: timeLeft.days },
                 { label: "Hours", value: timeLeft.hours },
@@ -195,102 +294,34 @@ function Hero() {
                 <div
                   key={item.label}
                   className="
-        rounded-2xl
-border border-white/10
-bg-[linear-gradient(135deg,rgba(45,212,191,0.18),rgba(34,211,238,0.20),rgba(255,255,255,0.06))]
-p-4 text-center
-shadow-[0_18px_45px_rgba(0,0,0,0.22)]
-backdrop-blur-xl
-      "
+                    relative overflow-hidden rounded-3xl
+                    border border-white/10
+                    bg-[linear-gradient(150deg,rgba(255,255,255,0.15),rgba(255,255,255,0.05))]
+                    px-3 py-5 text-center
+                    transition-all duration-300
+                    hover:-translate-y-1 hover:border-teal-300/35
+                    hover:bg-white/[0.14]
+                  "
                 >
-                  <h3 className="text-2xl font-black text-white md:text-3xl">
+                  <div
+                    className="
+                      absolute inset-x-4 top-0 h-px
+                      bg-gradient-to-r from-transparent via-teal-300/70 to-transparent
+                    "
+                  />
+
+                  <h3 className="text-3xl font-black text-white sm:text-4xl">
                     {String(item.value).padStart(2, "0")}
                   </h3>
 
-                  <p className="mt-1 text-xs font-bold uppercase tracking-[1px] text-white/60">
+                  <p
+                    className="
+                      mt-2 text-[11px] font-bold uppercase
+                      tracking-[1.8px] text-white/58
+                    "
+                  >
                     {item.label}
                   </p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="relative min-h-110 sm:min-h-165">
-            <div className="absolute right-0 left-0 top-10 w-full h-120 lg:h-140 xl:h-140 2xl:w-180 mx-auto">
-              {slides.map((slide, index) => (
-                <div
-                  key={index}
-                  className={`
-          absolute inset-0 rounded-[36px]
-          border border-white/15 bg-white/10
-          shadow-[0_35px_90px_rgba(0,0,0,0.35)]
-          backdrop-blur-xl
-          transition-all duration-700 ease-out
-
-          ${
-            activeSlide === index
-              ? "z-30 translate-x-0 translate-y-0 rotate-0 scale-100 opacity-100"
-              : index < activeSlide
-                ? "z-10 -translate-x-8 translate-y-8 -rotate-6 scale-90 opacity-40"
-                : "z-20 translate-x-8 translate-y-8 rotate-6 scale-90 opacity-40"
-          }
-        `}
-                >
-                  <img
-                    src={slide}
-                    alt="Conference"
-                    className="h-full w-full object-cover rounded-4xl"
-                  />
-
-                  <div className="absolute inset-0 bg-linear-to-t from-[#061a35]/90 via-[#061a35]/20 to-transparent" />
-
-                  <div className="absolute left-0 lg:-left-5 -top-5 z-40 animate-[floatBadge_3s_ease-in-out_infinite]">
-                    <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
-                      <div className="flex items-center justify-center rounded-xl text-teal-500">
-                        <CalendarDays size={24} />
-                      </div>
-
-                      <div>
-                        <h4 className="text-xs sm:text-xl">5 October 2026</h4>
-                        <p className="flex items-center gap-2 text-xs sm:text-sm text-cyan-100">
-                          <Mic2 size={15} />
-                          Pre-conference Workshops
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="absolute right-0 lg:-right-5 -bottom-5 sm:-top-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
-                    <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
-                      <div className="flex items-center justify-center rounded-xl text-teal-500">
-                        <CalendarDays size={24} />
-                      </div>
-
-                      <div>
-                        <h4 className="text-xs sm:text-xl">6-7 October 2026</h4>
-                        <p className="flex items-center gap-2 text-xs sm:text-sm  text-cyan-100">
-                          <Mic2 size={15} />
-                          Conference
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Floating Date Badge - Bottom Left */}
-                  {/* <div className="absolute right-0 sm:-right-5 -bottom-5 z-40 animate-[floatBadge_3.5s_ease-in-out_infinite]">
-                    <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-teal-900/80 p-2 backdrop-blur-3xl">
-                      <div className="flex items-center justify-center rounded-xl text-teal-500">
-                        <CalendarDays strokeWidth={1} size={24} />
-                      </div>
-
-                      <div>
-                        <h4 className="text-xs sm:text-xl">5–7 October 2026</h4>
-                        <p className="flex items-center gap-2 text-xs sm:text-sm  text-cyan-100">
-                          <Users strokeWidth={1} size={15} />
-                          Conference
-                        </p>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               ))}
             </div>

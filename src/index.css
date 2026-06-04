@@ -27,7 +27,6 @@
 }
 
 @layer components {
-
   @keyframes glassShine {
     0% {
       background-position: 200% 0;
@@ -45,6 +44,23 @@
   body {
     @apply text-green-950;
     font-family: 'Public Sans', sans-serif;
+    background:
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(0, 194, 184, 0.2),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 88% 28%,
+      rgba(71, 215, 255, 0.16),
+      transparent 26%
+    ),
+    linear-gradient(
+      135deg,
+      #061a35,
+      #09294f 58%,
+      #061a35
+    );
   }
   h1{
     @apply font-black leading-[1.1] text-4xl md:text-5xl lg:text-6xl

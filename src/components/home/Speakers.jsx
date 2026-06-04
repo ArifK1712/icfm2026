@@ -13,7 +13,7 @@ function Speakers() {
   }))
 
   return (
-    <section id="speakers" className="bg-white py-20">
+    <section id="speakers" className="py-20">
       <div className="min-w-[70%] max-w-7xl mx-auto px-4">
         {/* Heading */}
         <div className="mb-12 grid items-end gap-6 lg:grid-cols-[1fr_auto]">
@@ -22,7 +22,7 @@ function Speakers() {
               Featured Speakers
             </div>
 
-            <h2>
+            <h2 className="text-white">
               Meet the voices shaping healthcare
             </h2>
           </div>

@@ -20,7 +20,6 @@ function Home() {
     <WelcomeMessage />
     <About />
     <WhyAttend />
-    <Speakers />
     <EventHighlights />
     <Partners />
     <Venue />

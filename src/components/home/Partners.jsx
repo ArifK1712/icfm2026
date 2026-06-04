@@ -83,7 +83,7 @@ function Partners() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-white py-20">
+    <section className="relative overflow-hidden py-20">
       {/* Background Orbs */}
       <div
         className="
@@ -104,7 +104,7 @@ function Partners() {
       <div className="min-w-[70%] max-w-7xl mx-auto px-4">
         <div className="mb-14 text-center">
           <div className="subtitle">Partners</div>
-          <h2>Sponsors & Supporters</h2>
+          <h2 className="text-white">Sponsors & Supporters</h2>
           <p className="mx-auto mt-5 max-w-180 text-lg leading-8 text-slate-500">
             We are proud to collaborate with leading healthcare, pharmaceutical
             and medical organizations supporting ICFM 2026.
@@ -132,7 +132,7 @@ function Partners() {
 
                 <h4
                   className={`
-                    whitespace-nowrap 
+                    whitespace-nowrap text-white
                     ${category.headingClass || ""}
                   `}
                 >

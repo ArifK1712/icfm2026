@@ -54,7 +54,7 @@ function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="overflow-x-hidden bg-white py-20"
+      className="overflow-x-hiddenpy-20"
     >
       <div className="min-w-[70%] max-w-7xl mx-auto px-4">
         <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -69,8 +69,8 @@ function About() {
             />
           </div>
           <div ref={contentRef}>
-            <div className="subtitle">About the Conference</div>
-            <h2 className="mb-5">About Conference 2026</h2>
+            <div className="subtitle">About</div>
+            <h2 className="mb-5 text-white">About Conference 2026</h2>
             <p className="mb-3">
               The upcoming International Conference on Family Medicine promises
               to be a larger and more comprehensive event, scheduled to take

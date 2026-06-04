@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <>
-      <nav className="bg-white/90 backdrop-blur-3xl shadow-[0_12px_35px_rgba(6,26,53,0.08)] transition-all duration-300 sticky top-0 z-50">
+      <nav className="backdrop-blur-3xl shadow-[0_12px_35px_rgba(6,26,53,0.08)] transition-all duration-300 sticky top-0 z-50">
         <div className="min-w-full max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between min-h-15 md:min-h-20">
             <Link to="/">
@@ -58,7 +58,7 @@ function Header() {
                         className="
                           relative  px-2 py-2 text-nowrap
                           text-sm xl:text-[16px] transition-colors duration-300
-                          text-[#344054] hover:text-[#0aa6a6]
+                          text-white hover:text-[#0aa6a6]
                           flex items-center gap-1
                         "
                       >
@@ -85,7 +85,7 @@ function Header() {
                             <NavLink
                               to={dropItem.path}
                               className={({ isActive }) => `
-                                block px-4 py-3 text-sm transition-colors duration-300
+                                block px-4 py-3 text-sm transition-colors duration-300 text-white
                                 ${
                                   isActive
                                     ? "bg-teal-50 text-[#0aa6a6]"
@@ -105,7 +105,7 @@ function Header() {
                       end={item.path === "/"}
                       className={({ isActive }) => `
                         relative  px-2 py-2 text-nowrap
-                        text-sm xl:text-[16px] transition-colors duration-300
+                        text-sm xl:text-[16px] transition-colors duration-300 text-white
                         ${isActive ? "text-[#0aa6a6]" : "text-[#344054]"}
                         after:content-['']
                         after:absolute
@@ -211,7 +211,7 @@ function Header() {
                       <li key={dropItem.label}>
                         <NavLink
                           to={dropItem.path}
-                          className="block text-[14px] font-semibold text-[#344054] hover:text-teal-500 transition"
+                          className="block text-[14px] font-semibold text-white hover:text-teal-500 transition"
                           onClick={() => setMobileMenu(false)}
                         >
                           {dropItem.label}
@@ -223,7 +223,7 @@ function Header() {
               ) : (
                 <NavLink
                   to={item.path}
-                  className="block text-[15px] font-semibold text-[#344054] hover:text-teal-500 transition"
+                  className="block text-[15px] font-semibold text-white hover:text-teal-500 transition"
                   onClick={() => setMobileMenu(false)}
                 >
                   {item.label}

@@ -3,7 +3,7 @@ import aboutImg from "../../assets/images/5th-icfm-logo.png";
 
 function About() {
   return (
-    <section id="about" className="overflow-x-hidden pt-0 md:py-20">
+    <section id="about" className="overflow-x-hidden pt-0 md:pt-20">
       <div className="min-w-[80%] max-w-7xl mx-auto px-4">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative">
@@ -12,7 +12,7 @@ function About() {
               loading="lazy"
               alt="Conference audience"
               className="
-                w-full h-fit md:h-150 rounded-[38px] object-contain
+                w-full max-w-lg mx-auto
               "
             />
           </div>

@@ -100,9 +100,21 @@ function StackedCardsSection() {
                 backdrop-blur-2xl
                 transition-all duration-500
                 hover:-translate-y-2 hover:border-teal-300/35
-                hover:shadow-[0_42px_120px_rgba(0,0,0,0.44)]
+                hover:shadow-[0_42px_120px_rgba(0,0,0,0.44),0_0_45px_rgba(34,211,200,0.22)]
               "
             >
+              {/* Hover Shine Sweep */}
+<div
+  className="
+    pointer-events-none absolute inset-0 z-30
+    translate-x-[-120%] skew-x-[-18deg]
+    bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.20),rgba(34,211,200,0.20),transparent)]
+    opacity-0 blur-[1px]
+    transition-all duration-[450ms] ease-out
+    group-hover:translate-x-[120%]
+    group-hover:opacity-100
+  "
+/>
               {/* Card Glow */}
               <div
                 className="
@@ -211,12 +223,14 @@ function StackedCardsSection() {
 
               {/* Bottom Accent */}
               <div
-                className="
-                  absolute bottom-0 left-0 right-0 h-1
-                  bg-gradient-to-r from-transparent via-[#22d3c8] to-transparent
-                  opacity-50
-                "
-              />
+  className="
+    absolute bottom-0 left-0 right-0 h-1
+    bg-gradient-to-r from-transparent via-[#22d3c8] to-transparent
+    opacity-50 transition-all duration-500
+    group-hover:h-1.5 group-hover:opacity-100
+    group-hover:shadow-[0_0_28px_rgba(34,211,200,0.75)]
+  "
+/>
             </div>
           ))}
         </div>

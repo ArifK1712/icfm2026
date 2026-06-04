@@ -9,10 +9,11 @@ import slide4 from "../../assets/images/gallery/4.avif";
 import slide5 from "../../assets/images/gallery/5.avif";
 
 const slides = [slide1, slide2, slide3, slide4, slide5];
+const duplicatedSlides = [...slides, ...slides];
+
 const eventDate = new Date("2026-10-05T00:00:00").getTime();
 
 function Hero() {
-  const [activeSlide, setActiveSlide] = useState(0);
   const headingRef = useRef(null);
 
   const [timeLeft, setTimeLeft] = useState({
@@ -21,14 +22,6 @@ function Hero() {
     minutes: 0,
     seconds: 0,
   });
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % slides.length);
-    }, 4500);
-
-    return () => clearInterval(interval);
-  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -77,26 +70,33 @@ function Hero() {
       id="home"
       className="relative min-h-screen overflow-hidden bg-[#061a35] text-white"
     >
-      {/* Full Background Slider */}
-      <div className="absolute inset-0">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`
-              absolute inset-0 bg-cover bg-center bg-no-repeat
-              transition-all duration-[1800ms] ease-out
-              ${
-                activeSlide === index
-                  ? "opacity-100 scale-105"
-                  : "opacity-0 scale-110"
-              }
-            `}
-            style={{
-              backgroundImage: `url(${slide})`,
-            }}
-          />
-        ))}
+      {/* Vertical Infinite Background Image Reel */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="hero-vertical-bg-reel">
+          {duplicatedSlides.map((slide, index) => (
+            <div
+              key={index}
+              className="
+                relative h-screen w-full
+                bg-cover bg-center bg-no-repeat
+              "
+              style={{
+                backgroundImage: `url(${slide})`,
+              }}
+            >
+              <div className="absolute inset-0 bg-[#061a35]/18" />
+            </div>
+          ))}
+        </div>
       </div>
+
+      {/* Soft Blur Layer For Premium Motion */}
+      <div
+        className="
+          pointer-events-none absolute inset-0
+          bg-[radial-gradient(circle_at_68%_32%,transparent_0%,rgba(6,26,53,0.14)_48%,rgba(6,26,53,0.38)_100%)]
+        "
+      />
 
       {/* Dark Readability Overlay */}
       <div
@@ -186,8 +186,6 @@ function Hero() {
         "
       >
         <div className="w-full max-w-6xl">
-          {/* Badge */}
-
           {/* Title */}
           <h1
             ref={headingRef}
@@ -213,6 +211,7 @@ function Hero() {
               Home Healthcare 2026
             </span>
           </h1>
+
           <div
             className="
               my-5 inline-flex items-center gap-2 rounded-full
@@ -221,14 +220,11 @@ function Hero() {
               backdrop-blur-2xl
             "
           >
-            <h3
-              className="font-extrabold 
-                text-teal-400 px-2
-              "
-            >
+            <h3 className="px-2 font-extrabold text-teal-400">
               EMPOWERING LIVES, SHAPING FUTURE CARE
             </h3>
           </div>
+
           {/* Date Cards */}
           <div className="mt-5 grid max-w-3xl gap-3 md:grid-cols-2">
             <div
@@ -279,11 +275,7 @@ function Hero() {
           </div>
 
           {/* Countdown */}
-          <div
-            className="
-              mt-6 max-w-3xl 
-            "
-          >
+          <div className="mt-6 max-w-3xl">
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
               {[
                 { label: "Days", value: timeLeft.days },

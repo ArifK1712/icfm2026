@@ -27,6 +27,23 @@
 }
 
 @layer components {
+
+    .hero-vertical-bg-reel {
+  height: 1000vh;
+  animation: heroVerticalBgSlide 46s linear infinite;
+  will-change: transform;
+}
+
+@keyframes heroVerticalBgSlide {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
   @keyframes glassShine {
     0% {
       background-position: 200% 0;

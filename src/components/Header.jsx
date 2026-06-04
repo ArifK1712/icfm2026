@@ -57,7 +57,7 @@ function Header() {
                         type="button"
                         className="
                           relative  px-2 py-2 text-nowrap
-                          text-sm xl:text-xl transition-colors duration-300
+                          text-sm xl:text-lg transition-colors duration-300
                           text-white hover:text-[#0aa6a6]
                           flex items-center gap-1
                         "
@@ -110,7 +110,7 @@ function Header() {
                       end={item.path === "/"}
                       className={({ isActive }) => `
                         relative  px-2 py-2 text-nowrap
-                        text-sm xl:text-[16px] transition-colors duration-300 text-white
+                        text-sm xl:text-lg transition-colors duration-300 text-white
                         ${isActive ? "text-[#0aa6a6]" : "text-[#344054]"}
                         after:content-['']
                         after:absolute

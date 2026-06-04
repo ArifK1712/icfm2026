@@ -145,19 +145,11 @@ function StackedCardsSection() {
               {/* Image Area */}
               <div
                 className="
-                  relative flex min-h-[390px] items-end justify-center overflow-hidden
+                  relative flex  items-end justify-center overflow-hidden
                   bg-[radial-gradient(circle_at_50%_22%,rgba(20,184,166,0.28),transparent_44%)]
                   px-5 pt-8
                 "
               >
-                <div
-                  className="
-                    absolute bottom-8 h-72 w-72 rounded-full
-                    border border-dashed border-white/12
-                    transition-transform duration-700
-                    group-hover:rotate-45
-                  "
-                />
 
                 <div
                   className="
@@ -191,8 +183,7 @@ function StackedCardsSection() {
               <div className="relative z-10 p-6 text-right xl:p-7" dir="rtl">
                 <h2
                   className="
-                    mb-5 text-2xl font-black leading-tight text-white
-                    xl:text-3xl
+                    mb-5
                   "
                 >
                   {card.name}

@@ -66,7 +66,7 @@ function EventHighlights() {
         py-20
       "
     >
-      <div className="min-w-[70%] max-w-7xl mx-auto px-4">
+      <div className="min-w-[80%] max-w-7xl mx-auto px-4">
         <div className="mx-auto mb-14 text-center">
           <div className="subtitle">
             Event Highlights

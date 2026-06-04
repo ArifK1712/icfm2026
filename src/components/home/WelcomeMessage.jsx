@@ -194,7 +194,6 @@ function WelcomeMessage() {
               border border-white/12
               bg-white/[0.06]
               px-6 py-14
-              shadow-[0_32px_110px_rgba(0,0,0,0.30)]
               backdrop-blur-2xl
             "
           >
@@ -217,7 +216,7 @@ function WelcomeMessage() {
               "
             >
               <Sparkles size={15} className="text-[#22d3c8]" />
-              Invitation Message
+              Welcome Message
             </div>
 
             <h2 className="mb-5 text-white">Invitation</h2>
@@ -322,8 +321,6 @@ function WelcomeMessage() {
             {/* Modal Body */}
             <div className="relative z-10 overflow-y-auto px-5 py-6 sm:px-7 lg:px-10">
               <div className="space-y-3">
-                <h2 className="mb-6 text-center text-white">Invitation</h2>
-
                 <p className="font-bold text-white">Dear Colleagues,</p>
 
                 <p className="text-white/70">

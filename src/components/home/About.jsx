@@ -56,7 +56,7 @@ function About() {
       id="about"
       className="overflow-x-hidden py-20"
     >
-      <div className="min-w-[70%] max-w-7xl mx-auto px-4">
+      <div className="min-w-[80%] max-w-7xl mx-auto px-4">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div ref={imageRef} className="relative">
             <img
@@ -64,7 +64,7 @@ function About() {
               loading="lazy"
               alt="Conference audience"
               className="
-                w-full h-150 rounded-[38px] object-contain
+                w-full h-fit md:h-150 rounded-[38px] object-contain
               "
             />
           </div>

@@ -28,7 +28,26 @@
 
 @layer components {
 
-    .hero-vertical-bg-reel {
+.why-attend-marquee {
+  animation: whyAttendMarquee 55s linear infinite;
+  will-change: transform;
+}
+
+.why-attend-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes whyAttendMarquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hero-vertical-bg-reel {
   height: 1000vh;
   animation: heroVerticalBgSlide 46s linear infinite;
   will-change: transform;
@@ -59,7 +78,7 @@
   }
 
   body {
-    @apply text-green-950;
+    @apply text-white;
     font-family: 'Public Sans', sans-serif;
     background:
     radial-gradient(
@@ -83,7 +102,7 @@
     @apply font-black leading-[1.1] text-4xl md:text-5xl lg:text-6xl
   }
   h2{
-    @apply text-4xl md:text-5xl text-green-950 font-black tracking-[-1px] 
+    @apply text-4xl md:text-5xl text-green-950 font-black tracking-[-1px] text-white
   }
   h3{
    @apply text-3xl font-bold

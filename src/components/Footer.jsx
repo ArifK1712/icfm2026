@@ -10,7 +10,7 @@ function Footer() {
   ]
 
   return (
-    <footer className="px-4 py-15 text-white/70">
+    <footer className="px-4 py-15 text-white/70 border-t border-white/10">
       <div className="mx-auto max-w-7xl">
         {/* Top */}
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 
-import otherlogos from "../assets/images/other-logos.png";
+//import otherlogos from "../assets/images/other-logos.png";
 import logo from "../assets/images/logo.png";
 
 function Header() {
@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <>
-      <nav className="backdrop-blur-3xl shadow-[0_12px_35px_rgba(6,26,53,0.08)] transition-all duration-300 sticky top-0 z-50">
+      <nav className="backdrop-blur-3xl shadow-[0_12px_35px_rgba(6,26,53,0.08)] transition-all duration-300 fixed right-0 left-0 top-0 z-50">
         <div className="min-w-full max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between min-h-15 md:min-h-20">
             <Link to="/">
@@ -57,7 +57,7 @@ function Header() {
                         type="button"
                         className="
                           relative  px-2 py-2 text-nowrap
-                          text-sm xl:text-[16px] transition-colors duration-300
+                          text-sm xl:text-xl transition-colors duration-300
                           text-white hover:text-[#0aa6a6]
                           flex items-center gap-1
                         "
@@ -72,26 +72,31 @@ function Header() {
 
                       <ul
                         className="
-                          absolute left-0 top-full mt-2 w-80
-                          rounded-xl bg-white shadow-xl border border-slate-100
-                          opacity-0 invisible translate-y-2
-                          group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
-                          transition-all duration-300
-                          overflow-hidden z-50
-                        "
+    absolute left-0 top-full mt-2 w-80
+    overflow-hidden rounded-xl
+    border border-white/12
+    bg-[#061a35]/95
+    shadow-[0_24px_70px_rgba(0,0,0,0.35)]
+    backdrop-blur-2xl
+    opacity-0 invisible translate-y-2
+    group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+    transition-all duration-300
+    z-50
+  "
                       >
                         {item.dropdown.map((dropItem) => (
                           <li key={dropItem.label}>
                             <NavLink
                               to={dropItem.path}
                               className={({ isActive }) => `
-                                block px-4 py-3 text-sm transition-colors duration-300 text-white
-                                ${
-                                  isActive
-                                    ? "bg-teal-50 text-[#0aa6a6]"
-                                    : "text-[#344054] hover:bg-teal-50 hover:text-[#0aa6a6]"
-                                }
-                              `}
+          block border-b border-white/10 px-4 py-3 text-sm font-semibold
+          transition-all duration-300 last:border-b-0
+          ${
+            isActive
+              ? "bg-white/10 text-[#22d3c8]"
+              : "text-white/85 hover:bg-white/10 hover:text-[#22d3c8]"
+          }
+        `}
                             >
                               {dropItem.label}
                             </NavLink>
@@ -140,11 +145,7 @@ function Header() {
               </li>
             </ul>
 
-            <img
-              src={otherlogos}
-              className="max-h-6 sm:max-h-9 2xl:max-h-10 object-cover"
-              alt="Other Logos"
-            />
+          
 
             {/* Mobile Menu Toggle */}
             <button

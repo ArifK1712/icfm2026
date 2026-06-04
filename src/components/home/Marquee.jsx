@@ -11,8 +11,7 @@ function Marquee() {
             className="
               flex shrink-0 items-center
               whitespace-nowrap py-4
-              text-5xl font-black uppercase text-teal-400
-              tracking-[1px] 
+              text-xl md:text-5xl font-black uppercase text-teal-400
             "
           >
             <span>{text}</span>

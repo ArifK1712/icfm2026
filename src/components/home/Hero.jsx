@@ -7,6 +7,7 @@ import slide2 from "../../assets/images/gallery/2.avif";
 import slide3 from "../../assets/images/gallery/3.avif";
 import slide4 from "../../assets/images/gallery/4.avif";
 import slide5 from "../../assets/images/gallery/5.avif";
+import otherlogos from "../../assets/images/other-logos.png";
 
 const slides = [slide1, slide2, slide3, slide4, slide5];
 const duplicatedSlides = [...slides, ...slides];
@@ -149,7 +150,7 @@ function Hero() {
       <div className="absolute bottom-[2%] left-[42%] h-96 w-96 rounded-full bg-[#039c98]/22 blur-[120px] animate-blobFloatThree" />
 
       {/* ECG Line */}
-      <div className="pointer-events-none absolute left-0 top-[62%] hidden w-full opacity-30 lg:block">
+      <div className="pointer-events-none absolute right-0 w-full top-[62%] hidden w-full opacity-30 lg:block">
         <svg
           viewBox="0 0 1200 120"
           className="h-28 w-full animate-ecgMove"
@@ -185,21 +186,26 @@ function Hero() {
           lg:px-8 xl:py-32
         "
       >
-        <div className="w-full max-w-6xl">
+        <div className="w-full max-w-6xl">          
+        <img
+            src={otherlogos}
+            className="max-h-15 object-cover bg-white/80 mb-3 rounded-lg p-1"
+            alt="Other Logos"
+          />
           {/* Title */}
           <h1
-            ref={headingRef}
-            className="
-              max-w-[1080px]
-              text-[42px] font-black leading-[0.98]
-              tracking-[-2px]
-              sm:text-[58px]
-              md:text-[68px]
-              lg:text-[78px]
-              xl:text-[92px]
-              drop-shadow-[0_28px_70px_rgba(0,0,0,0.70)]
-            "
-          >
+  ref={headingRef}
+  className="
+    max-w-[980px]
+    text-[38px] font-black leading-[1.02]
+    tracking-[-1.5px]
+    sm:text-[52px]
+    md:text-[62px]
+    lg:text-[72px]
+    xl:text-[80px]
+    drop-shadow-[0_28px_70px_rgba(0,0,0,0.70)]
+  "
+>
             <span
               className="
                 gsap-word inline-block
@@ -220,13 +226,13 @@ function Hero() {
               backdrop-blur-2xl
             "
           >
-            <h3 className="px-2 font-extrabold text-teal-400">
+            <h3 className="px-2 font-extrabold text-teal-400 text-lg md:text-3xl">
               EMPOWERING LIVES, SHAPING FUTURE CARE
             </h3>
           </div>
 
           {/* Date Cards */}
-          <div className="mt-5 grid max-w-3xl gap-3 md:grid-cols-2">
+          <div className="mt-5 grid max-w-2xl gap-3 md:grid-cols-2">
             <div
               className="
                 flex items-center gap-3 rounded-3xl
@@ -275,7 +281,7 @@ function Hero() {
           </div>
 
           {/* Countdown */}
-          <div className="mt-6 max-w-3xl">
+          <div className="mt-6 max-w-2xl">
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
               {[
                 { label: "Days", value: timeLeft.days },

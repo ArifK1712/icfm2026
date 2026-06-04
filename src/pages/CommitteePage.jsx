@@ -80,7 +80,7 @@ function CommitteePage() {
       {/* <InnerPageHero
         title="Our Committee"
       /> */}
-      <h2 class="text-center h-100 flex items-center justify-center">Coming Soon...</h2>
+      <h2 class="text-center h-100 flex items-center justify-center text-white">Coming Soon...</h2>
       <section
         ref={sectionRef}
         className="bg-white py-20 hidden"

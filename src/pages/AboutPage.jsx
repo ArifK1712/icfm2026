@@ -111,7 +111,7 @@ function AboutPage() {
           className="
             absolute inset-0 opacity-[0.16]
             bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)]
-            bg-[size:58px_58px]
+            bg-size-[58px_58px]
           "
         />
 
@@ -190,7 +190,7 @@ function AboutPage() {
                         translate-x-[-120%] skew-x-[-18deg]
                         bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.18),rgba(34,211,200,0.18),transparent)]
                         opacity-0 blur-[1px]
-                        transition-all duration-[450ms] ease-out
+                        transition-all duration-450 ease-out
                         group-hover:translate-x-[120%]
                         group-hover:opacity-100
                       "
@@ -239,7 +239,7 @@ function AboutPage() {
                     <div
                       className="
                         absolute bottom-0 left-0 right-0 h-1
-                        bg-gradient-to-r from-transparent via-[#22d3c8] to-transparent
+                        bg-linear-to-r from-transparent via-[#22d3c8] to-transparent
                         opacity-50 transition-all duration-500
                         group-hover:h-1.5 group-hover:opacity-100
                         group-hover:shadow-[0_0_28px_rgba(34,211,200,0.75)]
@@ -252,7 +252,7 @@ function AboutPage() {
                     <div
                       className="
                         mx-auto h-10 w-px
-                        bg-gradient-to-b from-teal-400 to-cyan-400
+                        bg-linear-to-b from-teal-400 to-cyan-400
                         shadow-[0_0_20px_rgba(34,211,200,0.55)]
                       "
                     />

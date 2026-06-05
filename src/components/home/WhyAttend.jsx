@@ -148,8 +148,10 @@ function WhyAttend() {
 
           <div>
             <p>
-              Scroll down to explore the key audience groups who will benefit
-              from attending this conference.
+              This conference brings together medical experts, healthcare
+              leaders, researchers, and organizations to exchange knowledge,
+              discover opportunities, and strengthen collaboration across the
+              healthcare ecosystem.
             </p>
           </div>
         </div>
@@ -157,7 +159,6 @@ function WhyAttend() {
 
       {/* Auto Scrolling Cards */}
       <div className="relative z-10 overflow-hidden">
-
         <div className="why-attend-marquee flex w-max gap-7 py-4">
           {scrollingCards.map((card, index) => {
             const Icon = card.icon;
@@ -189,7 +190,7 @@ function WhyAttend() {
                     translate-x-[-120%] skew-x-[-18deg]
                     bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.18),rgba(34,211,200,0.18),transparent)]
                     opacity-0 blur-[1px]
-                    transition-all duration-[450ms] ease-out
+                    transition-all duration-450 ease-out
                     group-hover:translate-x-[120%]
                     group-hover:opacity-100
                   "
@@ -218,9 +219,7 @@ function WhyAttend() {
                 </div>
 
                 {/* Title */}
-                <h4 className="relative z-10 mb-4 text-white">
-                  {card.title}
-                </h4>
+                <h4 className="relative z-10 mb-4 text-white">{card.title}</h4>
 
                 {/* Text */}
                 <p className="relative z-10 text-white/60">{card.desc}</p>

@@ -45,7 +45,7 @@ function ContactPage() {
           className="
             absolute inset-0 opacity-[0.16]
             bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)]
-            bg-[size:58px_58px]
+            bg-size-[58px_58px]
           "
         />
 
@@ -57,7 +57,7 @@ function ContactPage() {
         <div
           className="
             pointer-events-none absolute -left-52 top-1/2
-            h-[520px] w-[520px] -translate-y-1/2 rounded-full
+            h-130 w-130 -translate-y-1/2 rounded-full
             border border-white/10
           "
         />
@@ -65,7 +65,7 @@ function ContactPage() {
         <div
           className="
             pointer-events-none absolute -right-56 top-1/2
-            h-[620px] w-[620px] -translate-y-1/2 rounded-full
+            h-155 w-155 -translate-y-1/2 rounded-full
             border border-dashed border-teal-200/15
             animate-[spin_44s_linear_infinite]
           "
@@ -115,7 +115,7 @@ function ContactPage() {
                         translate-x-[-120%] skew-x-[-18deg]
                         bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.18),rgba(34,211,200,0.18),transparent)]
                         opacity-0 blur-[1px]
-                        transition-all duration-[450ms] ease-out
+                        transition-all duration-450 ease-out
                         group-hover:translate-x-[120%]
                         group-hover:opacity-100
                       "
@@ -215,7 +215,7 @@ function ContactPage() {
                             outline-none transition-all duration-300
                             placeholder:text-white/40
                             focus:border-teal-300/50
-                            focus:bg-white/[0.13]
+                            focus:bg-white/13
                             focus:shadow-[0_0_0_4px_rgba(20,184,166,0.14)]
                           "
                         />
@@ -243,7 +243,7 @@ function ContactPage() {
                             outline-none transition-all duration-300
                             placeholder:text-white/40
                             focus:border-teal-300/50
-                            focus:bg-white/[0.13]
+                            focus:bg-white/13
                             focus:shadow-[0_0_0_4px_rgba(20,184,166,0.14)]
                           "
                         />
@@ -273,7 +273,7 @@ function ContactPage() {
                             outline-none transition-all duration-300
                             placeholder:text-white/40
                             focus:border-teal-300/50
-                            focus:bg-white/[0.13]
+                            focus:bg-white/13
                             focus:shadow-[0_0_0_4px_rgba(20,184,166,0.14)]
                           "
                         />
@@ -301,7 +301,7 @@ function ContactPage() {
                             outline-none transition-all duration-300
                             placeholder:text-white/40
                             focus:border-teal-300/50
-                            focus:bg-white/[0.13]
+                            focus:bg-white/13
                             focus:shadow-[0_0_0_4px_rgba(20,184,166,0.14)]
                           "
                         />
@@ -329,7 +329,7 @@ function ContactPage() {
                           outline-none transition-all duration-300
                           placeholder:text-white/40
                           focus:border-teal-300/50
-                          focus:bg-white/[0.13]
+                          focus:bg-white/13
                           focus:shadow-[0_0_0_4px_rgba(20,184,166,0.14)]
                         "
                       />

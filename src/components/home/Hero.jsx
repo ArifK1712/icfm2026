@@ -120,7 +120,7 @@ function Hero() {
         className="
           absolute inset-0 animate-gradientFlow
           bg-[linear-gradient(120deg,rgba(34,211,200,0.22),transparent_30%,rgba(71,215,255,0.15)_52%,transparent_72%,rgba(3,156,152,0.22))]
-          bg-[length:220%_220%]
+          bg-size-[220%_220%]
         "
       />
 
@@ -129,7 +129,7 @@ function Hero() {
         className="
           absolute inset-0 opacity-[0.12] animate-gridMove
           bg-[linear-gradient(rgba(255,255,255,0.14)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.14)_1px,transparent_1px)]
-          bg-[size:68px_68px]
+          bg-size-[68px_68px]
         "
       />
 
@@ -150,7 +150,7 @@ function Hero() {
       <div className="absolute bottom-[2%] left-[42%] h-96 w-96 rounded-full bg-[#039c98]/22 blur-[120px] animate-blobFloatThree" />
 
       {/* ECG Line */}
-      <div className="pointer-events-none absolute right-0 w-full top-[62%] hidden w-full opacity-30 lg:block">
+      <div className="pointer-events-none absolute right-0 top-[62%] hidden w-full opacity-30 lg:block">
         <svg
           viewBox="0 0 1200 120"
           className="h-28 w-full animate-ecgMove"
@@ -180,7 +180,7 @@ function Hero() {
       {/* Main Content Without Background Box */}
       <div
         className="
-          relative z-10 mx-auto flex min-h-screen w-full max-w-[1540px]
+          relative z-10 mx-auto flex min-h-screen w-full max-w-385
           items-center px-4 py-24
           sm:px-6 sm:py-28
           lg:px-8 xl:py-32
@@ -196,7 +196,7 @@ function Hero() {
           <h1
   ref={headingRef}
   className="
-    max-w-[980px]
+    max-w-245
     text-[38px] font-black leading-[1.02]
     tracking-[-1.5px]
     sm:text-[52px]
@@ -209,7 +209,7 @@ function Hero() {
             <span
               className="
                 gsap-word inline-block
-                bg-gradient-to-br from-white via-cyan-100 to-teal-300
+                bg-linear-to-br from-white via-cyan-100 to-teal-300
                 bg-clip-text text-transparent
               "
             >
@@ -304,7 +304,7 @@ function Hero() {
                   <div
                     className="
                       absolute inset-x-4 top-0 h-px
-                      bg-gradient-to-r from-transparent via-teal-300/70 to-transparent
+                      bg-linear-to-r from-transparent via-teal-300/70 to-transparent
                     "
                   />
 

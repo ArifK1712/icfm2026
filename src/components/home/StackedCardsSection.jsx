@@ -46,7 +46,7 @@ function StackedCardsSection() {
         className="
           absolute inset-0 opacity-[0.16]
           bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)]
-          bg-[size:58px_58px]
+          bg-size-[58px_58px]
         "
       />
 
@@ -73,7 +73,7 @@ function StackedCardsSection() {
       <div
         className="
           pointer-events-none absolute -left-52 top-1/2
-          h-[520px] w-[520px] -translate-y-1/2 rounded-full
+          h-130 w-130 -translate-y-1/2 rounded-full
           border border-white/10
         "
       />
@@ -81,7 +81,7 @@ function StackedCardsSection() {
       <div
         className="
           pointer-events-none absolute -right-56 top-1/2
-          h-[620px] w-[620px] -translate-y-1/2 rounded-full
+          h-155 w-155 -translate-y-1/2 rounded-full
           border border-dashed border-teal-200/15
           animate-[spin_44s_linear_infinite]
         "
@@ -104,17 +104,17 @@ function StackedCardsSection() {
               "
             >
               {/* Hover Shine Sweep */}
-<div
-  className="
+              <div
+                className="
     pointer-events-none absolute inset-0 z-30
     translate-x-[-120%] skew-x-[-18deg]
     bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.20),rgba(34,211,200,0.20),transparent)]
     opacity-0 blur-[1px]
-    transition-all duration-[450ms] ease-out
+    transition-all duration-450 ease-out
     group-hover:translate-x-[120%]
     group-hover:opacity-100
   "
-/>
+              />
               {/* Card Glow */}
               <div
                 className="
@@ -150,7 +150,6 @@ function StackedCardsSection() {
                   px-5 pt-8
                 "
               >
-
                 <div
                   className="
                     absolute bottom-0 h-28 w-[75%] rounded-full
@@ -164,7 +163,7 @@ function StackedCardsSection() {
                   loading="lazy"
                   decoding="async"
                   className="
-                    relative z-10 max-h-[410px] w-auto object-contain
+                    relative z-10 max-h-102.5 w-auto object-contain
                     drop-shadow-[0_30px_60px_rgba(0,0,0,0.38)]
                     transition-all duration-500
                     group-hover:scale-[1.04]
@@ -174,7 +173,7 @@ function StackedCardsSection() {
                 <div
                   className="
                     absolute bottom-0 left-0 right-0 h-32
-                    bg-gradient-to-t from-[#061a35] to-transparent
+                    bg-linear-to-t from-[#061a35] to-transparent
                   "
                 />
               </div>
@@ -193,7 +192,7 @@ function StackedCardsSection() {
                   className="
                     relative rounded-[26px]
                     border border-white/10
-                    bg-white/[0.055]
+                    bg-white/5.5
                     p-5
                   "
                 >
@@ -214,14 +213,14 @@ function StackedCardsSection() {
 
               {/* Bottom Accent */}
               <div
-  className="
+                className="
     absolute bottom-0 left-0 right-0 h-1
-    bg-gradient-to-r from-transparent via-[#22d3c8] to-transparent
+    bg-linear-to-r from-transparent via-[#22d3c8] to-transparent
     opacity-50 transition-all duration-500
     group-hover:h-1.5 group-hover:opacity-100
     group-hover:shadow-[0_0_28px_rgba(34,211,200,0.75)]
   "
-/>
+              />
             </div>
           ))}
         </div>

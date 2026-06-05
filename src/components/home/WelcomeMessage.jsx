@@ -162,7 +162,7 @@ function WelcomeMessage() {
           className="
             absolute inset-0 opacity-[0.14]
             bg-[linear-gradient(rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.10)_1px,transparent_1px)]
-            bg-[size:64px_64px]
+            bg-size-[64px_64px]
             animate-gridMove
           "
         />
@@ -192,7 +192,7 @@ function WelcomeMessage() {
             className="
               mx-auto max-w-3xl rounded-[36px]
               border border-white/12
-              bg-white/[0.06]
+              bg-white/6
               px-6 py-14
               backdrop-blur-2xl
             "
@@ -242,7 +242,7 @@ function WelcomeMessage() {
         <div
           ref={modalRef}
           className="
-            fixed inset-0 z-[999]
+            fixed inset-0 z-999
             flex items-center justify-center
             bg-[#020b18]/82 px-4 py-5
             backdrop-blur-xl
@@ -268,7 +268,7 @@ function WelcomeMessage() {
               className="
                 pointer-events-none absolute inset-0 opacity-[0.14]
                 bg-[linear-gradient(rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.10)_1px,transparent_1px)]
-                bg-[size:58px_58px]
+                bg-size-[58px_58px]
               "
             />
 
@@ -397,7 +397,7 @@ function WelcomeMessage() {
                 <div
                   className="
                     mt-7 flex flex-wrap items-center justify-between gap-6
-                    rounded-[26px] border border-white/10 bg-white/[0.055]
+                    rounded-[26px] border border-white/10 bg-white/5.5
                     p-5
                   "
                 >

@@ -90,7 +90,7 @@ function AbstractPage() {
                 hover:shadow-[0_42px_120px_rgba(0,0,0,0.42),0_0_45px_rgba(34,211,200,0.18)]
               "
             >
-              <div className="pointer-events-none absolute inset-0 z-30 translate-x-[-120%] skew-x-[-18deg] bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.18),rgba(34,211,200,0.18),transparent)] opacity-0 blur-[1px] transition-all duration-[450ms] ease-out group-hover:translate-x-[120%] group-hover:opacity-100" />
+              <div className="pointer-events-none absolute inset-0 z-30 translate-x-[-120%] skew-x-[-18deg] bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.18),rgba(34,211,200,0.18),transparent)] opacity-0 blur-[1px] transition-all duration-450 ease-out group-hover:translate-x-[120%] group-hover:opacity-100" />
               <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(20,184,166,0.18),transparent_70%)] transition-all duration-300 group-hover:scale-125" />
 
               <div className="relative z-10 mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/12 bg-white/10 text-[#22d3c8]">
@@ -122,7 +122,7 @@ function AbstractPage() {
                 hover:shadow-[0_42px_120px_rgba(0,0,0,0.42),0_0_45px_rgba(34,211,200,0.18)]
               "
             >
-              <div className="pointer-events-none absolute inset-0 z-30 translate-x-[-120%] skew-x-[-18deg] bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.18),rgba(34,211,200,0.18),transparent)] opacity-0 blur-[1px] transition-all duration-[450ms] ease-out group-hover:translate-x-[120%] group-hover:opacity-100" />
+              <div className="pointer-events-none absolute inset-0 z-30 translate-x-[-120%] skew-x-[-18deg] bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.18),rgba(34,211,200,0.18),transparent)] opacity-0 blur-[1px] transition-all duration-450 ease-out group-hover:translate-x-[120%] group-hover:opacity-100" />
               <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(20,184,166,0.18),transparent_70%)] transition-all duration-300 group-hover:scale-125" />
 
               <div className="relative z-10 mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/12 bg-white/10 text-[#22d3c8]">
@@ -386,7 +386,7 @@ function AbstractPage() {
           className="
             absolute inset-0 opacity-[0.16]
             bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)]
-            bg-[size:58px_58px]
+            bg-size-[58px_58px]
           "
         />
 

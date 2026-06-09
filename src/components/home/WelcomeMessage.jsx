@@ -308,7 +308,7 @@ function WelcomeMessage() {
                 className="
             flex h-11 w-11 shrink-0 items-center justify-center
             rounded-full border border-[#25e7dc]/25 bg-[#052f34]/75
-            text-white transition-all duration-300
+            text-white transition-all duration-300 cursor-pointer
             hover:bg-[#16d8cd] hover:text-[#03363a]
           "
                 aria-label="Close invitation modal"

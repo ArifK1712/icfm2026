@@ -77,9 +77,43 @@ function Hero() {
       </div>
 
       {/* Floating Glow Blobs */}
-      <div className="absolute left-[8%] top-[12%] h-72 w-72 rounded-full bg-teal-400/24 blur-[95px] animate-blobFloatOne" />
-      <div className="absolute right-[10%] top-[14%] h-80 w-80 rounded-full bg-cyan-400/20 blur-[105px] animate-blobFloatTwo" />
-      <div className="absolute bottom-[2%] left-[42%] h-96 w-96 rounded-full bg-[#039c98]/22 blur-[120px] animate-blobFloatThree" />
+<div className="pointer-events-none absolute inset-0 overflow-hidden">
+  <div
+    className="
+      absolute left-[6%] top-[10%]
+      h-72 w-72 rounded-full
+      bg-[#16d8cd]/24 blur-[95px]
+      animate-heroBlobOne
+    "
+  />
+
+  <div
+    className="
+      absolute right-[8%] top-[12%]
+      h-80 w-80 rounded-full
+      bg-[#25e7dc]/20 blur-[105px]
+      animate-heroBlobTwo
+    "
+  />
+
+  <div
+    className="
+      absolute bottom-[4%] left-[42%]
+      h-96 w-96 rounded-full
+      bg-[#039c98]/24 blur-[120px]
+      animate-heroBlobThree
+    "
+  />
+
+  <div
+    className="
+      absolute left-[18%] bottom-[12%]
+      h-64 w-64 rounded-full
+      bg-[#0fb9b1]/18 blur-[95px]
+      animate-heroBlobFour
+    "
+  />
+</div>
 
       {/* ECG Line */}
       <div className="pointer-events-none absolute left-0 right-0 bottom-0  w-full overflow-hidden opacity-40">

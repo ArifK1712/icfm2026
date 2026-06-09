@@ -27,73 +27,175 @@
 }
 
 @layer components {
+  @keyframes heroBlobOne {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
 
+    25% {
+      transform: translate(38vw, 10vh) scale(1.18);
+    }
+
+    50% {
+      transform: translate(62vw, 46vh) scale(0.95);
+    }
+
+    75% {
+      transform: translate(18vw, 58vh) scale(1.12);
+    }
+
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+
+  @keyframes heroBlobTwo {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+
+    25% {
+      transform: translate(-36vw, 22vh) scale(0.92);
+    }
+
+    50% {
+      transform: translate(-62vw, 54vh) scale(1.15);
+    }
+
+    75% {
+      transform: translate(-18vw, 42vh) scale(1.05);
+    }
+
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+
+  @keyframes heroBlobThree {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+
+    25% {
+      transform: translate(-24vw, -36vh) scale(1.12);
+    }
+
+    50% {
+      transform: translate(28vw, -52vh) scale(0.96);
+    }
+
+    75% {
+      transform: translate(36vw, -18vh) scale(1.16);
+    }
+
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+
+  @keyframes heroBlobFour {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+
+    25% {
+      transform: translate(48vw, -12vh) scale(1.08);
+    }
+
+    50% {
+      transform: translate(58vw, -58vh) scale(0.94);
+    }
+
+    75% {
+      transform: translate(16vw, -42vh) scale(1.14);
+    }
+
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+
+  .animate-heroBlobOne {
+    animation: heroBlobOne 26s ease-in-out infinite;
+  }
+
+  .animate-heroBlobTwo {
+    animation: heroBlobTwo 32s ease-in-out infinite;
+  }
+
+  .animate-heroBlobThree {
+    animation: heroBlobThree 30s ease-in-out infinite;
+  }
+
+  .animate-heroBlobFour {
+    animation: heroBlobFour 34s ease-in-out infinite;
+  }
   .ecg-live-line {
-  stroke-dasharray: 1200;
-  stroke-dashoffset: 1200;
-  animation: ecgDraw 3.2s linear infinite;
-}
-
-.ecg-live-glow {
-  filter: blur(6px);
-  opacity: 0.75;
-}
-
-@keyframes ecgDraw {
-  0% {
+    stroke-dasharray: 1200;
     stroke-dashoffset: 1200;
-    opacity: 0;
+    animation: ecgDraw 3.2s linear infinite;
   }
 
-  8% {
-    opacity: 1;
+  .ecg-live-glow {
+    filter: blur(6px);
+    opacity: 0.75;
   }
 
-  72% {
-    stroke-dashoffset: 0;
-    opacity: 1;
+  @keyframes ecgDraw {
+    0% {
+      stroke-dashoffset: 1200;
+      opacity: 0;
+    }
+
+    8% {
+      opacity: 1;
+    }
+
+    72% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+
+    100% {
+      stroke-dashoffset: -1200;
+      opacity: 0;
+    }
   }
 
-  100% {
-    stroke-dashoffset: -1200;
-    opacity: 0;
-  }
-}
-
-.why-attend-marquee {
-  animation: whyAttendMarquee 55s linear infinite;
-  will-change: transform;
-}
-
-.why-attend-marquee:hover {
-  animation-play-state: paused;
-}
-
-@keyframes whyAttendMarquee {
-  0% {
-    transform: translateX(0);
+  .why-attend-marquee {
+    animation: whyAttendMarquee 55s linear infinite;
+    will-change: transform;
   }
 
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.hero-vertical-bg-reel {
-  height: 1000vh;
-  animation: heroVerticalBgSlide 46s linear infinite;
-  will-change: transform;
-}
-
-@keyframes heroVerticalBgSlide {
-  0% {
-    transform: translateY(0);
+  .why-attend-marquee:hover {
+    animation-play-state: paused;
   }
 
-  100% {
-    transform: translateY(-50%);
+  @keyframes whyAttendMarquee {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
   }
-}
+
+  .hero-vertical-bg-reel {
+    height: 1000vh;
+    animation: heroVerticalBgSlide 46s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes heroVerticalBgSlide {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-50%);
+    }
+  }
 
   @keyframes glassShine {
     0% {
@@ -110,59 +212,52 @@
   }
 
   body {
-  @apply text-white;
-  font-family: 'Public Sans', sans-serif;
+    @apply text-white;
+    font-family: "Public Sans", sans-serif;
 
-  background:
-    radial-gradient(
-      circle at 12% 18%,
-      rgba(22, 216, 205, 0.22),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 88% 28%,
-      rgba(0, 184, 170, 0.18),
-      transparent 28%
-    ),
-    linear-gradient(
-      135deg,
-      #043d3d 0%,
-      #073f43 48%,
-      #032f34 100%
-    );
+    background: radial-gradient(
+        circle at 12% 18%,
+        rgba(22, 216, 205, 0.22),
+        transparent 30%
+      ),
+      radial-gradient(
+        circle at 88% 28%,
+        rgba(0, 184, 170, 0.18),
+        transparent 28%
+      ),
+      linear-gradient(135deg, #043d3d 0%, #073f43 48%, #032f34 100%);
 
-  background-attachment: fixed;
-}
-  h1{
-    @apply font-black leading-[1.1] text-4xl md:text-5xl lg:text-6xl
+    background-attachment: fixed;
   }
-  h2{
-    @apply text-4xl md:text-5xl text-green-950 font-black tracking-[-1px] text-white
+  h1 {
+    @apply font-black leading-[1.1] text-4xl md:text-5xl lg:text-6xl;
   }
-  h3{
-   @apply text-3xl font-bold
+  h2 {
+    @apply text-4xl md:text-5xl text-green-950 font-black tracking-[-1px] text-white;
   }
-  h4{
-   @apply text-2xl font-bold
+  h3 {
+    @apply text-3xl font-bold;
   }
-  h5{
-    @apply text-xl font-bold text-green-950
+  h4 {
+    @apply text-2xl font-bold;
   }
-  h6{
-    @apply text-green-950 font-bold
+  h5 {
+    @apply text-xl font-bold text-green-950;
   }
-  p{
-    @apply text-lg leading-7 text-slate-200
+  h6 {
+    @apply text-green-950 font-bold;
   }
-  .subtitle{
-    @apply mb-3 text-sm font-semibold uppercase tracking-[2px] text-teal-400
+  p {
+    @apply text-lg leading-7 text-slate-200;
   }
-  .btn{
-    @apply inline-flex items-center justify-center rounded-full px-6 py-2 xl:py-3 text-lg font-semibold transition-all duration-300 hover:-translate-y-1
+  .subtitle {
+    @apply mb-3 text-sm font-semibold uppercase tracking-[2px] text-teal-400;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-2 xl:py-3 text-lg font-semibold transition-all duration-300 hover:-translate-y-1 cursor-pointer;
   }
   .btn-main {
-    @apply 
-    relative overflow-hidden    
+    @apply relative overflow-hidden    
     bg-linear-to-r from-[#10bdb5] via-[#18d8cd] to-[#25eee2]   
      text-white
     shadow-lg shadow-teal-500/30    
@@ -170,13 +265,13 @@
   }
 
   .btn-main::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 40px;
     height: 120%;
     top: -10%;
     left: -70px;
-    background: rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255, 0.4);
     transform: skewX(-20deg);
     transition: 0.55s ease;
   }
@@ -190,13 +285,17 @@
   }
 
   .motion-card::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 160px;
     height: 160px;
     right: -55px;
     top: -55px;
-    background: radial-gradient(circle, rgba(0,194,184,0.13), transparent 70%);
+    background: radial-gradient(
+      circle,
+      rgba(0, 194, 184, 0.13),
+      transparent 70%
+    );
     transition: 0.35s ease;
   }
 
@@ -212,20 +311,20 @@
     transform: rotate(-8deg) scale(1.08);
   }
 
-  .sponsor-card{
-    @apply relative border overflow-hidden rounded-[28px] bg-white min-h-37 min-w-90 flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:border-teal-500/30 hover:shadow-[0_10px_70px_rgba(6,26,53,0.14)]
+  .sponsor-card {
+    @apply relative border overflow-hidden rounded-[28px] bg-white min-h-37 min-w-90 flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:border-teal-500/30 hover:shadow-[0_10px_70px_rgba(6,26,53,0.14)];
   }
 
   .key-sponsor-card {
     @apply border-teal-500/30;
   }
-  .strategic-sponsor-card{
+  .strategic-sponsor-card {
     @apply border-teal-500/30;
   }
   .gold-sponsor-card {
     @apply border-yellow-500/40 bg-linear-to-b from-white to-yellow-50;
   }
-  
+
   .silver-sponsor-card {
     @apply border border-slate-400/20;
   }
@@ -233,5 +332,4 @@
   .exhibitor-card {
     @apply border-teal-500/30;
   }
-  
 }

@@ -141,7 +141,7 @@ function WhyAttend() {
           <div>
             <div className="subtitle">Who Should Attend</div>
 
-            <h2 className="text-white">
+            <h2>
               Designed for healthcare professionals and organizations
             </h2>
           </div>
@@ -165,65 +165,71 @@ function WhyAttend() {
 
             return (
               <div
-                key={`${card.title}-${index}`}
-                className="
-                  group relative shrink-0 overflow-hidden
-                  rounded-[34px]
-                  border border-white/10
-                  bg-white/10
-                  p-8
-                  backdrop-blur-xl
-                  transition-all duration-300
-                  hover:-translate-y-3 hover:scale-[1.015]
-                  hover:border-teal-300/35
-                  hover:shadow-[0_32px_80px_rgba(6,26,53,0.16),0_0_38px_rgba(34,211,200,0.18)]
-                  w-[85vw]
-                  max-w-105
-                  sm:w-105
-                  sm:min-h-90
-                "
-              >
-                {/* Hover Shine Sweep */}
-                <div
-                  className="
-                    pointer-events-none absolute inset-0 z-30
-                    translate-x-[-120%] skew-x-[-18deg]
-                    bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.18),rgba(34,211,200,0.18),transparent)]
-                    opacity-0 blur-[1px]
-                    transition-all duration-450 ease-out
-                    group-hover:translate-x-[120%]
-                    group-hover:opacity-100
-                  "
-                />
+  key={`${card.title}-${index}`}
+  className="
+    group relative shrink-0 overflow-hidden
+    rounded-[34px]
+    bg-[linear-gradient(180deg,#25e7dc_0%,#08d8cf_45%,rgba(8,216,207,0.28)_100%)]
+    p-[3px]
+    transition-all duration-300
+    hover:-translate-y-3 hover:scale-[1.015]
+    hover:shadow-[0_32px_80px_rgba(0,0,0,0.28),0_0_34px_rgba(8,216,207,0.35)]
+    w-[85vw]
+    max-w-105
+    sm:w-105
+    sm:min-h-90
+  "
+>
+  <div
+    className="
+      relative h-full min-h-full overflow-hidden rounded-[31px]
+      bg-[#04383b]/95
+      p-8
+      backdrop-blur-xl
+    "
+  >
+    {/* Hover Shine Sweep */}
+    <div
+      className="
+        pointer-events-none absolute inset-0 z-30
+        translate-x-[-120%] skew-x-[-18deg]
+        bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.18),rgba(34,211,200,0.18),transparent)]
+        opacity-0 blur-[1px]
+        transition-all duration-450 ease-out
+        group-hover:translate-x-[120%]
+        group-hover:opacity-100
+      "
+    />
 
-                {/* Glow */}
-                <div
-                  className="
-                    absolute -right-22.5 -top-22.5
-                    h-52.5 w-52.5
-                    rounded-full
-                    bg-[radial-gradient(circle,rgba(0,194,184,0.16),transparent_70%)]
-                    transition-all duration-300
-                    group-hover:scale-125
-                  "
-                />
+    {/* Glow */}
+    <div
+      className="
+        absolute -right-22.5 -top-22.5
+        h-52.5 w-52.5
+        rounded-full
+        bg-[radial-gradient(circle,rgba(0,194,184,0.16),transparent_70%)]
+        transition-all duration-300
+        group-hover:scale-125
+      "
+    />
 
-                {/* Count */}
-                <h2 className="absolute right-7 top-5 text-white/15">
-                  {String((index % cards.length) + 1).padStart(2, "0")}
-                </h2>
+    {/* Count */}
+    <h2 className="absolute right-7 top-5 text-white/15">
+      {String((index % cards.length) + 1).padStart(2, "0")}
+    </h2>
 
-                {/* Icon */}
-                <div className="icon-box relative z-10">
-                  <Icon size={30} strokeWidth={1.5} />
-                </div>
+    {/* Icon */}
+    <div className="icon-box relative z-10">
+      <Icon size={30} strokeWidth={1.5} />
+    </div>
 
-                {/* Title */}
-                <h4 className="relative z-10 mb-4 text-white">{card.title}</h4>
+    {/* Title */}
+    <h4 className="relative z-10 mb-4 text-white">{card.title}</h4>
 
-                {/* Text */}
-                <p className="relative z-10 text-white/60">{card.desc}</p>
-              </div>
+    {/* Text */}
+    <p className="relative z-10 text-white/60">{card.desc}</p>
+  </div>
+</div>
             );
           })}
         </div>

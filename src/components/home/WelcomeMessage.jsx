@@ -154,10 +154,9 @@ function WelcomeMessage() {
       <section
         ref={sectionRef}
         className="
-          relative overflow-hidden py-24 text-white
+          relative overflow-hidden pb-24 text-white
         "
       >
-
         <div
           className="
             absolute inset-0 opacity-[0.14]
@@ -221,7 +220,7 @@ function WelcomeMessage() {
 
             <h2 className="mb-5 text-white">Invitation</h2>
 
-            <p className="mx-auto max-w-2xl text-lg leading-8 text-white/70">
+            <p className="mx-auto max-w-2xl text-lg leading-8">
               Dear Colleagues, we are pleased to invite you to participate in
               the 5th International Family Medicine Symposium on Family Medicine
               and Home Health Care 2026.
@@ -242,11 +241,11 @@ function WelcomeMessage() {
         <div
           ref={modalRef}
           className="
-            fixed inset-0 z-999
-            flex items-center justify-center
-            bg-[#020b18]/82 px-4 py-5
-            backdrop-blur-xl
-          "
+      fixed inset-0 z-999
+      flex items-center justify-center
+      bg-[#021f22]/86 px-4 py-5
+      backdrop-blur-xl
+    "
           onMouseDown={(event) => {
             if (event.target === event.currentTarget) {
               closeModal();
@@ -256,45 +255,45 @@ function WelcomeMessage() {
           <div
             ref={modalCardRef}
             className="
-              relative flex max-h-[90vh] w-full max-w-6xl
-              flex-col overflow-hidden rounded-[34px]
-              border border-white/14
-              bg-[radial-gradient(circle_at_12%_18%,rgba(0,194,184,0.18),transparent_28%),radial-gradient(circle_at_88%_28%,rgba(71,215,255,0.12),transparent_26%),linear-gradient(135deg,#061a35,#09294f_58%,#061a35)]
-              shadow-[0_40px_140px_rgba(0,0,0,0.55)]
-            "
+        relative flex max-h-[90vh] w-full max-w-6xl
+        flex-col overflow-hidden rounded-[34px]
+        border border-[#25e7dc]/24
+        bg-[radial-gradient(circle_at_12%_18%,rgba(22,216,205,0.24),transparent_28%),radial-gradient(circle_at_88%_28%,rgba(37,231,220,0.16),transparent_26%),linear-gradient(135deg,#043d3d,#063f43_58%,#032f34)]
+        shadow-[0_40px_140px_rgba(0,0,0,0.58)]
+      "
           >
             {/* Modal Background Effects */}
             <div
               className="
-                pointer-events-none absolute inset-0 opacity-[0.14]
-                bg-[linear-gradient(rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.10)_1px,transparent_1px)]
-                bg-size-[58px_58px]
-              "
+          pointer-events-none absolute inset-0 opacity-[0.14]
+          bg-[linear-gradient(rgba(37,231,220,0.13)_1px,transparent_1px),linear-gradient(90deg,rgba(37,231,220,0.13)_1px,transparent_1px)]
+          bg-size-[58px_58px]
+        "
             />
 
-            <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-teal-400/18 blur-3xl" />
-            <div className="pointer-events-none absolute -right-24 bottom-10 h-80 w-80 rounded-full bg-cyan-400/18 blur-3xl" />
+            <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-[#16d8cd]/22 blur-3xl" />
+            <div className="pointer-events-none absolute -right-24 bottom-10 h-80 w-80 rounded-full bg-[#25e7dc]/18 blur-3xl" />
 
             {/* Modal Header */}
             <div
               className="
-                relative z-10 flex items-center justify-between gap-4
-                border-b border-white/10 px-5 py-4
-                sm:px-7
-              "
+          relative z-10 flex items-center justify-between gap-4
+          border-b border-[#25e7dc]/18 px-5 py-4
+          sm:px-7
+        "
             >
               <div className="flex items-center gap-3">
                 <div
                   className="
-                    flex h-11 w-11 shrink-0 items-center justify-center
-                    rounded-2xl border border-white/15 bg-white/10 text-[#22d3c8]
-                  "
+              flex h-11 w-11 shrink-0 items-center justify-center
+              rounded-2xl border border-[#25e7dc]/25 bg-[#052f34]/75 text-[#25e7dc]
+            "
                 >
                   <MailOpen size={22} />
                 </div>
 
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-[1.8px] text-teal-100/80">
+                  <p className="text-xs font-bold uppercase tracking-[1.8px] text-[#9dfff7]/80">
                     Welcome Message
                   </p>
                   <h3 className="text-xl font-black text-white sm:text-2xl">
@@ -307,11 +306,11 @@ function WelcomeMessage() {
                 type="button"
                 onClick={closeModal}
                 className="
-                  flex h-11 w-11 shrink-0 items-center justify-center
-                  rounded-full border border-white/15 bg-white/10
-                  text-white transition-all duration-300
-                  hover:bg-white/18 hover:text-[#22d3c8]
-                "
+            flex h-11 w-11 shrink-0 items-center justify-center
+            rounded-full border border-[#25e7dc]/25 bg-[#052f34]/75
+            text-white transition-all duration-300
+            hover:bg-[#16d8cd] hover:text-[#03363a]
+          "
                 aria-label="Close invitation modal"
               >
                 <X size={22} />
@@ -323,20 +322,28 @@ function WelcomeMessage() {
               <div className="space-y-3">
                 <p className="font-bold text-white">Dear Colleagues,</p>
 
-                <p className="text-white/70">
-                  On behalf of the{" "}
-                  <b className="text-white">
-                    Saudi Society of Family and Community Medicine (SSFCM)
-                  </b>
-                  , we are pleased to invite you to participate in the{" "}
-                  <b className="text-white">
-                    5th International Family Medicine Symposium on Family
-                    Medicine and Home Health Care 2026
-                  </b>
-                  .
-                </p>
+                <p className="text-[#d9fffb]/72">
+  On behalf of The{" "}
+  <b className="text-white">
+    Saudi Society of Family and Community Medicine (SSFCM)
+  </b>{" "}
+  and the{" "}
+  <b className="text-white">
+    Prince Sultan Military Medical City (PSMMC) Department of Family and
+    Community Medicine
+  </b>
+  , we are honored to invite your esteemed organization to support and
+  participate in the{" "}
+  <b className="text-white">
+    5th International Family Medicine Symposium on Family Medicine and Home
+    Health Care 2026
+  </b>
+  . This prestigious three-day, expert-led educational event will be held from{" "}
+  <b className="text-white">5 to 7 October 2026</b> in Riyadh, Kingdom of Saudi
+  Arabia.
+</p>
 
-                <p className="text-white/70">
+                <p className="text-[#d9fffb]/72">
                   This distinguished 2-days scientific event will take place
                   from 6–7 October 2026 with Pre-Conference Workshops on 5
                   October, 2026 in Riyadh, Kingdom of Saudi Arabia, bringing
@@ -344,15 +351,15 @@ function WelcomeMessage() {
                   policymakers from across the region and beyond.
                 </p>
 
-                <p className="text-white/70">
+                <p className="text-[#d9fffb]/72">
                   Building on the success of previous editions, the 2026
                   symposium aims to serve as a premier platform for the exchange
-                  of knowledge, innovation, and best practices in family medicine
-                  and home healthcare. The scientific program will feature a
-                  diverse and forward-looking agenda, including:
+                  of knowledge, innovation, and best practices in family
+                  medicine and home healthcare. The scientific program will
+                  feature a diverse and forward-looking agenda, including:
                 </p>
 
-                <ul className="mb-4 list-disc space-y-2 pl-4 text-lg text-white/70">
+                <ul className="mb-4 list-disc space-y-2 pl-4 text-lg text-[#d9fffb]/72">
                   <li>
                     High-level scientific presentations by international and
                     regional experts
@@ -367,28 +374,28 @@ function WelcomeMessage() {
                   </li>
                 </ul>
 
-                <p className="text-white/70">
+                <p className="text-[#d9fffb]/72">
                   The symposium is expected to host over 1,000 in-person
                   participants, offering exceptional opportunities for
                   networking, collaboration, and professional development within
                   a dynamic and engaging environment.
                 </p>
 
-                <p className="text-white/70">
+                <p className="text-[#d9fffb]/72">
                   In addition to the scientific sessions, a comprehensive
                   exhibition will run alongside the program, showcasing the
                   latest advancements in healthcare services, technologies, and
                   solutions.
                 </p>
 
-                <p className="text-white/70">
+                <p className="text-[#d9fffb]/72">
                   We are pleased to confirm that MCI Saudi Arabia, operating
                   under license from Alrowad Exhibitions and Conferences
                   Organizing Co., has been appointed by SSFCM and PSMMC as the
                   official conference organizer.
                 </p>
 
-                <p className="mb-6 text-white/70">
+                <p className="mb-6 text-[#d9fffb]/72">
                   We warmly encourage you to join us for this important event
                   and contribute to advancing the future of family medicine and
                   home healthcare. We look forward to welcoming you in Riyadh.
@@ -396,19 +403,19 @@ function WelcomeMessage() {
 
                 <div
                   className="
-                    mt-7 flex flex-wrap items-center justify-between gap-6
-                    rounded-[26px] border border-white/10 bg-white/5.5
-                    p-5
-                  "
+              mt-7 flex flex-wrap items-center justify-between gap-6
+              rounded-[26px] border border-[#25e7dc]/18 bg-[#052f34]/70
+              p-5
+            "
                 >
                   <div>
-                    <p className="mb-1 text-white/70">Yours sincerely,</p>
+                    <p className="mb-1 text-[#d9fffb]/72">Yours sincerely,</p>
 
                     <h5 className="mb-1 text-lg font-bold text-white">
                       Organizing Committee
                     </h5>
 
-                    <p className="mb-0 max-w-md text-white/70">
+                    <p className="mb-0 max-w-md text-[#d9fffb]/72">
                       5th International Family Medicine Symposium on Family
                       Medicine and Home Health Care 2026
                     </p>

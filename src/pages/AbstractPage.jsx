@@ -75,7 +75,6 @@ function AbstractPage() {
           relative overflow-hidden pt-30 py-16 text-white
         "
       >
-
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="grid gap-6 lg:grid-cols-3">
             <div
@@ -150,7 +149,6 @@ function AbstractPage() {
                 hover:shadow-[0_42px_120px_rgba(0,0,0,0.42),0_0_45px_rgba(34,211,200,0.18)]
               "
             >
-
               <div className="relative z-10 mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/12 bg-white/10 text-[#22d3c8]">
                 <BadgeCheck size={28} />
               </div>
@@ -170,13 +168,12 @@ function AbstractPage() {
         id="abstract-guidelines"
         className="relative overflow-hidden py-16 text-white"
       >
-
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
               <span className="subtitle">Abstract Submission</span>
 
-              <h2 className="mb-6 text-white">
+              <h2 className="mb-6">
                 Important Instructions & Guidelines
               </h2>
 
@@ -207,8 +204,8 @@ function AbstractPage() {
 
                 <p className="text-white/70">
                   Abstracts should include the title, author details,
-                  organisation, city, country, email, phone numbers, fax numbers,
-                  mailing address, presenting author name, and a 3-line
+                  organisation, city, country, email, phone numbers, fax
+                  numbers, mailing address, presenting author name, and a 3-line
                   biography.
                 </p>
 
@@ -232,14 +229,14 @@ function AbstractPage() {
 
             <div
               className="
-                rounded-3xl border border-white/12
-                bg-[radial-gradient(circle_at_12%_20%,rgba(0,194,184,0.24),transparent_26%),radial-gradient(circle_at_88%_70%,rgba(71,215,255,0.18),transparent_28%),linear-gradient(135deg,#061a35,#09294f_55%,#061a35)]
-                p-7 text-white
-                backdrop-blur-2xl
-              "
+    rounded-3xl border border-[#25e7dc]/18
+    bg-[radial-gradient(circle_at_12%_20%,rgba(22,216,205,0.24),transparent_26%),radial-gradient(circle_at_88%_70%,rgba(37,231,220,0.16),transparent_28%),linear-gradient(135deg,#043d3d,#063f43_55%,#032f34)]
+    p-7 text-white
+    backdrop-blur-2xl
+  "
             >
               <div className="mb-5 flex items-center gap-3">
-                <ClipboardList className="text-cyan-300" size={26} />
+                <ClipboardList className="text-[#25e7dc]" size={26} />
                 <h3 className="text-white">Submission Rules</h3>
               </div>
 
@@ -248,27 +245,27 @@ function AbstractPage() {
                   <li key={rule} className="flex gap-3">
                     <CheckCircle2
                       size={20}
-                      className="mt-1 shrink-0 text-cyan-300"
+                      className="mt-1 shrink-0 text-[#25e7dc]"
                     />
-                    <span className="text-white/75">{rule}</span>
+                    <span className="text-[#d9fffb]/75">{rule}</span>
                   </li>
                 ))}
               </ul>
 
-              <div className="mt-7 rounded-2xl border border-white/10 bg-white/10 p-5">
-                <p className="text-white/75">
+              <div className="mt-7 rounded-2xl border border-[#25e7dc]/16 bg-[#052f34]/70 p-5">
+                <p className="text-[#d9fffb]/75">
                   <b className="text-white">For queries, contact:</b>
                 </p>
 
                 <a
                   href="mailto:ajay.gupta@wearemci.com"
-                  className="inline-flex items-center gap-2 font-bold text-white hover:text-cyan-200"
+                  className="inline-flex items-center gap-2 font-bold text-white hover:text-[#25e7dc]"
                 >
                   <Mail size={18} />
                   ajay.gupta@wearemci.com
                 </a>
 
-                <p className="text-white/75">
+                <p className="text-[#d9fffb]/75">
                   You will be notified of receipt of your abstract by email. If
                   you do not receive an email within two weeks of submission,
                   please contact the above email address.
@@ -280,12 +277,11 @@ function AbstractPage() {
       </section>
 
       <section className="relative overflow-hidden py-16 text-white">
-
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="mb-10 text-center">
             <span className="subtitle">Presentation Formats</span>
 
-            <h2 className="text-white">Abstract Categories</h2>
+            <h2>Abstract Categories</h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
@@ -339,12 +335,11 @@ function AbstractPage() {
         id="important-dates"
         className="relative overflow-hidden py-16 text-white"
       >
-
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="mb-10 text-center">
             <span className="subtitle">Important Dates</span>
 
-            <h2 className="text-white">Abstract Timeline</h2>
+            <h2>Abstract Timeline</h2>
           </div>
 
           <div className="mx-auto max-w-4xl">
@@ -429,8 +424,8 @@ function AbstractPage() {
               </p>
 
               <div className="mt-5 rounded-2xl border border-white/12 bg-white/10 p-5 text-white/75">
-                Abstracts will be evaluated by the scientific committee through a
-                blind review process.
+                Abstracts will be evaluated by the scientific committee through
+                a blind review process.
               </div>
             </div>
           </div>
@@ -438,12 +433,11 @@ function AbstractPage() {
       </section>
 
       <section className="relative overflow-hidden  py-16 text-white">
-
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="mb-10 text-center">
             <span className="subtitle">Terms and Conditions</span>
 
-            <h2 className="text-white">Before You Submit</h2>
+            <h2>Before You Submit</h2>
           </div>
 
           <div

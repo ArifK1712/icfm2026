@@ -1,25 +1,37 @@
 import cardImg1 from "../../assets/images/king-salman.png";
 import cardImg2 from "../../assets/images/prime-minister.png";
 import cardImg3 from "../../assets/images/ali-muhammad.png";
+import cardImg4 from "../../assets/images/khalid-alabdulkarim.png";
 
 const cards = [
   {
     image: cardImg1,
-    name: "خادم الحرمين الشريفين",
+    designation: "خادم الحرمين الشريفين",
+    name: "الملك سلمان بن عبدالعزيز آل سعود",
     detail:
       "هدفي الأول أن تكون بلادنا نموذجاً ناجحاً ورائداً في العالم على كافة الأصعدة، وسأعمل معكم على تحقيق ذلك",
   },
   {
     image: cardImg2,
-    name: "صاحب السمو الملكي ولي العهد ورئيس مجلس الوزراء الأمير",
+    designation: "صاحب السمو الملكي ولي العهد ورئيس مجلس الوزراء الأمير",
+    name: "الأمير محمد بن سلمان بن عبدالعزيز آل سعود",
     detail:
-      "إن مستقبل المملكة مبشـر وواعد، وتستحق بلادنا الغالية أكثر مما تحقق. لدينا قدرات سنقوم بمضاعفة دورها وزيادة إسهامها في صناعة هذا المستقبل",
+      "إن مستقبل المملكة مبشر وواعد، وتستحق بلادنا الغالية أكثر مما تحقق. لدينا قدرات سنقوم بمضاعفة دورها وزيادة إسهامها في صناعة هذا المستقبل",
   },
+  // {
+  //   image: cardImg3,
+  //   designation:
+  //     "المدير العام التنفيذي لمدينة الأمير سلطان بن عبدالعزيز الطبية العسكرية",
+  //   name: "الدكتور علي بن محمد",
+  //   detail:
+  //     "إن الرعاية الصحية الأولية تعدّ خط الدفاع الأول في أنظمتنا الصحية؛ فهي لا توفر فقط خدمات العلاج والوقاية والتشخيص المبكر، بل تلعب دورًا أساسيًّا في تعزيز الوعي الصحي وتثقيف الأفراد والمجتمعات",
+  // },
   {
-    image: cardImg3,
-    name: "المدير العام التنفيذي لمدينة الأمير سلطان بن عبدالعزيز الطبية العسكرية",
+    image: cardImg4,
+    designation: "مدير عام الإدارة العامة للخدمات الصحية بوزارة الدفاع",
+    name: "الدكتور خالد بن إبراهيم العبدالكريم",
     detail:
-      "إن الرعاية الصحية الأولية تعدّ خط الدفاع الأول في أنظمتنا الصحية؛ فهي لا توفر فقط خدمات العلاج والوقاية والتشخيص المبكر، بل تلعب دورًا أساسيًّا في تعزيز الوعي الصحي وتثقيف الأفراد والمجتمعات",
+      "نواصل العمل على تطوير الخدمات الصحية وفق أفضل الممارسات، بما يعزز كفاءة الرعاية وجودة الخدمات المقدمة.",
   },
 ];
 
@@ -27,19 +39,12 @@ function StackedCardsSection() {
   return (
     <section
       className="
-        relative overflow-hidden bg-[#061a35]
+        relative overflow-hidden
         px-4 py-20 text-white
         sm:px-6
         lg:px-8 lg:py-28
       "
     >
-      {/* Premium Background */}
-      <div
-        className="
-          absolute inset-0
-          bg-[radial-gradient(circle_at_12%_18%,rgba(0,194,184,0.20),transparent_28%),radial-gradient(circle_at_88%_28%,rgba(71,215,255,0.16),transparent_26%),linear-gradient(135deg,#061a35,#09294f_58%,#061a35)]
-        "
-      />
 
       {/* Grid Background */}
       <div
@@ -106,15 +111,16 @@ function StackedCardsSection() {
               {/* Hover Shine Sweep */}
               <div
                 className="
-    pointer-events-none absolute inset-0 z-30
-    translate-x-[-120%] skew-x-[-18deg]
-    bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.20),rgba(34,211,200,0.20),transparent)]
-    opacity-0 blur-[1px]
-    transition-all duration-450 ease-out
-    group-hover:translate-x-[120%]
-    group-hover:opacity-100
-  "
+                  pointer-events-none absolute inset-0 z-30
+                  translate-x-[-120%] skew-x-[-18deg]
+                  bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.20),rgba(34,211,200,0.20),transparent)]
+                  opacity-0 blur-[1px]
+                  transition-all duration-450 ease-out
+                  group-hover:translate-x-[120%]
+                  group-hover:opacity-100
+                "
               />
+
               {/* Card Glow */}
               <div
                 className="
@@ -145,7 +151,7 @@ function StackedCardsSection() {
               {/* Image Area */}
               <div
                 className="
-                  relative flex  items-end justify-center overflow-hidden
+                  relative flex items-end justify-center overflow-hidden
                   bg-[radial-gradient(circle_at_50%_22%,rgba(20,184,166,0.28),transparent_44%)]
                   px-5 pt-8
                 "
@@ -171,22 +177,34 @@ function StackedCardsSection() {
                 />
 
                 <div
-                  className="
-                    absolute bottom-0 left-0 right-0 h-32
-                    bg-linear-to-t from-[#061a35] to-transparent
-                  "
-                />
+  className="
+    absolute bottom-0 left-0 right-0 h-32
+    bg-linear-to-t from-[#043d3d]/100 to-transparent
+  "
+/>
               </div>
 
               {/* Content Area */}
               <div className="relative z-10 p-6 text-right xl:p-7" dir="rtl">
-                <h2
+                {/* Name */}
+                <h3
                   className="
-                    mb-5
+                    mb-3 font-black leading-8 text-white
                   "
                 >
                   {card.name}
-                </h2>
+                </h3>
+                {/* Designation */}
+                <p
+                  className="
+                    mb-3 font-bold leading-7
+                    text-teal-400
+                  "
+                >
+                  {card.designation}
+                </p>
+
+                
 
                 <div
                   className="
@@ -214,12 +232,12 @@ function StackedCardsSection() {
               {/* Bottom Accent */}
               <div
                 className="
-    absolute bottom-0 left-0 right-0 h-1
-    bg-linear-to-r from-transparent via-[#22d3c8] to-transparent
-    opacity-50 transition-all duration-500
-    group-hover:h-1.5 group-hover:opacity-100
-    group-hover:shadow-[0_0_28px_rgba(34,211,200,0.75)]
-  "
+                  absolute bottom-0 left-0 right-0 h-1
+                  bg-linear-to-r from-transparent via-[#22d3c8] to-transparent
+                  opacity-50 transition-all duration-500
+                  group-hover:h-1.5 group-hover:opacity-100
+                  group-hover:shadow-[0_0_28px_rgba(34,211,200,0.75)]
+                "
               />
             </div>
           ))}

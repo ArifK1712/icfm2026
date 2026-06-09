@@ -2,15 +2,7 @@ import { CalendarDays, Mic2 } from "lucide-react";
 import gsap from "gsap";
 import { useEffect, useState, useRef } from "react";
 
-import slide1 from "../../assets/images/gallery/1.avif";
-import slide2 from "../../assets/images/gallery/2.avif";
-import slide3 from "../../assets/images/gallery/3.avif";
-import slide4 from "../../assets/images/gallery/4.avif";
-import slide5 from "../../assets/images/gallery/5.avif";
 import otherlogos from "../../assets/images/other-logos.png";
-
-const slides = [slide1, slide2, slide3, slide4, slide5];
-const duplicatedSlides = [...slides, ...slides];
 
 const eventDate = new Date("2026-10-05T00:00:00").getTime();
 
@@ -62,76 +54,17 @@ function Hero() {
         duration: 1,
         stagger: 0.15,
         ease: "power4.out",
-      },
+      }
     );
   }, []);
 
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden bg-[#061a35] text-white"
+      className="
+        relative min-h-screen overflow-hidden text-white
+      "
     >
-      {/* Vertical Infinite Background Image Reel */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="hero-vertical-bg-reel">
-          {duplicatedSlides.map((slide, index) => (
-            <div
-              key={index}
-              className="
-                relative h-screen w-full
-                bg-cover bg-center bg-no-repeat
-              "
-              style={{
-                backgroundImage: `url(${slide})`,
-              }}
-            >
-              <div className="absolute inset-0 bg-[#061a35]/18" />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Soft Blur Layer For Premium Motion */}
-      <div
-        className="
-          pointer-events-none absolute inset-0
-          bg-[radial-gradient(circle_at_68%_32%,transparent_0%,rgba(6,26,53,0.14)_48%,rgba(6,26,53,0.38)_100%)]
-        "
-      />
-
-      {/* Dark Readability Overlay */}
-      <div
-        className="
-          absolute inset-0
-          bg-[linear-gradient(90deg,rgba(6,26,53,0.98)_0%,rgba(6,26,53,0.88)_38%,rgba(6,26,53,0.55)_68%,rgba(6,26,53,0.82)_100%)]
-        "
-      />
-
-      {/* Bottom Depth Overlay */}
-      <div
-        className="
-          absolute inset-0
-          bg-[linear-gradient(to_top,rgba(6,26,53,0.98)_0%,rgba(6,26,53,0.70)_28%,transparent_64%)]
-        "
-      />
-
-      {/* Animated Gradient Mood */}
-      <div
-        className="
-          absolute inset-0 animate-gradientFlow
-          bg-[linear-gradient(120deg,rgba(34,211,200,0.22),transparent_30%,rgba(71,215,255,0.15)_52%,transparent_72%,rgba(3,156,152,0.22))]
-          bg-size-[220%_220%]
-        "
-      />
-
-      {/* Moving Grid */}
-      <div
-        className="
-          absolute inset-0 opacity-[0.12] animate-gridMove
-          bg-[linear-gradient(rgba(255,255,255,0.14)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.14)_1px,transparent_1px)]
-          bg-size-[68px_68px]
-        "
-      />
 
       {/* Scan Light */}
       <div className="absolute inset-0 overflow-hidden">
@@ -150,7 +83,7 @@ function Hero() {
       <div className="absolute bottom-[2%] left-[42%] h-96 w-96 rounded-full bg-[#039c98]/22 blur-[120px] animate-blobFloatThree" />
 
       {/* ECG Line */}
-      <div className="pointer-events-none absolute right-0 top-[62%] hidden w-full opacity-30 lg:block">
+      <div className="pointer-events-none absolute right-0 top-[90%] hidden w-full opacity-30 lg:block">
         <svg
           viewBox="0 0 1200 120"
           className="h-28 w-full animate-ecgMove"
@@ -177,7 +110,7 @@ function Hero() {
         <span className="hero-particle right-[8%] bottom-[42%] animate-particleSix" />
       </div>
 
-      {/* Main Content Without Background Box */}
+      {/* Main Content */}
       <div
         className="
           relative z-10 mx-auto flex min-h-screen w-full max-w-385
@@ -186,26 +119,26 @@ function Hero() {
           lg:px-8 xl:py-32
         "
       >
-        <div className="w-full max-w-6xl">          
-        <img
+        <div className="w-full text-center">
+          <img
             src={otherlogos}
-            className="max-h-15 object-cover bg-white/80 mb-3 rounded-lg p-1"
+            className="mb-6 max-h-25 mx-auto"
             alt="Other Logos"
           />
+
           {/* Title */}
           <h1
-  ref={headingRef}
-  className="
-    max-w-245
-    text-[38px] font-black leading-[1.02]
-    tracking-[-1.5px]
-    sm:text-[52px]
-    md:text-[62px]
-    lg:text-[72px]
-    xl:text-[80px]
-    drop-shadow-[0_28px_70px_rgba(0,0,0,0.70)]
-  "
->
+            ref={headingRef}
+            className="
+              text-4xl font-black leading-[1.02]
+              tracking-[-1.5px]
+              sm:text-[52px]
+              md:text-[62px]
+              lg:text-[72px]
+              xl:text-[80px]
+              drop-shadow-[0_28px_70px_rgba(0,0,0,0.70)]
+            "
+          >
             <span
               className="
                 gsap-word inline-block
@@ -218,6 +151,7 @@ function Hero() {
             </span>
           </h1>
 
+          {/* Theme Badge */}
           <div
             className="
               my-5 inline-flex items-center gap-2 rounded-full
@@ -226,19 +160,20 @@ function Hero() {
               backdrop-blur-2xl
             "
           >
-            <h3 className="px-2 font-extrabold text-teal-400 text-lg md:text-3xl">
+            <h3 className="px-2 text-lg font-extrabold text-teal-400 md:text-3xl">
               EMPOWERING LIVES, SHAPING FUTURE CARE
             </h3>
           </div>
 
           {/* Date Cards */}
-          <div className="mt-5 grid max-w-2xl gap-3 md:grid-cols-2">
+          <div className="mt-5 grid max-w-2xl gap-3 md:grid-cols-2 mx-auto">
             <div
               className="
                 flex items-center gap-3 rounded-3xl
                 border border-white/12 bg-white/10 p-4
                 shadow-[0_20px_60px_rgba(0,0,0,0.26)]
                 backdrop-blur-2xl
+                
               "
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-[#22d3c8]">
@@ -249,6 +184,7 @@ function Hero() {
                 <h4 className="text-lg font-black text-white">
                   5 October 2026
                 </h4>
+
                 <p className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-cyan-100">
                   <Mic2 size={14} />
                   Pre-conference Workshops
@@ -272,6 +208,7 @@ function Hero() {
                 <h4 className="text-lg font-black text-white">
                   6-7 October 2026
                 </h4>
+
                 <p className="mt-1 flex items-center gap-1.5 text-sm font-semibold text-cyan-100">
                   <Mic2 size={14} />
                   Conference
@@ -281,7 +218,7 @@ function Hero() {
           </div>
 
           {/* Countdown */}
-          <div className="mt-6 max-w-2xl">
+          <div className="mt-6 max-w-2xl mx-auto">
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
               {[
                 { label: "Days", value: timeLeft.days },

@@ -78,26 +78,29 @@
   }
 
   body {
-    @apply text-white;
-    font-family: 'Public Sans', sans-serif;
-    background:
+  @apply text-white;
+  font-family: 'Public Sans', sans-serif;
+
+  background:
     radial-gradient(
       circle at 12% 18%,
-      rgba(0, 194, 184, 0.2),
-      transparent 28%
+      rgba(22, 216, 205, 0.22),
+      transparent 30%
     ),
     radial-gradient(
       circle at 88% 28%,
-      rgba(71, 215, 255, 0.16),
-      transparent 26%
+      rgba(0, 184, 170, 0.18),
+      transparent 28%
     ),
     linear-gradient(
       135deg,
-      #061a35,
-      #09294f 58%,
-      #061a35
+      #043d3d 0%,
+      #073f43 48%,
+      #032f34 100%
     );
-  }
+
+  background-attachment: fixed;
+}
   h1{
     @apply font-black leading-[1.1] text-4xl md:text-5xl lg:text-6xl
   }
@@ -117,7 +120,7 @@
     @apply text-green-950 font-bold
   }
   p{
-    @apply text-lg leading-7 text-slate-400
+    @apply text-lg leading-7 text-slate-200
   }
   .subtitle{
     @apply mb-3 text-sm font-semibold uppercase tracking-[2px] text-teal-400
@@ -128,7 +131,7 @@
   .btn-main {
     @apply 
     relative overflow-hidden    
-    bg-linear-to-r from-teal-500 to-cyan-500    
+    bg-linear-to-r from-[#10bdb5] via-[#18d8cd] to-[#25eee2]   
      text-white
     shadow-lg shadow-teal-500/30    
     hover:shadow-xl hover:shadow-teal-500/40;
@@ -170,7 +173,7 @@
   }
 
   .icon-box {
-    @apply mb-6 flex h-15.5 w-15.5 items-center justify-center rounded-[22px] bg-linear-to-br from-teal-500/15 to-cyan-400/15 text-teal-500 transition-all duration-300;
+    @apply mb-6 flex h-15.5 w-15.5 items-center justify-center rounded-[22px] bg-linear-to-br from-teal-500/15 to-cyan-400/15 text-teal-400 transition-all duration-300;
   }
 
   .motion-card:hover .icon-box {

@@ -188,7 +188,7 @@ function RegistrationPage() {
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
-                  <tr className="bg-[#062a4f] text-white">
+                  <tr className="bg-[#062e32] text-white">
                     <th className="p-5 text-left">Registration Category</th>
                     <th className="p-5 text-left">
                       Early Bird Until August 31, 2026
@@ -257,30 +257,29 @@ function RegistrationPage() {
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div
-              className="
-                rounded-3xl border border-white/12
-                bg-[radial-gradient(circle_at_12%_20%,rgba(0,194,184,0.24),transparent_26%),radial-gradient(circle_at_88%_70%,rgba(71,215,255,0.18),transparent_28%),linear-gradient(135deg,#061a35,#09294f_55%,#061a35)]
-                p-7 text-white
-                
-                backdrop-blur-2xl
-              "
-            >
-              <div className="mb-5 flex items-center gap-3">
-                <CalendarDays className="text-cyan-300" size={26} />
-                <h3 className="text-white">Registration Terms</h3>
-              </div>
+  className="
+    rounded-3xl border border-[#16d8cd]/24
+    bg-[radial-gradient(circle_at_12%_20%,rgba(22,216,205,0.22),transparent_26%),radial-gradient(circle_at_88%_70%,rgba(37,231,220,0.16),transparent_28%),linear-gradient(135deg,#043d3d,#063f43_55%,#032f34)]
+    p-7 text-white
+    backdrop-blur-2xl
+  "
+>
+  <div className="mb-5 flex items-center gap-3">
+    <CalendarDays className="text-[#25e7dc]" size={26} />
+    <h3 className="text-white">Registration Terms</h3>
+  </div>
 
-              <p className="text-white/70">
-                Please read the registration terms and conditions carefully
-                before beginning online registration.
-              </p>
+  <p className="text-[#d9fffb]/72">
+    Please read the registration terms and conditions carefully
+    before beginning online registration.
+  </p>
 
-              <p className="text-white/70">
-                Should there be no payment received within the given grace
-                period of 10 working days, we reserve the right to cancel your
-                registration.
-              </p>
-            </div>
+  <p className="text-[#d9fffb]/72">
+    Should there be no payment received within the given grace
+    period of 10 working days, we reserve the right to cancel your
+    registration.
+  </p>
+</div>
 
             <div
               className="

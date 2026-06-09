@@ -16,10 +16,12 @@ import AbstractPage from './pages/AbstractPage'
 import Sponsorship from './pages/Sponsorship'
 import ContactPage from './pages/ContactPage'
 import Accommodation from './pages/Accommodation'
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   return (
     <div className="flex min-h-screen flex-col">
+      <CustomCursor />
        <ScrollToTop />
       <Header />
       <main className="flex-1">

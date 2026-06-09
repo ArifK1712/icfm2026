@@ -54,7 +54,7 @@ function Hero() {
         duration: 1,
         stagger: 0.15,
         ease: "power4.out",
-      }
+      },
     );
   }, []);
 
@@ -65,7 +65,6 @@ function Hero() {
         relative min-h-screen overflow-hidden text-white
       "
     >
-
       {/* Scan Light */}
       <div className="absolute inset-0 overflow-hidden">
         <div
@@ -83,17 +82,39 @@ function Hero() {
       <div className="absolute bottom-[2%] left-[42%] h-96 w-96 rounded-full bg-[#039c98]/22 blur-[120px] animate-blobFloatThree" />
 
       {/* ECG Line */}
-      <div className="pointer-events-none absolute right-0 top-[90%] hidden w-full opacity-30 lg:block">
+      <div className="pointer-events-none absolute left-0 right-0 bottom-0  w-full overflow-hidden opacity-40">
         <svg
           viewBox="0 0 1200 120"
-          className="h-28 w-full animate-ecgMove"
+          className="h-28 w-full"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
         >
+          {/* Faded base line */}
           <path
             d="M0 70 H140 L165 70 L180 42 L198 96 L222 34 L245 70 H390 L420 70 L438 50 L460 86 L486 28 L512 70 H720 L746 70 L764 48 L786 90 L812 36 L840 70 H1200"
-            stroke="rgba(34,211,200,0.7)"
+            stroke="rgba(37,231,220,0.18)"
             strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+
+          {/* Running ECG line */}
+          <path
+            className="ecg-live-line"
+            d="M0 70 H140 L165 70 L180 42 L198 96 L222 34 L245 70 H390 L420 70 L438 50 L460 86 L486 28 L512 70 H720 L746 70 L764 48 L786 90 L812 36 L840 70 H1200"
+            stroke="rgba(37,231,220,0.95)"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+
+          {/* Glow line */}
+          <path
+            className="ecg-live-line ecg-live-glow"
+            d="M0 70 H140 L165 70 L180 42 L198 96 L222 34 L245 70 H390 L420 70 L438 50 L460 86 L486 28 L512 70 H720 L746 70 L764 48 L786 90 L812 36 L840 70 H1200"
+            stroke="rgba(37,231,220,0.55)"
+            strokeWidth="7"
             strokeLinecap="round"
             strokeLinejoin="round"
           />

@@ -28,6 +28,38 @@
 
 @layer components {
 
+  .ecg-live-line {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: ecgDraw 3.2s linear infinite;
+}
+
+.ecg-live-glow {
+  filter: blur(6px);
+  opacity: 0.75;
+}
+
+@keyframes ecgDraw {
+  0% {
+    stroke-dashoffset: 1200;
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  72% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: -1200;
+    opacity: 0;
+  }
+}
+
 .why-attend-marquee {
   animation: whyAttendMarquee 55s linear infinite;
   will-change: transform;

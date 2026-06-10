@@ -21,7 +21,7 @@ function Home() {
     <About />
     <WhyAttend />
     <EventHighlights />
-    <Partners />
+    {/* <Partners /> */}
     <Venue />
     <CTA />
     </>

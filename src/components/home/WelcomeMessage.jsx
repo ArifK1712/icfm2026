@@ -189,11 +189,8 @@ function WelcomeMessage() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-center">
           <div
             className="
-              mx-auto max-w-3xl rounded-[36px]
-              border border-white/12
-              bg-white/6
+              mx-auto max-w-7xl 
               px-6 py-14
-              backdrop-blur-2xl
             "
           >
             <div

@@ -6,7 +6,7 @@ import About from '../components/home/About'
 import WelcomeMessage from '../components/home/WelcomeMessage'
 import Speakers from '../components/home/Speakers'
 import EventHighlights from '../components/home/EventHighlights'
-import Partners from '../components/home/Partners'
+//import Partners from '../components/home/Partners'
 import Venue from '../components/home/Venue'
 import CTA from '../components/CTA'
 

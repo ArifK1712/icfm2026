@@ -114,7 +114,11 @@ function StackedCardsSection() {
                   </p>
                 </div>
               </div>
-              {/* Image Area */}
+              {/* Image Area 
+              Image Area 
+              Image Area 
+              Image Area 
+              Image Area */}
               <div
                 className="
                   relative flex items-end justify-center overflow-hidden

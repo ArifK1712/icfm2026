@@ -100,12 +100,12 @@ function CommitteePage() {
 
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           {/* Page Heading */}
-          <div className="mb-12 flex gap-5">
+          <div className="mb-12 grid sm:flex gap-5">
             <div>
 
-            <h1 className="mb-4">
+            <h2 className="mb-4">
               Committee Members
-            </h1>
+            </h2>
 
             <p className="mx-auto max-w-3xl text-white/65">
               Search and filter committee members by committee category, name,

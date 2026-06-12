@@ -509,7 +509,7 @@ function ProgramPage() {
         className="
           relative overflow-hidden
           bg-[#063b3d]
-          py-20 text-white
+          pt-30 py-20 text-white
         "
       >
         
@@ -517,21 +517,8 @@ function ProgramPage() {
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="mb-14 text-center">
             <h1 className="mb-4 text-4xl font-black text-white md:text-6xl">
-              5th International Symposium
+              5th International Symposium Family Medicine & Home Healthcare
             </h1>
-
-            <h2 className="mb-4 text-3xl font-black text-[#12c4bb] md:text-5xl">
-              Family Medicine & Home Healthcare
-            </h2>
-
-            <p className="text-xl font-bold text-white/75">
-              5 – 7 October 2026
-            </p>
-
-            <p className="mt-2 text-white/65">
-              Prince Sultan Military Medical City (PSMMC) · Riyadh, Kingdom of
-              Saudi Arabia
-            </p>
           </div>
 
           <div className="mb-12">

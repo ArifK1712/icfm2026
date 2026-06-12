@@ -1,76 +1,185 @@
-function CommitteeCard({ member, cardRef }) {
+import { Mail, Phone, Building2, UserRound } from 'lucide-react'
+
+function CommitteeCard({ member }) {
   return (
     <div
-      ref={cardRef}
       className="
-        group relative flex h-full flex-col overflow-hidden
-        rounded-4xl
-        border border-slate-900/5
-        shadow-[0_22px_65px_rgba(6,26,53,0.08)]
+        group relative h-full overflow-hidden rounded-[34px]
+        border border-[#12c4bb]/90
+        bg-[linear-gradient(150deg,rgba(4,63,65,0.82),rgba(7,91,93,0.44))]
+        p-5 text-white
+        shadow-[0_28px_80px_rgba(0,0,0,0.34)]
+        backdrop-blur-2xl
         transition-all duration-500
-        hover:-translate-y-3
-        hover:shadow-[0_36px_90px_rgba(6,26,53,0.16)]
+        hover:-translate-y-2
+        hover:border-[#12c4bb]/55
+        hover:shadow-[0_38px_110px_rgba(0,0,0,0.45),0_0_45px_rgba(18,196,187,0.18)]
       "
     >
-      {/* Top background glow */}
+      {/* Glow */}
       <div
         className="
-          absolute -right-20 -top-20
-          h-56 w-56
-          rounded-full
-          bg-[radial-gradient(circle,rgba(20,184,166,0.16),transparent_70%)]
+          absolute -right-20 -top-20 h-64 w-64 rounded-full
+          bg-[radial-gradient(circle,rgba(18,196,187,0.24),transparent_70%)]
           transition-all duration-500
           group-hover:scale-125
         "
       />
 
-      {/* Image area */}
       <div
         className="
-          relative mx-5 mt-5 overflow-hidden
-          rounded-[30px]
-          bg-[linear-gradient(135deg,#ecfeff,#f0fdfa)]
+          absolute -left-24 bottom-10 h-60 w-60 rounded-full
+          bg-[radial-gradient(circle,rgba(6,169,159,0.18),transparent_70%)]
         "
-      >
-        <img
-          src={member.image}
-          alt={member.name}
-          loading="lazy"
-          decoding="async"
+      />
+
+      {/* Shine */}
+      <div
+        className="
+          pointer-events-none absolute inset-0
+          bg-[linear-gradient(135deg,rgba(255,255,255,0.10),transparent_42%,rgba(18,196,187,0.12))]
+        "
+      />
+
+      {/* Hover sweep */}
+      <div
+        className="
+          pointer-events-none absolute inset-0 z-30
+          translate-x-[-120%] skew-x-[-18deg]
+          bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.16),rgba(18,196,187,0.18),transparent)]
+          opacity-0 blur-[1px]
+          transition-all duration-700 ease-out
+          group-hover:translate-x-[120%]
+          group-hover:opacity-100
+        "
+      />
+
+      <div className="relative z-10 grid h-full content-between">
+        <div>
+        {/* Image */}
+        <div
           className="
-            h-50 w-full object-cover object-center
-            transition-all duration-700
-            group-hover:scale-105
+            relative mx-auto mb-6 flex h-42 w-42 items-end justify-center
+            overflow-hidden rounded-full
+            border border-[#12c4bb]/25
+            bg-[radial-gradient(circle_at_50%_30%,rgba(18,196,187,0.30),rgba(4,63,65,0.75)_58%,rgba(4,63,65,0.95))]
+            shadow-[0_22px_60px_rgba(0,0,0,0.30)]
           "
-        />
-        
-      </div>
+        >
+          {member.image ? (
+            <img
+              src={member.image}
+              alt={member.name}
+              loading="lazy"
+              decoding="async"
+              className="
+                h-full w-full object-cover
+                transition-all duration-500
+                group-hover:scale-105
+              "
+            />
+          ) : (
+            <UserRound size={58} className="mb-10 text-[#12c4bb]" />
+          )}
 
-      {/* Content */}
-      <div className="relative z-10 flex-1 px-7 pb-7 pt-6 text-center">
-        <h5 className="mb-2">
+          <div
+            className="
+              absolute bottom-0 left-0 right-0 h-16
+              bg-linear-to-t from-[#043f41] to-transparent
+            "
+          />
+        </div>
+
+        {/* Name */}
+        <h3
+          className="
+            mb-3 text-center 
+            transition-colors duration-300
+            group-hover:text-[#12c4bb]
+          "
+        >
           {member.name}
-        </h5>
+        </h3>
 
-        <p className="mb-2 font-semibold text-teal-600">
-          {member.role}
-        </p>
-
-        {member.organization && (
-          <p className="text-sm leading-6 text-slate-500">
-            {member.organization}
+        {/* Role */}
+        {member.role && (
+          <p className="mb-4 text-center leading-6 text-white/68">
+            {member.role}
           </p>
         )}
+        </div>
+        <div>
+        {/* Organization */}
+        {member.organization && (
+          <div
+            className="
+              mb-4 flex items-start gap-3 rounded-2xl
+              border border-white/10
+              bg-white/[0.04]
+              p-3
+            "
+          >
+            <Building2 size={18} className="mt-0.5 shrink-0 text-[#12c4bb]" />
+
+            <p className="leading-6">
+              {member.organization}
+            </p>
+          </div>
+        )}
+
+        {/* Contact */}
+        {(member.email || member.contactNumber) && (
+          <div className="space-y-3">
+            {member.email && (
+              <a
+                href={`mailto:${member.email}`}
+                className="
+                  flex items-center gap-3 rounded-2xl
+                  border border-white/10
+                  bg-white/[0.04]
+                  p-3 text-white/65
+                  transition-all duration-300
+                  hover:border-[#12c4bb]/35
+                  hover:bg-[#12c4bb]/10
+                  hover:text-[#12c4bb]
+                "
+              >
+                <Mail size={17} className="shrink-0" />
+                <p className="min-w-0 break-all">{member.email}</p>
+              </a>
+            )}
+
+            {member.contactNumber && (
+              <a
+                href={`tel:${member.contactNumber.replace(/\s/g, '')}`}
+                className="
+                  flex items-center gap-3 rounded-2xl
+                  border border-white/10
+                  bg-white/[0.04]
+                  p-3 text-white/65
+                  transition-all duration-300
+                  hover:border-[#12c4bb]/35
+                  hover:bg-[#12c4bb]/10
+                  hover:text-[#12c4bb]
+                "
+              >
+                <Phone size={17} className="shrink-0" />
+                <p>{member.contactNumber}</p>
+              </a>
+            )}
+          </div>
+        )}
+        </div>
       </div>
 
-      {/* Bottom accent */}
+      {/* Bottom Accent */}
       <div
         className="
-          mt-auto h-1.5 w-full
-          bg-linear-to-r from-teal-400 via-cyan-400 to-teal-500
-          opacity-80
-          transition-all duration-500
-          group-hover:opacity-100
+          absolute bottom-0 left-0 right-0 h-1
+          bg-linear-to-r from-transparent via-[#12c4bb] to-transparent
+          opacity-60 transition-all duration-500
+          group-hover:h-1.5 group-hover:opacity-100
+          group-hover:shadow-[0_0_28px_rgba(18,196,187,0.75)]
         "
       />
     </div>

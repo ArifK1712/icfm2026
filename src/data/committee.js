@@ -171,7 +171,7 @@ const committeeMembers = [
   {
     id: 10,
     image: defaultImage,
-    name: 'Dr.Nawaf Mohammed Basulaib',
+    name: 'Dr. Nawaf Mohammed Basulaib',
     role: 'Emergency medicine consultant \\ Urgent care fellowship director',
     organization: 'Prince sultan military medical city',
     contactNumber: '0560 277 778',
@@ -355,7 +355,7 @@ const committeeMembers = [
   {
     id: 20,
     image: defaultImage,
-    name: 'Ms.Najlaa khalil',
+    name: 'Ms. Najlaa khalil',
     role: 'Head of Training & Academic Affairs Office',
     organization: '',
     contactNumber: '+966 54 852 3323',

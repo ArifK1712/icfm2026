@@ -1,4 +1,4 @@
-import { Mail, Phone, Building2, UserRound } from 'lucide-react'
+import { Building2, UserRound } from 'lucide-react'
 
 function CommitteeCard({ member }) {
   return (
@@ -130,43 +130,8 @@ function CommitteeCard({ member }) {
         {/* Contact */}
         {(member.email || member.contactNumber) && (
           <div className="space-y-3">
-            {member.email && (
-              <a
-                href={`mailto:${member.email}`}
-                className="
-                  flex items-center gap-3 rounded-2xl
-                  border border-white/10
-                  bg-white/[0.04]
-                  p-3 text-white/65
-                  transition-all duration-300
-                  hover:border-[#12c4bb]/35
-                  hover:bg-[#12c4bb]/10
-                  hover:text-[#12c4bb]
-                "
-              >
-                <Mail size={17} className="shrink-0" />
-                <p className="min-w-0 break-all">{member.email}</p>
-              </a>
-            )}
 
-            {member.contactNumber && (
-              <a
-                href={`tel:${member.contactNumber.replace(/\s/g, '')}`}
-                className="
-                  flex items-center gap-3 rounded-2xl
-                  border border-white/10
-                  bg-white/[0.04]
-                  p-3 text-white/65
-                  transition-all duration-300
-                  hover:border-[#12c4bb]/35
-                  hover:bg-[#12c4bb]/10
-                  hover:text-[#12c4bb]
-                "
-              >
-                <Phone size={17} className="shrink-0" />
-                <p>{member.contactNumber}</p>
-              </a>
-            )}
+            
           </div>
         )}
         </div>

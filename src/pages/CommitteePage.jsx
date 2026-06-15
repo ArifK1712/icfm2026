@@ -5,6 +5,12 @@ import { Search, SlidersHorizontal, X } from 'lucide-react'
 import CommitteeCard from '../components/committee/CommitteeCard'
 import committeeMembers from '../data/committee'
 
+const committeeOrder = {
+  'Organizing Committee': 1,
+  'Scientific Committee': 2,
+  'Research Committee': 3,
+}
+
 function CommitteePage() {
 
   const [searchTerm, setSearchTerm] = useState('')
@@ -18,7 +24,7 @@ function CommitteePage() {
         if (!categories[category.name]) {
           categories[category.name] = {
             name: category.name,
-            categoryOrder: category.categoryOrder,
+            categoryOrder: committeeOrder[category.name] || category.categoryOrder,
           }
         }
       })
@@ -59,7 +65,7 @@ function CommitteePage() {
         if (!groups[category.name]) {
           groups[category.name] = {
             category: category.name,
-            categoryOrder: category.categoryOrder,
+            categoryOrder: committeeOrder[category.name] || category.categoryOrder,
             members: [],
           }
         }

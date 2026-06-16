@@ -100,7 +100,26 @@ function CommitteeCard({ member }) {
         >
           {member.name}
         </h3>
-
+        {/* Type Badge */}
+        {member.tag && (
+          <div className="mb-4 text-center">
+            <span
+              className="
+                inline-flex items-center justify-center rounded-full
+                border border-[#12c4bb]/35
+                bg-[#12c4bb]/12
+                px-4 py-1.5 font-semibold uppercase tracking-[1.4px]
+                text-[#12c4bb]
+                shadow-[0_0_24px_rgba(18,196,187,0.12)]
+                transition-all duration-300
+                group-hover:border-[#12c4bb]/60
+                group-hover:bg-[#12c4bb]/18
+              "
+            >
+              {member.tag}
+            </span>
+          </div>
+        )}
         {/* Role */}
         {member.role && (
           <p className="mb-4 text-center leading-6 text-white/68">

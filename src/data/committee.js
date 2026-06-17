@@ -140,7 +140,7 @@ const committeeMembers = [
   {
     id: 19,
     image: memberImages[19] || defaultImage,
-    name: 'Dr.Fahad  alromaih',
+    name: 'Dr. Fahad alromaih',
     role:
       'Consultant  of Family Medicine and Mental Health\\ head of physics affairs in family and community department',
     organization: 'Prince sultan military medical city',

@@ -54,7 +54,7 @@ const committeeMembers = [
     image: memberImages[14] || defaultImage,
     name: 'Dr. Turki AL Harbi',
     role:
-      'General Supervisor of Diabetes clinical service MOD-HS',
+      'Chairman, Organizing Committee \\ General Supervisor of Diabetes clinical service MOD-HS',
     organization: '',
     contactNumber: '+966 55 599 9493',
     email: 'tjalharbi@psmmc.med.sa',
@@ -70,7 +70,7 @@ const committeeMembers = [
   {
     id: 15,
     image: memberImages[15] || defaultImage,
-    name: 'Dr. Faris Alotaibi',
+    name: 'Dr. Faris Al Otaibi',
     role:
       'Consultant of Family Medicine \\ Supervisor of Allied Health Services in family Medicine',
     organization: '',
@@ -105,7 +105,7 @@ const committeeMembers = [
   {
     id: 17,
     image: memberImages[17] || defaultImage,
-    name: 'Dr. Nouf ALturkey',
+    name: 'Dr. Nouf Al Turkey',
     role:
       'Consultant of Family Medicine and in charge Royal guard clinic in family medicine department',
     organization: 'Prince sultan military medical city',
@@ -140,7 +140,7 @@ const committeeMembers = [
   {
     id: 19,
     image: memberImages[19] || defaultImage,
-    name: 'Dr. Fahad alromaih',
+    name: 'Dr. Fahad Al Romaih',
     role:
       'Consultant  of Family Medicine and Mental Health\\ head of physics affairs in family and community department',
     organization: 'Prince sultan military medical city',
@@ -177,9 +177,9 @@ const committeeMembers = [
   {
     id: 1,
     image: memberImages[1] || defaultImage,
-    name: 'Dr. Moawad Eid Alotaibi',
+    name: 'Dr. Moawad Eid Al Otaibi',
     role:
-      'Assistant director of training and academic affair in family medicine department',
+      'Chairperson, Scientific Committee \ Assistant director of training and academic affair in family medicine department',
     organization: 'Prince sultan military medical city',
     contactNumber: '+966 50 555 9824',
     email: 'Me.alotaibi@psmmc.med.sa',
@@ -218,7 +218,7 @@ const committeeMembers = [
   {
     id: 3,
     image: memberImages[3] || defaultImage,
-    name: 'Prof. Tarek AlSaid',
+    name: 'Prof. Tarek Al Said',
     role: 'Consultant and senior trainer in family medicine',
     organization: 'Prince sultan military medical city',
     contactNumber: '0509 631 775',
@@ -305,7 +305,7 @@ const committeeMembers = [
   {
     id: 8,
     image: memberImages[8] || defaultImage,
-    name: 'Dr. Abdulrahman Alkhalifa',
+    name: 'Dr. Abdulrahman Al Khalifa',
     role:
       'Family Medicine and Mental Health Consultant\\ Program Director of Primary Mental Healthcare Fellowship',
     organization: 'Prince sultan military medical city',
@@ -360,7 +360,7 @@ const committeeMembers = [
     image: memberImages[11] || defaultImage,
     name: 'Dr. Hanan Taib',
     role:
-      'Consultant of Family Medicine and diabetes',
+      'Consultant, Family Medicine and Diabetes Patient Experience Team Leader, Family Medicine Department',
     organization: 'Prince sultan military medical city',
     contactNumber: '0555 960 015',
     email: 'Hanan.altaib@gmail.com',
@@ -399,9 +399,9 @@ const committeeMembers = [
   {
     id: 13,
     image: memberImages[13] || defaultImage,
-    name: 'Dr. Mashael Albargawi',
+    name: 'Dr. Mashael Al Bargawi',
     role:
-      'Consultant of Family Medicine and diabetes \\ Patient Experience Team Leader, Family Medicine Department',
+      'Consultant of Family Medicine and diabetes \\ Patient Experience Team Leader, Family Medicine Department  Patient Experience Team Leader, Family Medicine Department',
     organization: 'Prince sultan military medical city',
     contactNumber: '+966 55 611 5604',
     email: 'Dr-albargawi@hotmail.com',
@@ -419,7 +419,7 @@ const committeeMembers = [
   {
     id: 21,
     image: memberImages[21] || defaultImage,
-    name: 'Dr. Mervat Al-Asnaj',
+    name: 'Dr. Mervat Al Asnaj',
     role: 'Saudi Medical Journal Editor in Chief',
     organization: 'King Fahd Armed Forces Hospital',
     contactNumber: '+966 50 903 2333',
@@ -436,7 +436,7 @@ const committeeMembers = [
   {
     id: 22,
     image: memberImages[22] || defaultImage,
-    name: 'Dr. Haifa Al-Otaibi',
+    name: 'Dr. Haifa Al Otaibi',
     role: 'Deputy Director of the MOD-HS Research Institute',
     organization: 'MOD-HS',
     contactNumber: '+966 50 418 1309',

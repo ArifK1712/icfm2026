@@ -382,10 +382,10 @@
   }
   .btn-main {
     @apply relative overflow-hidden    
-    bg-linear-to-r from-[#10bdb5] via-[#18d8cd] to-[#25eee2]   
-     text-white
-    shadow-lg shadow-teal-500/30    
-    hover:shadow-xl hover:shadow-teal-500/40;
+    bg-linear-to-r from-[#10bdb5] via-[#18d8cd] to-[#25eee2]
+    text-[#032f34]/88
+    shadow-lg    
+    hover:shadow-xl hover:shadow-teal-700/40;
   }
 
   .btn-main::before {

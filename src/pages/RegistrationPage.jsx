@@ -30,6 +30,34 @@ function RegistrationPage() {
     },
   ];
 
+  const workshopFees = [
+    {
+      time: "09:00 – 12:00",
+      theme: "Research Methods & Evidence-Based Medicine",
+      capacity: "25",
+      price: "SAR 50",
+    },
+    {
+      time: "09:00 – 12:00",
+      theme: "Good Morning Sleep Medicine: From Snoring to Metabolic Health",
+      capacity: "25",
+      price: "SAR 50",
+    },
+    {
+      time: "13:00 – 16:00",
+      theme: "Hands-on Stations",
+      capacity: "25",
+      price: "SAR 50",
+    },
+    {
+      time: "13:00 – 16:00",
+      theme:
+        "Practical applications of artificial intelligence in general primary care.",
+      capacity: "25",
+      price: "SAR 50",
+    },
+  ];
+
   const entitlements = [
     "Attend the Opening Ceremony",
     "Attend all Scientific Sessions of the Main Conference",
@@ -182,10 +210,8 @@ function RegistrationPage() {
               border border-white/12
               bg-white/[0.07]
               shadow-[0_34px_100px_rgba(0,0,0,0.30)]
-              backdrop-blur-2xl
-            "
-          >
-            <div className="overflow-x-auto">
+              backdrop-blur-2xl mb-10">
+            <div className="overflow-x-auto mb-16">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-[#062e32] text-white">
@@ -222,6 +248,50 @@ function RegistrationPage() {
               </table>
             </div>
           </div>
+          
+
+          <div className="mb-10 text-center">
+            <span className="subtitle">Workshops & Fee</span>
+
+            <h2 className="text-white">Pre-Conference Workshops</h2>
+          </div>
+          <div
+            className="
+              overflow-hidden rounded-3xl
+              border border-white/12
+              bg-white/[0.07]
+              shadow-[0_34px_100px_rgba(0,0,0,0.30)]
+              backdrop-blur-2xl">
+            <div className="overflow-x-auto mb-16">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-[#062e32] text-white">
+                    <th className="p-5 text-left">Time</th>
+                    <th className="p-5 text-left">Theme</th>
+                    <th className="p-5 text-left">Capacity</th>
+                    <th className="p-5 text-left">Price</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {workshopFees.map((item, index) => (
+                    <tr
+                      key={`${item.time}-${item.theme}`}
+                      className={
+                        index % 2 === 0 ? "bg-white/[0.06]" : "bg-white/[0.10]"
+                      }
+                    >
+                      <td className="p-5 font-semibold text-white">{item.time}</td>
+                      <td className="p-5 text-white/75">{item.theme}</td>
+                      <td className="p-5 text-white/75">{item.capacity}</td>
+                      <td className="p-5 text-white/75">{item.price}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
 
           <div
             className="

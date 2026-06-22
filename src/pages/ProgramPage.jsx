@@ -16,7 +16,7 @@ const colorGuide = [
 
 const programDays = [
   {
-    day: "DAY 1",
+    day: "DAY 0",
     date: "Monday, 5 October 2026",
     title: "Pre-Conference Workshops",
     subtitle: "Capacity: 25 per workshop",
@@ -36,7 +36,7 @@ const programDays = [
       {
         time: "09:00 – 12:00",
         theme: "Lifestyle Medicine",
-        moderator: "Dr.Hanan Taib",
+        moderator: "Dr. Hanan Taib",
         topic: "Good Morning Sleep Medicine: From Snoring to Metabolic Health",
         details: [
           "Sleep 101: why sleep matters",
@@ -45,7 +45,7 @@ const programDays = [
           "Caffeine, naps & melatonin: what really helps?",
           "Sleep medications: helpful or harmful?",
         ],
-        speakers: ["Dr.Hamzah"],
+        speakers: ["Dr. Hamzah"],
       },
       {
         time: "",
@@ -58,7 +58,7 @@ const programDays = [
       {
         time: "13:00 – 16:00",
         theme: "Urgent Cases in Family Medicine",
-        moderator: "Dr.Najlah Al Oda",
+        moderator: "Dr. Najlah Al Oda",
         topic: "Hands-on Stations",
         details: [
           "Station 1 — Bedside maneuvers (Modified Valsalva, Dix-Hallpike & Epley)",
@@ -79,15 +79,15 @@ const programDays = [
     ],
   },
   {
-    day: "DAY 2",
+    day: "Day 1",
     date: "Tuesday, 6 October 2026",
-    title: "Opening & Clinical Excellence",
+    title: "Conference – Opening & Clinical Excellence",
     subtitle: "",
     sessions: [
       {
         time: "08:30 – 08:50",
         theme: "Health System Transformation & the Future of Primary Care",
-        moderator: "Dr.Meshal Al Otaib",
+        moderator: "Dr. Meshal Al Otaib",
         topic: "Reimagining primary care: the future beyond clinic walls",
         details: [],
         speakers: ["Dr. Khalid Al-Qamizi"],
@@ -95,10 +95,10 @@ const programDays = [
       {
         time: "08:55 – 09:15",
         theme: "Health System Transformation & the Future of Primary Care",
-        moderator: "Dr.Meshal Al Otaib",
+        moderator: "Dr. Meshal Al Otaib",
         topic: "Proactive Population Health Management: From Insight to Impac",
         details: [],
-        speakers: ["Dr. Saad AL battal"],
+        speakers: ["Dr. Saad Al Battal"],
       },
       {
         time: "09:15 – 09:45",
@@ -143,7 +143,7 @@ const programDays = [
         topic:
           "Diabetes Beyond Sugar: The Rise of Cardio-Renal-Metabolic Medicine",
         details: [],
-        speakers: ["Pro.Carel Le Roux", "Dr.Mohammed AL Muhthel"],
+        speakers: ["Prof. Carel Le Roux", "Dr. Mohammed Al Muhthel"],
       },
       {
         time: "13:25 – 13:45",
@@ -210,9 +210,9 @@ const programDays = [
     ],
   },
   {
-    day: "DAY 3",
+    day: "DAY 2",
     date: "Wednesday, 7 October 2026",
-    title: "Home Healthcare & Quality of Care",
+    title: "Conference – Home Healthcare & Quality of Care",
     subtitle: "Dr. Ahmed Al-Nashri",
     sessions: [
       {
@@ -231,7 +231,7 @@ const programDays = [
         topic:
           "Advanced Home Health Nursing: Building Competencies for High-Quality Care Beyond Hospital Walls",
         details: [],
-        speakers: ["Dr.Hana Alothiemin"],
+        speakers: ["Dr. Hana Alothiemin"],
       },
       {
         time: "09:15– 09:45",
@@ -242,12 +242,12 @@ const programDays = [
         details: [],
         speakers: [
           "Dr. Aysha Al-Saqeer",
-          "Dr.Ahmed Alnashri",
-          "Dr.Nour Alhuda",
+          "Dr. Ahmed Alnashri",
+          "Dr. Nour Alhuda",
         ],
       },
       {
-        time: "9:45-10:15",
+        time: "9:45 - 10:15",
         theme: "Breaks / Admin",
         moderator: "",
         topic: "☕ Coffee Break",
@@ -263,7 +263,7 @@ const programDays = [
         speakers: ["Dr. Fatimah Alhamlan"],
       },
       {
-        time: "10:40– 11:00",
+        time: "10:40 – 11:00",
         theme: "Women's Health Across the Lifespan: family medicne prospective",
         moderator: "Dr. Al Johara Al Osimi",
         topic: "Hormone-free menopause: from evidence to excellence",
@@ -271,23 +271,23 @@ const programDays = [
         speakers: ["Dr. Nimsha Alhajiri"],
       },
       {
-        time: "11:05-11:25",
+        time: "11:05 - 11:25",
         theme: "Women's Health Across the Lifespan: family medicne prospective",
         moderator: "Dr. Al Johara Al Osimi",
         topic: "Clinicl excellence in antenatal care",
         details: [],
-        speakers: ["Dr.Maha Alnemr"],
+        speakers: ["Dr. Maha Alnemr"],
       },
       {
-        time: "11:30– 11:50",
+        time: "11:30 – 11:50",
         theme: "Women's Health Across the Lifespan: family medicne prospective",
         moderator: "Dr. Al Johara Al Osimi",
         topic: "Breast cancer prevention and early detection in primary care",
         details: [],
-        speakers: ["Dr.Muna Al Muhiri"],
+        speakers: ["Dr. Muna Al Muhiri"],
       },
       {
-        time: "12:00-13:00",
+        time: "12:00 - 13:00",
         theme: "Breaks / Admin",
         moderator: "",
         topic: "🍽️ Lunch Break",
@@ -297,16 +297,16 @@ const programDays = [
       {
         time: "13:00 – 13:20",
         theme: "Quality of Care & Patient Experience",
-        moderator: "Dr. Mashael AL Barqawi",
+        moderator: "Dr. Mashael Al Barqawi",
         topic:
           "The Primary Care Paradox in Saudi Arabia : The Urgent Case for Rebuilding Saudi Primary Healthcare",
         details: [],
-        speakers: ["Dr.Yasser Al Otaibi"],
+        speakers: ["Dr. Yasser Al Otaibi"],
       },
       {
         time: "13:25 – 13:45",
         theme: "Quality of Care & Patient Experience",
-        moderator: "Dr. Mashael AL Barqawi",
+        moderator: "Dr. Mashael Al Barqawi",
         topic:
           "Designing smarter primary care clinics: access, flow & digital experience",
         details: [],
@@ -315,7 +315,7 @@ const programDays = [
       {
         time: "13:50 – 14:10",
         theme: "Quality of Care & Patient Experience",
-        moderator: "Dr. Mashael AL Barqawi",
+        moderator: "Dr. Mashael Al Barqawi",
         topic: "Measuring what matters: PROMs in modern healthcare",
         details: [],
         speakers: ["Mrs. Naseem Allmulla"],
@@ -323,7 +323,7 @@ const programDays = [
       {
         time: "14:15 – 14:35",
         theme: "Quality of Care & Patient Experience",
-        moderator: "Dr. Mashael AL Barqawi",
+        moderator: "Dr. Mashael Al Barqawi",
         topic: "Quality at Home: Understanding CBAHI Home Healthcare Standards",
         details: [],
         speakers: ["Dr. Maher Al-Sakkak"],
@@ -350,7 +350,7 @@ const programDays = [
         moderator: "Dr. Abdulrahman Al Khalifa",
         topic: "Practical mental health for family physicians",
         details: [],
-        speakers: ["Dr. Tamem ALHameed"],
+        speakers: ["Dr. Tamem Al Hameed"],
       },
       {
         time: "15:55 – 16: 15",
@@ -516,9 +516,9 @@ function ProgramPage() {
 
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="mb-14 text-center">
-            <h1 className="mb-4 text-4xl font-black text-white md:text-6xl">
+            <h2 className="mb-4 max-w-5xl mx-auto">
               5th International Symposium Family Medicine & Home Healthcare
-            </h1>
+            </h2>
           </div>
 
           <div className="mb-12">
@@ -789,8 +789,7 @@ function ProgramPage() {
                                     <span
                                       className="
               rounded-full
-              px-4 py-1.5 font-bold uppercase
-              tracking-[1.4px]
+              px-4 py-1.5 font-bold
             "
                                       style={{
                                         backgroundColor: style.bg,

@@ -56,19 +56,7 @@ function About() {
           <h2 className="mb-5">About Conference 2026</h2>
 
           <p className="mb-3">
-            The upcoming International Conference on Family Medicine promises
-            to be a larger and more comprehensive event, scheduled to take
-            place from 5–7 October at the Fairmont Hotel, Riyad
-          </p>
-
-          <p>
-            The three-day scientific program will address the full spectrum of
-            topics in Family Medicine through a diverse format that includes
-            plenary lectures, case presentations, panel debates, hands-on
-            workshops, and networking sessions. The conference is poised to be
-            a must-attend event in 2026 for Family Physicians, General
-            Practitioners, Nurse Practitioners, and other Healthcare
-            Professionals
+            The Upcoming International Conference on Family Medicine Promises to Be a Larger and More Comprehensive Event, Scheduled to Take Place From 5–7 October at the Fairmont Hotel, Riyadh.
           </p>
 
           <Link to="/about" className="btn btn-main mt-8">

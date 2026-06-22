@@ -84,7 +84,7 @@ function Footer() {
             flex gap-3 text-sm text-white/50 justify-center
           "
         >
-          <div>© 2026 SSFCM Conference. All rights reserved.</div>
+          <div>© 2026 ICFM Conference. All rights reserved.</div>
 
           
         </div>

@@ -217,10 +217,9 @@ function WelcomeMessage() {
 
             <h2 className="mb-5 text-white">Invitation</h2>
 
-            <p className="mx-auto max-w-2xl text-lg leading-8">
-              Dear Colleagues, we are pleased to invite you to participate in
-              the 5th International Family Medicine Symposium on Family Medicine
-              and Home Health Care 2026.
+            <p className="mx-auto max-w-4xl text-lg leading-8">
+              Dear Colleagues, On behalf of The Saudi Society of Family and Community Medicine (SSFCM) and the Prince Sultan Military Medical City (PSMMC) Department of Family and Community Medicine, It is our great pleasure to invite you to attend the 5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026. This prestigious three-day, expert-led educational event will be held from 5 to 7 October 2026 in Riyadh, Kingdom of Saudi Arabia. 
+
             </p>
 
             <button

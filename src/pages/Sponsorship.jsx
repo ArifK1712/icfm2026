@@ -1,14 +1,19 @@
-// import Partners from "../components/home/Partners";
-
+import prospectusPdf from "../assets/images/Sponsorship-Brochure-2026.pdf";
 
 function Sponsorship() {
   return (
-    <>
-    <div className="pt-10">
-      <h2 class="text-center h-100 flex items-center justify-center text-white">Coming Soon...</h2>
-      {/* <Partners /> */}
-    </div>
-    </>
+    <section className="text-center pt-30 py-20 min-h-[58vh] flex flex-col items-center justify-center">
+      <div className="mx-auto max-w-7xl px-4">
+        <h2>For More Information, Please Download the Sponsorship & Partnership Prospectus.</h2>
+        <a
+          href={prospectusPdf}
+          download
+          className="btn btn-main mt-15"
+        >
+          Download Brochure
+        </a>
+      </div>
+    </section>
   );
 }
 

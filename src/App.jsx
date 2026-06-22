@@ -15,7 +15,6 @@ import RegistrationPage from './pages/RegistrationPage'
 import AbstractPage from './pages/AbstractPage'
 import Sponsorship from './pages/Sponsorship'
 import ContactPage from './pages/ContactPage'
-import Accommodation from './pages/Accommodation'
 import CustomCursor from "./components/CustomCursor";
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
           <Route path="/program" element={<ProgramPage />} />
           <Route path="/registration" element={<RegistrationPage />} />
           <Route path="/call-for-abstract" element={<AbstractPage />} />
-          <Route path="/accommodation" element={<Accommodation />} />
           <Route path="/sponsorship" element={<Sponsorship />} />
           <Route path="/contact" element={<ContactPage />} />
 

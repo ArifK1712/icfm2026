@@ -114,8 +114,7 @@ function CommitteePage() {
             </h2>
 
             <p className="mx-auto max-w-3xl text-white/65">
-              Search and filter committee members by committee category, name,
-              role, organization, email, or contact number.
+              Search and filter committee members by committee category, name, role, organization.
             </p>
             </div>
             {/* Search & Filter */}

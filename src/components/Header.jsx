@@ -30,7 +30,6 @@ function Header() {
       ],
     },
     { label: "Registration", path: "/registration" },
-    { label: "Accommodation", path: "/accommodation" },
     { label: "Sponsorship & Exhibition", path: "/sponsorship" },
   ];
 

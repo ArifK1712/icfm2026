@@ -16,6 +16,7 @@ import noufAlTurkey from '../assets/images/committee/nouf-aiturkey.webp'
 import safaSedra from '../assets/images/committee/safa-sedra.webp'
 import tarekAlSaid from '../assets/images/committee/tarek-alSaid.webp'
 import turkiAlHarbi from '../assets/images/committee/turki-al-harbi.webp'
+import haifaAlOtaibi from '../assets/images/committee/haifa-al-otaibi.webp'
 
 const memberImages = {
   // Scientific Committee
@@ -44,7 +45,7 @@ const memberImages = {
 
   // Research Committee
   21: mervatAlAsnaj,
-  22: defaultImage,
+  22: haifaAlOtaibi,
 }
 
 const committeeMembers = [
@@ -52,10 +53,10 @@ const committeeMembers = [
   {
     id: 14,
     image: memberImages[14] || defaultImage,
-    name: 'Dr. Turki AL Harbi',
+    name: 'Dr. Turki Al Harbi',
     role:
-      'Chairman, Organizing Committee \\ General Supervisor of Diabetes clinical service MOD-HS',
-    organization: '',
+      'General Supervisor of Diabetes Clinical Service',
+    organization: 'MOD-HS',
     contactNumber: '+966 55 599 9493',
     email: 'tjalharbi@psmmc.med.sa',
     categories: [
@@ -73,7 +74,7 @@ const committeeMembers = [
     name: 'Dr. Faris Al Otaibi',
     role:
       'Consultant of Family Medicine \\ Supervisor of Allied Health Services in family Medicine',
-    organization: '',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 355 5547',
     email: 'fm-alotaibi@psmmc.med.sa',
     categories: [
@@ -123,8 +124,8 @@ const committeeMembers = [
   {
     id: 18,
     image: memberImages[18] || defaultImage,
-    name: 'Dr. Nawaf AL Aqeel',
-    role: 'Consultantin of Family Medicine \\ Deputy Director of Family Medicine Department',
+    name: 'Dr. Nawaf Al Aqeel',
+    role: 'Consultation of Family Medicine \\ Deputy Director of Family Medicine Department',
     organization: 'Prince sultan military medical city',
     contactNumber: '+966 55 201 1114',
     email: 'Naokeil@psmmc.med.sa',
@@ -179,7 +180,7 @@ const committeeMembers = [
     image: memberImages[1] || defaultImage,
     name: 'Dr. Moawad Eid Al Otaibi',
     role:
-      'Chairperson, Scientific Committee \ Assistant director of training and academic affair in family medicine department',
+      'Assistant Director of Training and Academic Affair in Family Medicine Department',
     organization: 'Prince sultan military medical city',
     contactNumber: '+966 50 555 9824',
     email: 'Me.alotaibi@psmmc.med.sa',
@@ -188,7 +189,7 @@ const committeeMembers = [
         name: 'Scientific Committee',
         categoryOrder: 1,
         pageOrder: 1,
-        tag: 'Chairperson',
+        tag: 'Chairman',
       },
     ],
   },
@@ -360,7 +361,7 @@ const committeeMembers = [
     image: memberImages[11] || defaultImage,
     name: 'Dr. Hanan Taib',
     role:
-      'Consultant, Family Medicine and Diabetes Patient Experience Team Leader, Family Medicine Department',
+      'Consultant, Family Medicine and Diabetes',
     organization: 'Prince sultan military medical city',
     contactNumber: '0555 960 015',
     email: 'Hanan.altaib@gmail.com',
@@ -401,7 +402,7 @@ const committeeMembers = [
     image: memberImages[13] || defaultImage,
     name: 'Dr. Mashael Al Bargawi',
     role:
-      'Consultant of Family Medicine and diabetes \\ Patient Experience Team Leader, Family Medicine Department  Patient Experience Team Leader, Family Medicine Department',
+      'Consultant of Family Medicine and Diabetes \\ Patient Experience Team Leader, Family Medicine Department',
     organization: 'Prince sultan military medical city',
     contactNumber: '+966 55 611 5604',
     email: 'Dr-albargawi@hotmail.com',
@@ -419,9 +420,9 @@ const committeeMembers = [
   {
     id: 21,
     image: memberImages[21] || defaultImage,
-    name: 'Dr. Mervat Al Asnaj',
+    name: 'Dr. Mirvat Al Asnag',
     role: 'Saudi Medical Journal Editor in Chief',
-    organization: 'King Fahd Armed Forces Hospital',
+    organization: 'King Fahad Armed Forces Hospital',
     contactNumber: '+966 50 903 2333',
     email: 'Mirvat@kfafh.med.sa',
     categories: [

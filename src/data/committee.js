@@ -91,7 +91,7 @@ const committeeMembers = [
     image: memberImages[16] || defaultImage,
     name: 'Dr. Meshal Al Otaibi',
     role: 'Consultant of  Family Medicine',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 511 3488',
     email: 'mmiteb@psmmc.med.sa',
     categories: [
@@ -109,7 +109,7 @@ const committeeMembers = [
     name: 'Dr. Nouf Al Turkey',
     role:
       'Consultant of Family Medicine and in charge Royal guard clinic in family medicine department',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 336 0423',
     email: 'NTURKI@psmmc.med.sa',
     categories: [
@@ -126,7 +126,7 @@ const committeeMembers = [
     image: memberImages[18] || defaultImage,
     name: 'Dr. Nawaf Al Aqeel',
     role: 'Consultation of Family Medicine \\ Deputy Director of Family Medicine Department',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 55 201 1114',
     email: 'Naokeil@psmmc.med.sa',
     categories: [
@@ -144,7 +144,7 @@ const committeeMembers = [
     name: 'Dr. Fahad Al Romaih',
     role:
       'Consultant  of Family Medicine and Mental Health\\ head of physics affairs in family and community department',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 646 4427',
     email: 'Fromaih@psmmc.med.sa',
     categories: [
@@ -161,7 +161,7 @@ const committeeMembers = [
     image: memberImages[20] || defaultImage,
     name: 'Ms. Najlaa khalil',
     role: 'Head of Training & Academic Affairs Office',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 54 852 3323',
     email: 'Najlaakhalil@hotmail.com',
     categories: [
@@ -181,7 +181,7 @@ const committeeMembers = [
     name: 'Dr. Moawad Eid Al Otaibi',
     role:
       'Assistant Director of Training and Academic Affair in Family Medicine Department',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 555 9824',
     email: 'Me.alotaibi@psmmc.med.sa',
     categories: [
@@ -198,7 +198,7 @@ const committeeMembers = [
     image: memberImages[2] || defaultImage,
     name: 'Prof. Mostafa Kofi',
     role: 'Consultant & Senior Trainer in Occupational Medicine',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '0501 436 859',
     email: 'Moustafafouad@yahoo.com',
     categories: [
@@ -221,7 +221,7 @@ const committeeMembers = [
     image: memberImages[3] || defaultImage,
     name: 'Prof. Tarek Al Said',
     role: 'Consultant and senior trainer in family medicine',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '0509 631 775',
     email: 'Telsaid@psmmc.med.sa',
     categories: [
@@ -239,7 +239,7 @@ const committeeMembers = [
     name: 'Prof. Ayman Afifi',
     role:
       'Consultant and senior trainer in family medicine\\ Director of Lifestyle Medicine Fellowship',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 283 4270',
     email: 'iymen16@gmail.com',
     categories: [
@@ -257,7 +257,7 @@ const committeeMembers = [
     name: 'Dr. Najla Aodh',
     role:
       'Consultant and  trainer in family medicine \\ Director of Family Medicine Residency Program',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '550 617 218',
     email: 'nja-1@hotmail.com',
     categories: [
@@ -274,7 +274,7 @@ const committeeMembers = [
     image: memberImages[6] || defaultImage,
     name: 'Dr. Ghada Al Arfaj',
     role: 'Consultant and senior trainer in family medicine',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 542 3097',
     email: 'Dr_ghada199@yahoo.com',
     categories: [
@@ -291,7 +291,7 @@ const committeeMembers = [
     image: memberImages[7] || defaultImage,
     name: 'Dr. Jawharah Al Osimi',
     role: 'Consultant of Family medicine and Women Health',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '550 720 999',
     email: 'Joharh.al@gmail.com',
     categories: [
@@ -309,7 +309,7 @@ const committeeMembers = [
     name: 'Dr. Abdulrahman Al Khalifa',
     role:
       'Family Medicine and Mental Health Consultant\\ Program Director of Primary Mental Healthcare Fellowship',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 55 513 9342',
     email: 'Akalkhalifah@psmmc.med.sa',
     categories: [
@@ -327,7 +327,7 @@ const committeeMembers = [
     name: 'Dr. Safa Sedra',
     role:
       'Consultant of Preventive medicine \\ Program Director of Preventive medicine residency program',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '505 241 415',
     email: 'dr.sedrah@hotmail.com',
     categories: [
@@ -344,7 +344,7 @@ const committeeMembers = [
     image: memberImages[10] || defaultImage,
     name: 'Dr. Nawaf Mohammed Basulaib',
     role: 'Emergency medicine consultant \\ Urgent care fellowship director',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '0560 277 778',
     email: 'Nbasulaib@gmail.com',
     categories: [
@@ -362,7 +362,7 @@ const committeeMembers = [
     name: 'Dr. Hanan Taib',
     role:
       'Consultant, Family Medicine and Diabetes',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '0555 960 015',
     email: 'Hanan.altaib@gmail.com',
     categories: [
@@ -385,7 +385,7 @@ const committeeMembers = [
     image: memberImages[12] || defaultImage,
     name: 'Ms. Najla Khaleel',
     role: 'Head of Training & Academic Affairs Office',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 54 852 3323',
     email: 'Najlaakhalil@hotmail.com',
     categories: [
@@ -403,7 +403,7 @@ const committeeMembers = [
     name: 'Dr. Mashael Al Bargawi',
     role:
       'Consultant of Family Medicine and Diabetes \\ Patient Experience Team Leader, Family Medicine Department',
-    organization: 'Prince sultan military medical city',
+    organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 55 611 5604',
     email: 'Dr-albargawi@hotmail.com',
     categories: [

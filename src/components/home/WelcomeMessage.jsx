@@ -217,9 +217,10 @@ function WelcomeMessage() {
 
             <h2 className="mb-5 text-white">Invitation</h2>
 
-            <p className="mx-auto max-w-4xl text-lg leading-8">
-              Dear Colleagues, On behalf of The Saudi Society of Family and Community Medicine (SSFCM) and the Prince Sultan Military Medical City (PSMMC) Department of Family and Community Medicine, It is our great pleasure to invite you to attend the 5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026. This prestigious three-day, expert-led educational event will be held from 5 to 7 October 2026 in Riyadh, Kingdom of Saudi Arabia. 
-
+            <p className="mx-auto max-w-4xl text-lg leading-8 px-5">
+              Dear Colleagues,
+On behalf of the Saudi Society of Family and Community Medicine (SSFCM), we are pleased to invite you to participate in the 5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026.
+This distinguished 2-days scientific event will take place from 6–7 October 2026 with Pre-Conference Workshops on 5 October, 2026 in Riyadh, Kingdom of Saudi Arabia, bringing together leading healthcare professionals, academics, and policymakers from across the region and beyond.
             </p>
 
             <button
@@ -319,101 +320,70 @@ function WelcomeMessage() {
                 <p className="font-bold text-white">Dear Colleagues,</p>
 
                 <p className="text-[#d9fffb]/72">
-  On behalf of The{" "}
-  <b className="text-white">
-    Saudi Society of Family and Community Medicine (SSFCM)
-  </b>{" "}
-  and the{" "}
-  <b className="text-white">
-    Prince Sultan Military Medical City (PSMMC) Department of Family and
-    Community Medicine
-  </b>
-  , we are honored to invite your esteemed organization to support and
-  participate in the{" "}
-  <b className="text-white">
-    5th International Family Medicine Symposium on Family Medicine and Home
-    Health Care 2026
-  </b>
-  . This prestigious three-day, expert-led educational event will be held from{" "}
-  <b className="text-white">5 to 7 October 2026</b> in Riyadh, Kingdom of Saudi
-  Arabia.
-</p>
-
-                <p className="text-[#d9fffb]/72">
-                  This distinguished 2-days scientific event will take place
-                  from 6–7 October 2026 with Pre-Conference Workshops on 5
-                  October, 2026 in Riyadh, Kingdom of Saudi Arabia, bringing
-                  together leading healthcare professionals, academics, and
-                  policymakers from across the region and beyond.
+                  On behalf of the{" "}
+                  <b className="text-white">
+                    Saudi Society of Family and Community Medicine (SSFCM),
+                  </b>{" "}
+                  we are pleased to invite you to participate in the{" "}
+                  <b className="text-white">
+                    5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026.
+                  </b>
                 </p>
 
                 <p className="text-[#d9fffb]/72">
-                  Building on the success of previous editions, the 2026
-                  symposium aims to serve as a premier platform for the exchange
-                  of knowledge, innovation, and best practices in family
-                  medicine and home healthcare. The scientific program will
-                  feature a diverse and forward-looking agenda, including:
+                  This distinguished 2-days scientific event will take place from <b className="text-white">6–7 October 2026 with Pre-Conference Workshops on 5 October, 2026 in Riyadh, Kingdom of Saudi Arabia</b>, bringing together leading healthcare professionals, academics, and policymakers from across the region and beyond.
+                </p>
+
+                <p className="text-[#d9fffb]/72">
+                  Building on the success of previous editions, the 2026 symposium aims to serve as a premier platform for the <b className="text-white">exchange of knowledge, innovation, and best practices in family medicine and home healthcare</b>. The scientific program will feature a diverse and forward-looking agenda, including:
                 </p>
 
                 <ul className="mb-4 list-disc space-y-2 pl-4 text-lg text-[#d9fffb]/72">
                   <li>
-                    High-level scientific presentations by international and
-                    regional experts
+                    High-level scientific presentations by international and regional experts
                   </li>
                   <li>
-                    Interactive panel discussions addressing key challenges and
-                    future trends
+                    Interactive panel discussions addressing key challenges and future trends
                   </li>
                   <li>
-                    Practical, hands-on workshops designed to enhance clinical
-                    skills and healthcare delivery
+                    Practical, hands-on workshops designed to enhance clinical skills and healthcare delivery
                   </li>
                 </ul>
 
                 <p className="text-[#d9fffb]/72">
-                  The symposium is expected to host over 1,000 in-person
-                  participants, offering exceptional opportunities for
-                  networking, collaboration, and professional development within
-                  a dynamic and engaging environment.
+                  The symposium is expected to host <b className="text-white">over 1,000 in-person participants</b>, offering exceptional opportunities for <b className="text-white">networking, collaboration, and professional development</b> within a dynamic and engaging environment.
                 </p>
 
                 <p className="text-[#d9fffb]/72">
-                  In addition to the scientific sessions, a comprehensive
-                  exhibition will run alongside the program, showcasing the
-                  latest advancements in healthcare services, technologies, and
-                  solutions.
+                  In addition to the scientific sessions, a comprehensive exhibition will run alongside the program, showcasing the latest advancements in healthcare services, technologies, and solutions.
                 </p>
 
                 <p className="text-[#d9fffb]/72">
-                  We are pleased to confirm that MCI Saudi Arabia, operating
-                  under license from Alrowad Exhibitions and Conferences
-                  Organizing Co., has been appointed by SSFCM and PSMMC as the
-                  official conference organizer.
+                  We are pleased to confirm that <b className="text-white">MCI Saudi Arabia</b>, operating under license from <b className="text-white">Alrowad Exhibitions and Conferences Organizing Co.</b>, has been appointed by <b className="text-white">SSFCM and PSMMC</b> as the official conference organizer.
                 </p>
 
                 <p className="mb-6 text-[#d9fffb]/72">
-                  We warmly encourage you to join us for this important event
-                  and contribute to advancing the future of family medicine and
-                  home healthcare. We look forward to welcoming you in Riyadh.
+                  We warmly encourage you to join us for this important event and contribute to advancing the future of family medicine and home healthcare.
+                  <br />
+                  We look forward to welcoming you in Riyadh.
                 </p>
 
                 <div
                   className="
-              mt-7 flex flex-wrap items-center justify-between gap-6
-              rounded-[26px] border border-[#25e7dc]/18 bg-[#052f34]/70
-              p-5
-            "
+                    mt-7 flex flex-wrap items-center justify-between gap-6
+                    rounded-[26px] border border-[#25e7dc]/18 bg-[#052f34]/70
+                    p-5
+                  "
                 >
                   <div>
-                    <p className="mb-1 text-[#d9fffb]/72">Yours sincerely,</p>
 
                     <h5 className="mb-1 text-lg font-bold text-white">
+                      Yours sincerely,<br />
                       Organizing Committee
                     </h5>
 
                     <p className="mb-0 max-w-md text-[#d9fffb]/72">
-                      5th International Family Medicine Symposium on Family
-                      Medicine and Home Health Care 2026
+                      5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026
                     </p>
                   </div>
 

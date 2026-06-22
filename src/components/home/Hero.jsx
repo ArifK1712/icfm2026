@@ -236,7 +236,7 @@ function Hero() {
               </div>
 
               <div>
-                <h4 className="text-lg font-black text-white">
+                <h4 className="text-lg font-black text-white text-start">
                   5 October 2026
                 </h4>
 
@@ -260,7 +260,7 @@ function Hero() {
               </div>
 
               <div>
-                <h4 className="text-lg font-black text-white">
+                <h4 className="text-lg font-black text-white text-start">
                   6-7 October 2026
                 </h4>
 

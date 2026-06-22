@@ -17,16 +17,23 @@ function RegistrationPage() {
   const registrationFees = [
     {
       category: "Physicians",
-      earlyBird: "SAR 250",
-      regular: "SAR 350",
-      late: "SAR 500",
+      earlyBird: "SAR 150",
+      regular: "SAR 250",
+      late: "SAR 350",
     },
     {
       category:
-        "Students / Residents, Nurses & Other allied Health Professionals",
-      earlyBird: "SAR 200",
-      regular: "SAR 300",
-      late: "SAR 400",
+        "Students / Residents",
+      earlyBird: "SAR 50",
+      regular: "SAR 100",
+      late: "SAR 150",
+    },
+    {
+      category:
+        "Nurses & Other Allied Health Professionals",
+      earlyBird: "SAR 100",
+      regular: "SAR 150",
+      late: "SAR 200",
     },
   ];
 
@@ -211,7 +218,7 @@ function RegistrationPage() {
               bg-white/[0.07]
               shadow-[0_34px_100px_rgba(0,0,0,0.30)]
               backdrop-blur-2xl mb-10">
-            <div className="overflow-x-auto mb-16">
+            <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-[#062e32] text-white">
@@ -262,7 +269,7 @@ function RegistrationPage() {
               bg-white/[0.07]
               shadow-[0_34px_100px_rgba(0,0,0,0.30)]
               backdrop-blur-2xl">
-            <div className="overflow-x-auto mb-16">
+            <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-[#062e32] text-white">

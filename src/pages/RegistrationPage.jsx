@@ -206,11 +206,49 @@ function RegistrationPage() {
 
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="mb-10 text-center">
-            <span className="subtitle">Registration Category & Fee</span>
-
-            <h2 className="text-white">Registration Category & Fee</h2>
+            <span className="subtitle">Workshops & Fee</span>
+            <h2 className="text-white">Pre-Conference Workshops</h2>
           </div>
+          <div
+            className="
+              overflow-hidden rounded-3xl
+              border border-white/12
+              bg-white/[0.07]
+              shadow-[0_34px_100px_rgba(0,0,0,0.30)]
+              backdrop-blur-2xl mb-10">
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-[#062e32] text-white">
+                    <th className="p-5 text-left">Time</th>
+                    <th className="p-5 text-left">Theme</th>
+                    <th className="p-5 text-left">Capacity</th>
+                    <th className="p-5 text-left">Price</th>
+                  </tr>
+                </thead>
 
+                <tbody>
+                  {workshopFees.map((item, index) => (
+                    <tr
+                      key={`${item.time}-${item.theme}`}
+                      className={
+                        index % 2 === 0 ? "bg-white/[0.06]" : "bg-white/[0.10]"
+                      }
+                    >
+                      <td className="p-5 font-semibold text-white">{item.time}</td>
+                      <td className="p-5 text-white/75">{item.theme}</td>
+                      <td className="p-5 text-white/75">{item.capacity}</td>
+                      <td className="p-5 text-white/75">{item.price}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className="mb-10 text-center">
+            <span className="subtitle">Registration Category & Fee</span>
+            <h2 className="text-white">Conference - Registration Category & Fee</h2>
+          </div>
           <div
             className="
               overflow-hidden rounded-3xl
@@ -254,52 +292,9 @@ function RegistrationPage() {
                 </tbody>
               </table>
             </div>
-          </div>
+          </div>  
+                 
           
-
-          <div className="mb-10 text-center">
-            <span className="subtitle">Workshops & Fee</span>
-
-            <h2 className="text-white">Pre-Conference Workshops</h2>
-          </div>
-          <div
-            className="
-              overflow-hidden rounded-3xl
-              border border-white/12
-              bg-white/[0.07]
-              shadow-[0_34px_100px_rgba(0,0,0,0.30)]
-              backdrop-blur-2xl">
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="bg-[#062e32] text-white">
-                    <th className="p-5 text-left">Time</th>
-                    <th className="p-5 text-left">Theme</th>
-                    <th className="p-5 text-left">Capacity</th>
-                    <th className="p-5 text-left">Price</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  {workshopFees.map((item, index) => (
-                    <tr
-                      key={`${item.time}-${item.theme}`}
-                      className={
-                        index % 2 === 0 ? "bg-white/[0.06]" : "bg-white/[0.10]"
-                      }
-                    >
-                      <td className="p-5 font-semibold text-white">{item.time}</td>
-                      <td className="p-5 text-white/75">{item.theme}</td>
-                      <td className="p-5 text-white/75">{item.capacity}</td>
-                      <td className="p-5 text-white/75">{item.price}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-
           <div
             className="
               mt-6 rounded-3xl border border-white/12
@@ -372,8 +367,7 @@ function RegistrationPage() {
 
               <p className="text-white/70">
                 The conference is pleased to offer letters of invitation to those
-                planning to attend “4th International Conference on Community
-                Health & Primary Healthcare 2024” at Fairmont Hotel, Riyadh.
+                planning to attend “5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026.
               </p>
 
               <p className="text-white/70">

@@ -108,7 +108,7 @@ const committeeMembers = [
     image: memberImages[17] || defaultImage,
     name: 'Dr. Nouf Al Turkey',
     role:
-      'Consultant of Family Medicine and in Charge Royal guard Clinic in Family Medicine Department',
+      'Consultant of Family Medicine and in Charge Royal Guard Clinic in Family Medicine Department',
     organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 336 0423',
     email: 'NTURKI@psmmc.med.sa',
@@ -361,7 +361,7 @@ const committeeMembers = [
     image: memberImages[11] || defaultImage,
     name: 'Dr. Hanan Taib',
     role:
-      'Consultant of Family Medicine and Diabetes',
+      'Consultant, Family Medicine and Diabetes',
     organization: 'Prince Sultan Military Medical City',
     contactNumber: '0555 960 015',
     email: 'Hanan.altaib@gmail.com',

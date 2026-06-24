@@ -22,15 +22,13 @@ function RegistrationPage() {
       late: "SAR 350",
     },
     {
-      category:
-        "Students / Residents",
+      category: "Students / Residents",
       earlyBird: "SAR 50",
       regular: "SAR 100",
       late: "SAR 150",
     },
     {
-      category:
-        "Nurses & Other Allied Health Professionals",
+      category: "Nurses & Other Allied Health Professionals",
       earlyBird: "SAR 100",
       regular: "SAR 150",
       late: "SAR 200",
@@ -46,20 +44,20 @@ function RegistrationPage() {
     },
     {
       time: "09:00 – 12:00",
-      theme: "Good Morning Sleep Medicine: From Snoring to Metabolic Health",
+      theme: "Sleep Medicine: From Snoring to Metabolic Health",
       capacity: "25",
       price: "SAR 50",
     },
     {
       time: "13:00 – 16:00",
-      theme: "Hands-on Stations",
+      theme: "Urgent Cases in Family Medicine",
       capacity: "25",
       price: "SAR 50",
     },
     {
       time: "13:00 – 16:00",
       theme:
-        "Practical applications of artificial intelligence in general primary care.",
+        "AI in Primary Care",
       capacity: "25",
       price: "SAR 50",
     },
@@ -90,7 +88,6 @@ function RegistrationPage() {
   return (
     <>
       <section className="relative overflow-hidden pt-30 py-16 text-white">
-
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="grid gap-6 lg:grid-cols-3">
             <div
@@ -203,11 +200,16 @@ function RegistrationPage() {
         id="registration-fees"
         className="relative overflow-hidden py-16 text-white"
       >
-
         <div className="relative z-10 mx-auto max-w-7xl px-4">
-          <div className="mb-10 text-center">
-            <span className="subtitle">Workshops & Fee</span>
-            <h2 className="text-white">Pre-Conference Workshops</h2>
+          <div className="mb-10 text-center sm:text-start sm:flex justify-between items-center">
+            <div>
+              <span className="subtitle">Workshops & Fee</span>
+              <h2 className="text-white">Pre - Conference Workshops</h2>
+            </div>
+            <div className="inline-flex items-center gap-2 text-nowrap rounded-full border border-white/20 bg-white/10 px-5 py-2 text-lg font-semibold text-white backdrop-blur-xl">
+              <CalendarDays className="text-[#25e7dc]" />
+              <span>5 October 2026</span>
+            </div>
           </div>
           <div
             className="
@@ -215,7 +217,8 @@ function RegistrationPage() {
               border border-white/12
               bg-white/[0.07]
               shadow-[0_34px_100px_rgba(0,0,0,0.30)]
-              backdrop-blur-2xl mb-10">
+              backdrop-blur-2xl mb-10"
+          >
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
@@ -235,7 +238,9 @@ function RegistrationPage() {
                         index % 2 === 0 ? "bg-white/[0.06]" : "bg-white/[0.10]"
                       }
                     >
-                      <td className="p-5 font-semibold text-white">{item.time}</td>
+                      <td className="p-5 font-semibold text-white">
+                        {item.time}
+                      </td>
                       <td className="p-5 text-white/75">{item.theme}</td>
                       <td className="p-5 text-white/75">{item.capacity}</td>
                       <td className="p-5 text-white/75">{item.price}</td>
@@ -245,9 +250,15 @@ function RegistrationPage() {
               </table>
             </div>
           </div>
-          <div className="mb-10 text-center">
-            <span className="subtitle">Registration Category & Fee</span>
-            <h2 className="text-white">Conference - Registration Category & Fee</h2>
+          <div className="mb-10 text-center sm:text-start sm:flex justify-between items-center">
+            <div>
+              <span className="subtitle">Registration Category & Fee</span>
+              <h2 className="text-white">Conference - Registration Category & Fee</h2>
+            </div>
+            <div className="inline-flex items-center gap-2 text-nowrap rounded-full border border-white/20 bg-white/10 px-5 py-2 text-lg font-semibold text-white backdrop-blur-xl">
+              <CalendarDays className="text-[#25e7dc]" />
+              <span>6–7 October 2026</span>
+            </div>
           </div>
           <div
             className="
@@ -255,7 +266,8 @@ function RegistrationPage() {
               border border-white/12
               bg-white/[0.07]
               shadow-[0_34px_100px_rgba(0,0,0,0.30)]
-              backdrop-blur-2xl mb-10">
+              backdrop-blur-2xl mb-10"
+          >
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
@@ -292,9 +304,8 @@ function RegistrationPage() {
                 </tbody>
               </table>
             </div>
-          </div>  
-                 
-          
+          </div>
+
           <div
             className="
               mt-6 rounded-3xl border border-white/12
@@ -311,8 +322,8 @@ function RegistrationPage() {
 
             <p className="text-white/70">
               Registered Physicians, Residents, Nurses, Medical Students are
-              entitled to attend all scientific sessions, the exhibition, as well
-              as receive the congress material.
+              entitled to attend all scientific sessions, the exhibition, as
+              well as receive the congress material.
             </p>
 
             <p className="text-white/70">
@@ -325,33 +336,32 @@ function RegistrationPage() {
       </section>
 
       <section className="relative overflow-hidden py-16 text-white">
-
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div
-  className="
+              className="
     rounded-3xl border border-[#16d8cd]/24
     bg-[radial-gradient(circle_at_12%_20%,rgba(22,216,205,0.22),transparent_26%),radial-gradient(circle_at_88%_70%,rgba(37,231,220,0.16),transparent_28%),linear-gradient(135deg,#043d3d,#063f43_55%,#032f34)]
     p-7 text-white
     backdrop-blur-2xl
   "
->
-  <div className="mb-5 flex items-center gap-3">
-    <CalendarDays className="text-[#25e7dc]" size={26} />
-    <h3 className="text-white">Registration Terms</h3>
-  </div>
+            >
+              <div className="mb-5 flex items-center gap-3">
+                <CalendarDays className="text-[#25e7dc]" size={26} />
+                <h3 className="text-white">Registration Terms</h3>
+              </div>
 
-  <p className="text-[#d9fffb]/72">
-    Please read the registration terms and conditions carefully
-    before beginning online registration.
-  </p>
+              <p className="text-[#d9fffb]/72">
+                Please read the registration terms and conditions carefully
+                before beginning online registration.
+              </p>
 
-  <p className="text-[#d9fffb]/72">
-    Should there be no payment received within the given grace
-    period of 10 working days, we reserve the right to cancel your
-    registration.
-  </p>
-</div>
+              <p className="text-[#d9fffb]/72">
+                Should there be no payment received within the given grace
+                period of 10 working days, we reserve the right to cancel your
+                registration.
+              </p>
+            </div>
 
             <div
               className="
@@ -366,8 +376,9 @@ function RegistrationPage() {
               </div>
 
               <p className="text-white/70">
-                The conference is pleased to offer letters of invitation to those
-                planning to attend “5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026.
+                The conference is pleased to offer letters of invitation to
+                those planning to attend “5th International Family Medicine
+                Symposium on Family Medicine and Home Health Care 2026.
               </p>
 
               <p className="text-white/70">
@@ -380,9 +391,9 @@ function RegistrationPage() {
               <p className="text-white/70">
                 <b className="text-white">Note:</b> This invitation letter is
                 also to assist delegate in obtaining a visa for entering KSA to
-                participate in the International Conference on Community Health &
-                Primary Healthcare. To obtain the Invitation letter please write
-                us at{" "}
+                participate in the International Conference on Community Health
+                & Primary Healthcare. To obtain the Invitation letter please
+                write us at{" "}
                 <Link
                   to="mailto:ajay.gupta@wearemci.com"
                   className="text-[#22d3c8] underline"
@@ -396,7 +407,6 @@ function RegistrationPage() {
       </section>
 
       <section className="relative overflow-hidden py-16 text-white">
-
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           <div className="mb-10 text-center">
             <span className="subtitle">Cancellation & Refund Policy</span>

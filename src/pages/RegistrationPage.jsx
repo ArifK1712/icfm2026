@@ -50,7 +50,7 @@ function RegistrationPage() {
     },
     {
       time: "13:00 – 16:00",
-      theme: "Urgent Cases in Family Medicine Hands-on",
+      theme: "Urgent Cases in Family Medicine (Hands-on)",
       capacity: "25",
       price: "SAR 50",
     },

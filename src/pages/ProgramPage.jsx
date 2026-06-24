@@ -548,7 +548,7 @@ function ProgramPage() {
             </div>
           </div>
 
-          <div
+          {/* <div
             className="
               mb-12 rounded-[32px]
               border border-[#12c4bb]/22
@@ -599,7 +599,7 @@ function ProgramPage() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="space-y-10">
             {programDays.map((dayItem) => (

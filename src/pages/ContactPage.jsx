@@ -32,22 +32,6 @@ function ContactPage() {
       /> */}
 
       <section className="relative overflow-hidden pt-30 py-16 text-white">
-        {/* Brochure Theme Background */}
-        <div
-          className="
-            absolute inset-0
-            bg-[radial-gradient(circle_at_12%_18%,rgba(22,216,205,0.22),transparent_28%),radial-gradient(circle_at_88%_28%,rgba(37,231,220,0.16),transparent_26%),linear-gradient(135deg,#043d3d,#063f43_58%,#032f34)]
-          "
-        />
-
-        {/* Grid Background */}
-        <div
-          className="
-            absolute inset-0 opacity-[0.16]
-            bg-[linear-gradient(rgba(37,231,220,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(37,231,220,0.12)_1px,transparent_1px)]
-            bg-size-[58px_58px]
-          "
-        />
 
         {/* Decorative Background Glow */}
         <div className="absolute -left-24 top-20 h-80 w-80 rounded-full bg-[#16d8cd]/18 blur-3xl animate-[floatGlow_12s_ease-in-out_infinite]" />

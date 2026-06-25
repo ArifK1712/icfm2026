@@ -531,7 +531,7 @@ function RegistrationPage() {
 
           <div className="mt-10 text-center">
             <Link
-              to="https://confkt.congenie.com/main-form/"
+              to="https://icfmconference.congenie.com/"
               target="_blank"
               className="btn btn-main"
             >

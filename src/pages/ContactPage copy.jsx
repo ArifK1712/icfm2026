@@ -31,7 +31,7 @@ function ContactPage() {
         title="Contact 5th ICFM"
       /> */}
 
-      <section className="relative overflow-hidden pt-30 py-16 text-white">
+      <section className="relative overflow-hidden bg-[#043d3d] pt-30 py-16 text-white">
         {/* Brochure Theme Background */}
         <div
           className="
@@ -64,13 +64,14 @@ function ContactPage() {
 
             <p className="text-[#d9fffb]/72">
               Have a question about registration, speakers, sponsorship,
-              abstract submission, or general symposium information? Email us and our team will get back to you.
+              abstract submission, or general symposium information? Send us a
+              message and our team will get back to you.
             </p>
           </div>
 
-          <div className="">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
             {/* Left Contact Info */}
-            <div className="grid gap-10 grid-cols-2">
+            <div className="space-y-6">
               {contactDetails.map((item, index) => {
                 const Icon = item.icon;
 
@@ -146,7 +147,7 @@ function ContactPage() {
                 bg-[linear-gradient(150deg,rgba(5,79,81,0.72),rgba(3,47,52,0.58))]
                 p-6
                 backdrop-blur-2xl
-                md:p-8 lg:p-10 hidden
+                md:p-8 lg:p-10
               "
             >
               {/* Decorative Shapes */}

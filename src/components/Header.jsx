@@ -24,7 +24,7 @@ function Header() {
           path: "/speakers",
         },
         {
-          label: "Call for Abstracts",
+          label: "Call for Abstract",
           path: "/call-for-abstract",
         },
       ],

@@ -17,6 +17,7 @@ import safaSedra from '../assets/images/committee/safa-sedra.webp'
 import tarekAlSaid from '../assets/images/committee/tarek-alSaid.webp'
 import turkiAlHarbi from '../assets/images/committee/turki-al-harbi.webp'
 import haifaAlOtaibi from '../assets/images/committee/haifa-al-otaibi.webp'
+import farisalotaibi from '../assets/images/committee/faris-al-otaibi.webp'
 
 const memberImages = {
   // Scientific Committee
@@ -36,11 +37,11 @@ const memberImages = {
 
   // Organizing Committee
   14: turkiAlHarbi,
-  15: defaultImage,
+  15: farisalotaibi,
   16: meshalAlOtaibi,
   17: noufAlTurkey,
   18: nawafAlAqeel,
-  19: fahadAlromaih,
+  19: defaultImage,
   20: najlaaKhalil,
 
   // Research Committee
@@ -73,7 +74,7 @@ const committeeMembers = [
     image: memberImages[15] || defaultImage,
     name: 'Dr. Faris Al Otaibi',
     role:
-      'Consultant of Family Medicine \\ Supervisor of Allied Health Services in Family Medicine',
+      'Director of Al-Wizarat Health Center / Director of Allied Medical Services in Family Medicine',
     organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 355 5547',
     email: 'fm-alotaibi@psmmc.med.sa',
@@ -143,7 +144,7 @@ const committeeMembers = [
     image: memberImages[19] || defaultImage,
     name: 'Dr. Fahad Al Romaih',
     role:
-      'Consultant of Family Medicine and Mental Health \\ Head of Physics Affairs in Family and Community Department',
+      'Consultant of Family Medicine and Mental Health \\ Head of Physician Affairs in Family and Community Department',
     organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 646 4427',
     email: 'Fromaih@psmmc.med.sa',
@@ -383,7 +384,7 @@ const committeeMembers = [
   {
     id: 12,
     image: memberImages[12] || defaultImage,
-    name: 'Ms. Najla Khaleel',
+    name: 'Ms. Najlaa Khalil',
     role: 'Head of Training & Academic Affairs Office',
     organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 54 852 3323',

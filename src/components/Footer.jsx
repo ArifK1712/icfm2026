@@ -17,7 +17,7 @@ function Footer() {
           {/* About Conference */}
           <div>
             <p className="max-w-sm leading-8 text-white/60">
-              International Family Medicine Symposium on Family Medicine and
+              5th International Family Medicine Symposium on Family Medicine and
               Home Healthcare 2026
             </p>
           </div>
@@ -47,7 +47,7 @@ function Footer() {
           {/* Contact */}
           <div>
             <h5 className="mb-5 text-white">
-              Contact
+              Technical Enquiry
             </h5>
 
             <div className="space-y-4">

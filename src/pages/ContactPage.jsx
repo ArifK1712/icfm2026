@@ -54,7 +54,7 @@ function ContactPage() {
 
           <div className="">
             {/* Left Contact Info */}
-            <div className="grid gap-10 grid-cols-2">
+            <div className="md:grid gap-6 grid-cols-2">
               {contactDetails.map((item, index) => {
                 const Icon = item.icon;
 
@@ -71,6 +71,9 @@ function ContactPage() {
                       hover:-translate-y-2
                       hover:border-[#25e7dc]/45
                       hover:shadow-[0_42px_120px_rgba(0,0,0,0.42),0_0_45px_rgba(37,231,220,0.2)]
+                      w-full
+                      mb-6
+                      md:mb-0
                     "
                   >
                     {/* Hover Shine Sweep */}
@@ -113,7 +116,7 @@ function ContactPage() {
                 );
 
                 return item.link ? (
-                  <a key={index} href={item.link} className="block">
+                  <a key={index} href={item.link} className="flex w-full">
                     {content}
                   </a>
                 ) : (

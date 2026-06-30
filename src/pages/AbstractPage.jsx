@@ -60,15 +60,15 @@ function AbstractPage() {
   const importantDates = [
     {
       title: "Submission Start Date",
-      date: "June 15, 2026",
+      date: "01 July 2026",
     },
     {
       title: "Submission End Date",
-      date: "30th July 2026",
+      date: "01 September 2026",
     },
     {
       title: "Abstract Acceptance Notification",
-      date: "24th August 2026",
+      date: "10 September 2026",
     },
   ];
 
@@ -323,7 +323,7 @@ function AbstractPage() {
       </section>
 
       {/* 9. Abstract Submission Link */}
-      <section className="relative pb-16 text-white">
+      {/* <section className="relative pb-16 text-white">
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-center">
           <Link
             to="https://abstract.congenie.com/abstract/icfm2026/abstract/login.php"
@@ -333,7 +333,7 @@ function AbstractPage() {
             Submit Abstract
           </Link>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

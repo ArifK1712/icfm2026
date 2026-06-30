@@ -105,7 +105,7 @@ function AbstractPage() {
                 <p className="font-semibold text-white">
                   The deadline for abstracts submission:
                 </p>
-                <p className="text-[#d9fffb]/75">30th July 2026</p>
+                <p className="text-[#d9fffb]/75">01 September 2026</p>
               </div>
             </div>
           </div>

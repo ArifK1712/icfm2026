@@ -32,7 +32,6 @@ const memberImages = {
   9: safaSedra,
   10: nawafMohammedBasulaib,
   11: hananTaib,
-  12: najlaaKhalil,
   13: mashaelAlbargawi,
 
   // Organizing Committee
@@ -377,23 +376,6 @@ const committeeMembers = [
         name: 'Organizing Committee',
         categoryOrder: 2,
         pageOrder: 7,
-        tag: 'Member',
-      },
-    ],
-  },
-  {
-    id: 12,
-    image: memberImages[12] || defaultImage,
-    name: 'Ms. Najlaa Khalil',
-    role: 'Head of Training & Academic Affairs Office',
-    organization: 'Prince Sultan Military Medical City',
-    contactNumber: '+966 54 852 3323',
-    email: 'Najlaakhalil@hotmail.com',
-    categories: [
-      {
-        name: 'Scientific Committee',
-        categoryOrder: 1,
-        pageOrder: 12,
         tag: 'Member',
       },
     ],

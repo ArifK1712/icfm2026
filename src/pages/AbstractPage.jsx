@@ -191,10 +191,10 @@ function AbstractPage() {
                 you do not receive an email within two weeks of submission or if
                 you have any additional queries, please contact at{" "}
                 <a
-                  href="mailto:ajay.gupta@wearemci.com"
+                  href="mailto:office@icfmconference.com"
                   className="inline-flex items-center gap-2 font-bold text-white hover:text-[#25e7dc]"
                 >
-                  ajay.gupta@wearemci.com
+                  office@icfmconference.com
                 </a>
               </p>
             </div>

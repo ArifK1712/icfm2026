@@ -19,10 +19,10 @@ const programDays = [
     day: "DAY 0",
     date: "Monday, 5 October 2026",
     title: "Pre-Conference Workshops",
-    subtitle: "Capacity: 25 per workshop",
+    subtitle: "2 Meeting Rooms for the whole day · Capacity: 25 per workshop",
     sessions: [
       {
-        time: "9:00 – 12:00",
+        time: "09:00 – 12:00",
         theme: "Research",
         moderator: "Dr. Ghada Al Arfaj",
         topic: "Research Methods & Evidence-Based Medicine",
@@ -31,13 +31,13 @@ const programDays = [
           "Statistics for non-statisticians",
           "Responsible AI use in research: ethical considerations",
         ],
-        speakers: ["Prof. Mostafa Kofi", "Prof. Tarek Al-Saied"],
+        speakers: ["Prof. Mostafa Kofi", "Prof. Tarek Al Saied"],
       },
       {
         time: "09:00 – 12:00",
         theme: "Lifestyle Medicine",
-        moderator: "Dr. Hanan Taib",
-        topic: "Good Morning Sleep Medicine: From Snoring to Metabolic Health",
+        moderator: "Dr. Hanan Taib / Dr. Reem Al Aqeel",
+        topic: "Sleep Medicine in Primary Care: A Case-Based Approach",
         details: [
           "Sleep 101: why sleep matters",
           "Early birds or night owls? Understanding your chronotype",
@@ -45,63 +45,76 @@ const programDays = [
           "Caffeine, naps & melatonin: what really helps?",
           "Sleep medications: helpful or harmful?",
         ],
-        speakers: ["Dr. Hamzah"],
+        speakers: ["Dr. Hamza Dhafar"],
       },
       {
         time: "",
         theme: "Breaks / Admin",
         moderator: "",
-        topic: "Lunch Break (60 minutes)",
-        details: [""],
+        topic: "🍽️ Lunch Break (60 minutes)",
+        details: [],
         speakers: [],
       },
       {
         time: "13:00 – 16:00",
         theme: "Urgent Cases in Family Medicine",
-        moderator: "Dr. Najlah Al Oda",
+        moderator: "Dr. Najla Al Oda / Dr. Shahed Al Wathnani",
         topic: "Hands-on Stations",
         details: [
           "Station 1 — Bedside maneuvers (Modified Valsalva, Dix-Hallpike & Epley)",
           "Station 2 — Vascular ultrasound in urgent care",
           "Station 3 — Joint injections",
         ],
-        speakers: ["Dr. Nawaf Basleeb"],
+        speakers: [
+          "Dr. Nawaf Basleeb",
+          "Dr. Abdullah Abdulmomen",
+          "Dr. Fatimah Hakami",
+        ],
       },
       {
         time: "13:00 – 16:00",
         theme: "AI in Primary Care",
-        moderator: "Prof. Ayman Afifi",
+        moderator: "Prof. Ayman Afifi / Dr. Lina Al Olaiwi",
         topic:
-          "Practical applications of artificial intelligence in general primary care.",
+          "Practical Applications of Artificial Intelligence in General Primary Care.",
         details: [],
-        speakers: ["Prof. Hassaneen"],
+        speakers: ["Prof. Mohammed Hassanien"],
       },
     ],
   },
+
   {
-    day: "Day 1",
+    day: "DAY 1",
     date: "Tuesday, 6 October 2026",
     title: "Conference – Opening & Clinical Excellence",
     subtitle: "",
     sessions: [
       {
-        time: "08:30 – 08:50",
+        time: "08:35 – 08:55",
         theme: "Health System Transformation & the Future of Primary Care",
-        moderator: "Dr. Meshal Al Otaib",
-        topic: "Reimagining primary care: the future beyond clinic walls",
+        moderator: "Dr. Mishal Al Otaiba",
+        topic: "Reimagining Primary Care: The Future Beyond Clinic Walls",
         details: [],
-        speakers: ["Dr. Khalid Al-Qamizi"],
+        speakers: ["Dr. Khalid Al Qumaizi"],
       },
       {
-        time: "08:55 – 09:15",
+        time: "09:00 – 09:20",
         theme: "Health System Transformation & the Future of Primary Care",
-        moderator: "Dr. Meshal Al Otaib",
-        topic: "Proactive Population Health Management: From Insight to Impac",
+        moderator: "Dr. Mishal Al Otaiba",
+        topic: "Proactive Population Health Management: From Insight to Impact",
         details: [],
         speakers: ["Dr. Saad Al Battal"],
       },
       {
-        time: "09:15 – 09:45",
+        time: "09:25 – 09:45",
+        theme: "",
+        moderator: "",
+        topic: "TBA",
+        details: [],
+        speakers: [],
+      },
+      {
+        time: "09:45 – 10:00",
         theme: "Breaks / Admin",
         moderator: "",
         topic: "☕ Coffee Break",
@@ -109,23 +122,34 @@ const programDays = [
         speakers: [],
       },
       {
-        time: "09:45 – 11:00",
-        theme: "Opening Ceremony",
-        moderator: "Dr. Mawadh Al-Otaibi",
-        topic: "Opening Ceremony",
-        details: [
-          "Welcome & Introduction — Dr. Mawadh Al-Otaibi",
-          "Future Vision of the Family Medicine Department at PSMMC — Dr. Azzam Al-Otaibi",
-          "Honorable Address by the Director General of MODHS — introduced by Dr. Khalid Al-Abdulkareem",
-        ],
+        time: "10:00 – 10:20",
+        theme: "Health System Transformation & the Future of Primary Care",
+        moderator: "Dr. Mishal Al Otaiba",
+        topic: "Building a World Class Primary Care Research Ecosystem",
+        details: [],
+        speakers: ["Prof. Waleed Al Hazzan"],
+      },
+      {
+        time: "10:25 – 10:55",
+        theme: "",
+        moderator: "",
+        topic: "TBA",
+        details: [],
         speakers: [],
       },
       {
         time: "11:00 – 12:00",
-        theme: "Breaks / Admin",
-        moderator: "",
-        topic: "Conference Exhibition & Winning Poster Showcase",
-        details: [],
+        theme: "Opening Ceremony",
+        moderator: "Dr. Moawad Al-Otaibi",
+        topic: "Opening Ceremony",
+        details: [
+          "Welcome & Introduction of the ICFM 2026 — Dr. Moawad Al Otaibi , Chairperson, Scientific Committee",
+          "Welcoming remarks – Dr.Turki Al Harbi, Chairman, Organizing Committee",
+          "General Manager for Strategic Partnerships",
+          "Future Vision of the Family Medicine Department at PSMMC  —  Dr.Azzam Al Otaib, Chairperson of the International Conference of Family Medicine and Home Care",
+          "Recognition Awards for Conference Committee Members —  Dr. Ali Al Shehri, General Executive Director of PSMMC ",
+          "Honorable Address by the Director General of MODHS  —  Introduced by Dr. Khalid Al Abdulkareem",
+        ],
         speakers: [],
       },
       {
@@ -143,77 +167,78 @@ const programDays = [
         topic:
           "Diabetes Beyond Sugar: The Rise of Cardio-Renal-Metabolic Medicine",
         details: [],
-        speakers: ["Prof. Carel Le Roux", "Dr. Mohammed Al Muhthel"],
+        speakers: ["Dr. Mohammed Al Mehthel"],
       },
       {
         time: "13:25 – 13:45",
         theme: "Clinical Excellence in Modern Practice",
         moderator: "Dr. Mohammed Al Eissa",
-        topic: "MASLD: the silent disease hiding in your daily clinic",
+        topic: "MASLD: The Silent Disease Hiding in Your Daily Clinic",
         details: [],
-        speakers: ["Dr. Jeffrey Lazarus", "Dr. Faisal Al-Otaibi"],
+        speakers: ["Dr. Jeffrey Lazarus"],
       },
       {
         time: "13:50 – 14:10",
         theme: "Clinical Excellence in Modern Practice",
         moderator: "Dr. Mohammed Al Eissa",
-        topic: "Not just LDL: the new conversation in lipids",
+        topic: "Not Just LDL: The New Conversation in Lipids",
         details: [],
-        speakers: ["Dr. Abdulaziz Al-Dehish"],
+        speakers: ["Dr. Abdulaziz Aldheshi"],
       },
       {
         time: "14:15 – 14:35",
         theme: "Clinical Excellence in Modern Practice",
         moderator: "Dr. Mohammed Al Eissa",
-        topic: "Sweet bones: are we missing bone fragility in diabetes?",
+        topic: "Sweet Bones: Are We Missing Bone Fragility in Diabetes?",
         details: [],
-        speakers: ["Dr. Yasser Al-Hakami"],
+        speakers: ["Dr. Yasser Al Hakami"],
       },
       {
         time: "14:40 – 15:00",
         theme:
-          "Investing in life: KSA’s Population Health Framework &GCC’s Health Future",
-        moderator: "Dr. Safa Sedrah",
+          "Investing in Life: KSA’s Population Health Framework & GCC’s Health Future",
+        moderator: "Dr. Safa Sedrah \\ Dr. Lara Al Namlah",
         topic: "Integration of Lifestyle Medicine into Saudi Primary Care",
         details: [],
-        speakers: ["Prof. Saleh Al-Rajhi"],
+        speakers: ["Prof. Saleh Al Rajhi"],
       },
       {
         time: "15:05 – 15:25",
         theme:
-          "Investing in life: KSA’s Population Health Framework &GCC’s Health Future",
-        moderator: "Dr. Safa Sedrah",
+          "Investing in Life: KSA’s Population Health Framework & GCC’s Health Future",
+        moderator: "Dr. Safa Sedrah \\ Dr. Lara Al Namlah",
         topic:
-          "Leveraging AI & wearables: personalized lifestyle prescriptions in family practice",
+          "Leveraging AI & Wearables: Personalized Lifestyle Prescriptions in Family Practice",
         details: [],
         speakers: ["Prof. Amro Jamal"],
       },
       {
         time: "15:30 – 15:50",
         theme:
-          "Investing in life: KSA’s Population Health Framework &GCC’s Health Future",
-        moderator: "Dr. Safa Sedrah",
+          "Investing in Life: KSA’s Population Health Framework & GCC’s Health Future",
+        moderator: "Dr. Safa Sedrah \\ Dr. Lara Al Namlah",
         topic:
-          "Health beyond healthcare: building Saudi Arabia's National Population Health Framework",
+          "Health Beyond Healthcare: Building Saudi Arabia's National Population Health Framework",
         details: [],
         speakers: ["Dr. Abdullah Al Arifi"],
       },
       {
         time: "15:55 – 16:15",
         theme:
-          "Investing in life: KSA’s Population Health Framework &GCC’s Health Future",
-        moderator: "Dr. Safa Sedrah",
-        topic: "The future of population health financing in the GCC",
+          "Investing in Life: KSA’s Population Health Framework & GCC’s Health Future",
+        moderator: "Dr. Safa Sedrah \\ Dr. Lara Al Namlah",
+        topic: "The Future of Population Health Financing in the GCC",
         details: [],
-        speakers: ["Dr. Sami Al Mudrae"],
+        speakers: ["Dr. Sami Al Mudarra"],
       },
     ],
   },
+
   {
     day: "DAY 2",
     date: "Wednesday, 7 October 2026",
     title: "Conference – Home Healthcare & Quality of Care",
-    subtitle: "Dr. Ahmed Al-Nashri",
+    subtitle: "Home Healthcare & Quality of Care  •  Dr. Ahmed Al Nashri",
     sessions: [
       {
         time: "08:30 – 08:50",
@@ -222,72 +247,73 @@ const programDays = [
         topic:
           "Community Geriatrics and Home-Based Care: Redesigning Care for Aging Populations",
         details: [],
-        speakers: ["Dr. Suliman Alkassar"],
+        speakers: ["Dr. Suliman Kassar"],
       },
       {
-        time: "08:55– 09:10",
+        time: "08:55 – 09:10",
         theme: "The Future of Home Healthcare & Integrated Care",
         moderator: "",
         topic:
           "Advanced Home Health Nursing: Building Competencies for High-Quality Care Beyond Hospital Walls",
         details: [],
-        speakers: ["Dr. Hana Alothiemin"],
+        speakers: ["Dr. Hana Al Othiemin"],
       },
       {
-        time: "09:15– 09:45",
+        time: "09:15 – 09:45",
         theme: "The Future of Home Healthcare & Integrated Care",
         moderator: "",
         topic:
-          "Panel discussion: Home Healthcare 2035: Shaping the Future of Home Health Care & Integrated Care",
+          "A Risk Stratification and Clinical Intervention Model for Predicting Wound Healing Success in Home Healthcare Settings",
+        details: [],
+        speakers: ["Dr. Medhat Maher"],
+      },
+      {
+        time: "09:50 – 10:10",
+        theme: "The Future of Home Healthcare & Integrated Care",
+        moderator: "",
+        topic:
+          "Panel Discussion: Home Healthcare 2035: Shaping the Future of Home Healthcare & Integrated Care",
         details: [],
         speakers: [
-          "Dr. Aysha Al-Saqeer",
-          "Dr. Ahmed Alnashri",
-          "Dr. Nour Alhuda",
+          "Dr. Aysha Al Saqeer",
+          "Dr. Ahmed Al Nashri",
+          "Dr. Nour Al Huda",
         ],
       },
       {
-        time: "9:45 - 10:15",
-        theme: "Breaks / Admin",
-        moderator: "",
-        topic: "☕ Coffee Break",
-        details: [],
-        speakers: [],
-      },
-      {
         time: "10:15 – 10:40",
-        theme: "Women's Health Across the Lifespan: family medicne prospective",
+        theme: "Women's Health Across the Lifespan: Family Medicne Prospective",
         moderator: "Dr. Al Johara Al Osimi",
         topic: "HPV Vaccination: From Evidance to Practice",
         details: [],
-        speakers: ["Dr. Fatimah Alhamlan"],
+        speakers: ["Dr. Fatimah Al Hamlan"],
       },
       {
         time: "10:40 – 11:00",
-        theme: "Women's Health Across the Lifespan: family medicne prospective",
+        theme: "Women's Health Across the Lifespan: Family Medicne Prospective",
         moderator: "Dr. Al Johara Al Osimi",
-        topic: "Hormone-free menopause: from evidence to excellence",
+        topic: "Hormone-Free Menopause: From Evidence to Excellence",
         details: [],
-        speakers: ["Dr. Nimsha Alhajiri"],
+        speakers: ["Dr. Nimsha Al Hajiri"],
       },
       {
-        time: "11:05 - 11:25",
-        theme: "Women's Health Across the Lifespan: family medicne prospective",
+        time: "11:05 – 11:25",
+        theme: "Women's Health Across the Lifespan: Family Medicne Prospective",
         moderator: "Dr. Al Johara Al Osimi",
-        topic: "Clinicl excellence in antenatal care",
+        topic: "Clinical Excellence in Antenatal Care",
         details: [],
-        speakers: ["Dr. Maha Alnemr"],
+        speakers: ["Dr. Maha Al Nemr"],
       },
       {
         time: "11:30 – 11:50",
-        theme: "Women's Health Across the Lifespan: family medicne prospective",
+        theme: "Women's Health Across the Lifespan: Family Medicne Prospective",
         moderator: "Dr. Al Johara Al Osimi",
-        topic: "Breast cancer prevention and early detection in primary care",
+        topic: "Breast Cancer Prevention and Early Detection in Primary Care",
         details: [],
-        speakers: ["Dr. Muna Al Muhiri"],
+        speakers: ["Dr. Muna Al Mohri"],
       },
       {
-        time: "12:00 - 13:00",
+        time: "12:00 – 13:00",
         theme: "Breaks / Admin",
         moderator: "",
         topic: "🍽️ Lunch Break",
@@ -299,7 +325,7 @@ const programDays = [
         theme: "Quality of Care & Patient Experience",
         moderator: "Dr. Mashael Al Barqawi",
         topic:
-          "The Primary Care Paradox in Saudi Arabia : The Urgent Case for Rebuilding Saudi Primary Healthcare",
+          "The Primary Care Paradox in Saudi Arabia: The Urgent Case for Rebuilding Saudi Primary Healthcare",
         details: [],
         speakers: ["Dr. Yasser Al Otaibi"],
       },
@@ -308,15 +334,15 @@ const programDays = [
         theme: "Quality of Care & Patient Experience",
         moderator: "Dr. Mashael Al Barqawi",
         topic:
-          "Designing smarter primary care clinics: access, flow & digital experience",
+          "Designing Smarter Primary Care Clinics: Access, Flow & Digital Experience",
         details: [],
-        speakers: ["Dr. Maram Al-Sharani"],
+        speakers: ["Dr. Maram Al Sharani"],
       },
       {
         time: "13:50 – 14:10",
         theme: "Quality of Care & Patient Experience",
         moderator: "Dr. Mashael Al Barqawi",
-        topic: "Measuring what matters: PROMs in modern healthcare",
+        topic: "Measuring What Matters: PROMs in Modern Healthcare",
         details: [],
         speakers: ["Mrs. Naseem Allmulla"],
       },
@@ -326,42 +352,41 @@ const programDays = [
         moderator: "Dr. Mashael Al Barqawi",
         topic: "Quality at Home: Understanding CBAHI Home Healthcare Standards",
         details: [],
-        speakers: ["Dr. Maher Al-Sakkak"],
+        speakers: ["Dr. Maher Al Sakkak"],
       },
       {
         time: "14:40 – 15:00",
         theme: "Minds Matter in Primary Care",
-        moderator: "Dr. Abdulrahman Al Khalifa",
-        topic: "Collaborative model of care",
+        moderator: "Dr. Abdulrahman Al Khalifah",
+        topic: "Collaborative Model of Care",
         details: [],
-        speakers: ["Dr. Abdulgader Aljarad"],
+        speakers: ["Dr. Abdulgader Al Jarad"],
       },
       {
         time: "15:05 – 15:25",
         theme: "Minds Matter in Primary Care",
-        moderator: "Dr. Abdulrahman Al Khalifa",
-        topic: "Psychopharmacology for the primary care physician",
+        moderator: "Dr. Abdulrahman Al Khalifah",
+        topic: "Psychopharmacology for the Primary Care Physician",
         details: [],
-        speakers: ["Dr. Abdulellah Alosaimi"],
+        speakers: ["Dr. Abdulellah Al Osaimi"],
       },
       {
         time: "15:30 – 15:50",
         theme: "Minds Matter in Primary Care",
-        moderator: "Dr. Abdulrahman Al Khalifa",
-        topic: "Practical mental health for family physicians",
+        moderator: "Dr. Abdulrahman Al Khalifah",
+        topic: "Practical Mental Health for Family Physicians",
         details: [],
-        speakers: ["Dr. Tamem Al Hameed"],
+        speakers: ["Dr. Tameem Al Homaid"],
       },
       {
-        time: "15:55 – 16: 15",
+        time: "15:55 – 16:15",
         theme: "Research Posters Showcase & Presentations",
         moderator: "Dr. Mostafa Kofi",
         topic: "Top 3 Winning Posters",
         details: [
-          "Panel: Prof. Waleed ALHazzani. Dr. Mervat Al-Asnaj · Dr. Haifa Al-Otaibi",
           "Presentation of the top 3 selected abstracts",
-          "Panel: conducting research in service-oriented settings",
-          
+          "Panel: Conducting research in service-oriented settings",
+          "Panel: Dr. Mirvat Al Asnag · Dr. Haifa Al Otaibi",
         ],
         speakers: [],
       },
@@ -415,7 +440,7 @@ const themeStyles = {
     bg: "rgba(236,72,153,0.14)",
     border: "rgba(236,72,153,0.38)",
   },
-  "Women's Health Across the Lifespan: family medicne prospective": {
+  "Women's Health Across the Lifespan: Family Medicne Prospective: family medicne prospective": {
     accent: "#ec4899",
     bg: "rgba(236,72,153,0.14)",
     border: "rgba(236,72,153,0.38)",
@@ -474,6 +499,11 @@ const themeStyles = {
     accent: "#14b8a6",
     bg: "rgba(20,184,166,0.14)",
     border: "rgba(20,184,166,0.38)",
+  },
+  "Investing in Life: KSA’s Population Health Framework & GCC’s Health Future": {
+    accent: "#84cc16",
+    bg: "rgba(132,204,22,0.14)",
+    border: "rgba(132,204,22,0.38)",
   },
 };
 
@@ -547,59 +577,6 @@ function ProgramPage() {
               })}
             </div>
           </div>
-
-          {/* <div
-            className="
-              mb-12 rounded-[32px]
-              border border-[#12c4bb]/22
-              bg-[linear-gradient(150deg,rgba(4,63,65,0.78),rgba(7,91,93,0.42))]
-              p-6 shadow-[0_24px_70px_rgba(0,0,0,0.24)]
-              backdrop-blur-2xl
-              md:p-8
-            "
-          >
-            <h3 className="mb-6 text-2xl font-black text-white">
-              Pre-Conference Planning — Recommendations & Audience Alignment
-            </h3>
-
-            <div
-              className="
-                grid gap-5 rounded-[24px]
-                border border-white/10
-                bg-white/[0.04]
-                p-5
-                md:grid-cols-[220px_1fr_1fr]
-              "
-            >
-              <div>
-                <p className="mb-2 text-xs font-black uppercase tracking-[1.5px] text-white/45">
-                  Item
-                </p>
-                <p className="font-bold text-[#12c4bb]">
-                  Pre-Conference Survey
-                </p>
-              </div>
-
-              <div>
-                <p className="mb-2 text-xs font-black uppercase tracking-[1.5px] text-white/45">
-                  Description
-                </p>
-                <p className="text-white/70">
-                  A short survey sent to physicians ahead of the conference to
-                  identify preferred workshop topics.
-                </p>
-              </div>
-
-              <div>
-                <p className="mb-2 text-xs font-black uppercase tracking-[1.5px] text-white/45">
-                  Objective
-                </p>
-                <p className="text-white/70">
-                  Align content with audience needs and improve engagement.
-                </p>
-              </div>
-            </div>
-          </div> */}
 
           <div className="space-y-10">
             {programDays.map((dayItem) => (
@@ -785,12 +762,9 @@ function ProgramPage() {
 
                               <div>
                                 <div className="mb-3 flex flex-wrap gap-2">
-                                  {session.theme !== "Breaks / Admin" && (
+                                  {session.theme && session.theme !== "Breaks / Admin" && (
                                     <span
-                                      className="
-              rounded-full
-              px-4 py-1.5 font-bold
-            "
+                                      className="rounded-full px-4 py-1.5 font-bold"
                                       style={{
                                         backgroundColor: style.bg,
                                         color: style.accent,
@@ -887,7 +861,7 @@ function ProgramPage() {
           </div>
 
           <div className="mt-12 text-center">
-            Closing Remarks & Farewell — Summary of key takeaways & acknowledgements · Dr. Mowad AL-Otaibi
+            Closing Remarks & Farewell — Summary of Key Takeaways & Acknowledgements · Dr. Mowad AL Otaibi
           </div>
         </div>
       </section>

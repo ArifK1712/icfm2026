@@ -270,7 +270,7 @@ const committeeMembers = [
     image: memberImages[5] || defaultImage,
     name: 'Dr. Najla Aodh',
     role:
-      'Director in Family Medicine Residency Program \\ Consultant and Trainer In Family Medicine',
+      'Director of Family Medicine Residency Program \\ Consultant and Trainer In Family Medicine',
     organization: 'Prince Sultan Military Medical City',
     contactNumber: '550 617 218',
     email: 'nja-1@hotmail.com',

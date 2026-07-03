@@ -304,7 +304,7 @@ const committeeMembers = [
     id: 7,
     image: memberImages[7] || defaultImage,
     name: 'Dr. Jawharah Al Osimi',
-    role: 'Director Of  Women Health Fellowship Program \\ Family Medicine Consultant',
+    role: 'Director of Women Health Fellowship Program \\ Family Medicine Consultant',
     organization: 'Prince Sultan Military Medical City',
     contactNumber: '550 720 999',
     email: 'Joharh.al@gmail.com',

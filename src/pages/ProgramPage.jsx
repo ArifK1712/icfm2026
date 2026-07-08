@@ -3,7 +3,7 @@ import { Coffee, Utensils, Images } from "lucide-react";
 
 const colorGuide = [
   "Opening Ceremony",
-  "Workshops (Day 1)",
+  "Workshops (Day 0)",
   "Clinical Excellence",
   "Preventive & Lifestyle",
   "Home Healthcare",
@@ -143,10 +143,10 @@ const programDays = [
         moderator: "Dr. Moawad Al-Otaibi",
         topic: "Opening Ceremony",
         details: [
-          "Welcome & Introduction of the ICFM 2026 — Dr. Moawad Al Otaibi , Chairperson, Scientific Committee",
-          "Welcoming remarks – Dr.Turki Al Harbi, Chairman, Organizing Committee",
+          "Welcome & Introduction of the ICFM 2026 — Dr. Moawad Al Otaibi, Chairperson, Scientific Committee",
+          "Welcoming remarks – Dr. Turki Al Harbi, Chairperson, Organizing Committee",
           "General Manager for Strategic Partnerships",
-          "Future Vision of the Family Medicine Department at PSMMC  —  Dr.Azzam Al Otaib, Chairperson of the International Conference of Family Medicine and Home Care",
+          "Future Vision of the Family Medicine Department at PSMMC  —  Dr. Azzam Al Otaib, Chairperson of the International Conference of Family Medicine and Home Care",
           "Recognition Awards for Conference Committee Members —  Dr. Ali Al Shehri, General Executive Director of PSMMC ",
           "Honorable Address by the Director General of MODHS  —  Introduced by Dr. Khalid Al Abdulkareem",
         ],
@@ -272,12 +272,12 @@ const programDays = [
         theme: "The Future of Home Healthcare & Integrated Care",
         moderator: "",
         topic:
-          "Panel Discussion: Home Healthcare 2035: Shaping the Future of Home Healthcare & Integrated Care",
+          "Panel Discussion: Home Healthcare 2035: Shaping the Future of Home Health Care & Integrated Care",
         details: [],
         speakers: [
           "Dr. Aysha Al Saqeer",
           "Dr. Ahmed Al Nashri",
-          "Dr. Nour Al Huda",
+          "Dr. NourAlHuda Obaidallah",
         ],
       },
       {
@@ -336,7 +336,7 @@ const programDays = [
         topic:
           "Designing Smarter Primary Care Clinics: Access, Flow & Digital Experience",
         details: [],
-        speakers: ["Dr. Maram Al Sharani"],
+        speakers: ["TBA"],
       },
       {
         time: "13:50 – 14:10",
@@ -400,7 +400,7 @@ const themeStyles = {
     bg: "rgba(250,204,21,0.16)",
     border: "rgba(250,204,21,0.42)",
   },
-  "Workshops (Day 1)": {
+  "Workshops (Day 0)": {
     accent: "#06b6d4",
     bg: "rgba(6,182,212,0.14)",
     border: "rgba(6,182,212,0.38)",

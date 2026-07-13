@@ -1,4 +1,5 @@
 // import InnerPageHero from "../components/InnerPageHero";
+import { useState } from "react";
 import { Coffee, Utensils, Images } from "lucide-react";
 
 const colorGuide = [
@@ -531,13 +532,15 @@ const cleanBreakTopic = (topic) =>
   topic.replace("☕", "").replace("🍽️", "").trim();
 
 function ProgramPage() {
+  const [activeDay, setActiveDay] = useState("DAY 0");
+
   return (
     <>
       {/* <InnerPageHero title="Program 5th ICFM" /> */}
 
       <section
         className="
-          relative overflow-hidden
+          relative
           bg-[#063b3d]
           pt-30 py-20 text-white
         "
@@ -553,7 +556,7 @@ function ProgramPage() {
 
           <div className="mb-12">
 
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="grid gap-3 grid-cols-2 sm:grid-cols-2 lg:grid-cols-5">
               {colorGuide.map((theme) => {
                 const style = getThemeStyle(theme);
 
@@ -578,8 +581,37 @@ function ProgramPage() {
             </div>
           </div>
 
+          <div
+            className="mb-10 grid grid-cols-3 gap-3 rounded-3xl border border-[#12c4bb]/20 bg-[#043f41]/45 p-4 backdrop-blur-2xl sticky top-20 z-20"
+            role="tablist"
+            aria-label="Program days"
+          >
+            {programDays.map((dayItem) => {
+              const isActive = activeDay === dayItem.day;
+
+              return (
+                <button
+                  key={dayItem.day}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => setActiveDay(dayItem.day)}
+                  className={`rounded-[18px] px-4 py-3 text-sm font-black uppercase tracking-[1.2px] transition-all duration-300 md:text-base ${
+                    isActive
+                      ? "bg-[#12c4bb] text-[#043f41] shadow-[0_12px_35px_rgba(18,196,187,0.28)]"
+                      : "border border-white/10 bg-white/[0.04] text-white/65 hover:border-[#12c4bb]/40 hover:bg-[#12c4bb]/10 hover:text-white"
+                  }`}
+                >
+                  {dayItem.day.replace("DAY", "Day")}
+                </button>
+              );
+            })}
+          </div>
+
           <div className="space-y-10">
-            {programDays.map((dayItem) => (
+            {programDays
+              .filter((dayItem) => dayItem.day === activeDay)
+              .map((dayItem) => (
               <div
                 key={dayItem.day}
                 className="

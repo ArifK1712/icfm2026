@@ -2,7 +2,9 @@ import { CalendarDays, Mic2 } from "lucide-react";
 import gsap from "gsap";
 import { useEffect, useState, useRef } from "react";
 
-import otherlogos from "../../assets/images/other-logos.png";
+import herologoone from "../../assets/images/hero-logo-1.png";
+import ssfcmlogowhite from "../../assets/images/ssfcm-logo-white.png";
+import modlogo from "../../assets/images/mod-logo.png";
 
 const eventDate = new Date("2026-10-05T00:00:00").getTime();
 
@@ -82,7 +84,7 @@ function Hero() {
     className="
       absolute left-[6%] top-[10%]
       h-72 w-72 rounded-full
-      bg-[#16d8cd]/24 blur-[95px]
+      bg-[#16d8cd]/60 blur-[95px]
       animate-heroBlobOne
     "
   />
@@ -91,7 +93,7 @@ function Hero() {
     className="
       absolute right-[8%] top-[12%]
       h-80 w-80 rounded-full
-      bg-[#25e7dc]/20 blur-[105px]
+      bg-[#25e7dc]/55 blur-[105px]
       animate-heroBlobTwo
     "
   />
@@ -100,7 +102,7 @@ function Hero() {
     className="
       absolute bottom-[4%] left-[42%]
       h-96 w-96 rounded-full
-      bg-[#039c98]/24 blur-[120px]
+      bg-[#039c98]/60 blur-[120px]
       animate-heroBlobThree
     "
   />
@@ -109,14 +111,14 @@ function Hero() {
     className="
       absolute left-[18%] bottom-[12%]
       h-64 w-64 rounded-full
-      bg-[#0fb9b1]/18 blur-[95px]
+      bg-[#0fb9b1]/55 blur-[95px]
       animate-heroBlobFour
     "
   />
 </div>
 
       {/* ECG Line */}
-      <div className="pointer-events-none absolute left-0 right-0 bottom-0  w-full overflow-hidden opacity-40">
+      <div className="pointer-events-none absolute left-0 right-0 bottom-0  w-full overflow-hidden opacity-90">
         <svg
           viewBox="0 0 1200 120"
           className="h-28 w-full"
@@ -175,12 +177,28 @@ function Hero() {
         "
       >
         <div className="w-full text-center">
-          <img
-            src={otherlogos}
-            className="mb-6 max-h-25 mx-auto"
-            alt="Other Logos"
-          />
-
+          <div className="grid grid-cols-3 items-center justify-center gap-3">
+            <img
+              src={herologoone}
+              className="mb-2 max-h-15 sm:max-h-35 mx-auto"
+              alt="Hero Logo 1"
+            />
+            <img
+              src={ssfcmlogowhite}
+              className="mb-2 max-h-50 sm:max-h-20 mx-auto"
+              alt="SSFCM Logo"
+            />
+            <img
+              src={modlogo}
+              className="mb-2 max-h-15 sm:max-h-35 mx-auto"
+              alt="Ministry of Defense Logo"
+            />
+          </div>
+          
+          {/* Theme Badge */}
+          <h3 className="px-2 text-lg font-extrabold text-teal-400 md:text-3xl mb-6 max-w-2xl mx-auto">
+            General Administration of Health Services Prince Sultan Military Medical City
+          </h3>
           {/* Title */}
           <h1
             ref={headingRef}
@@ -201,7 +219,7 @@ function Hero() {
                 bg-clip-text text-transparent
               "
             >
-              International Family Medicine Symposium on Family Medicine and
+              5<sup className="text-5xl">th</sup> International Family Medicine Symposium on Family Medicine and
               Home Healthcare 2026
             </span>
           </h1>

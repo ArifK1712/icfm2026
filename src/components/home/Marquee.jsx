@@ -1,6 +1,6 @@
 function Marquee() {
   const text =
-    'Important Dates: Abstract Submission closes on 30 July 2026 • Early Bird Registration ends on 11 August 2026.'
+    'Important Dates: Abstract Submission closes on 01 September 2026 • Early Bird Registration ends on 31 August 2026.'
 
   return (
     <section className="overflow-hidden text-white">

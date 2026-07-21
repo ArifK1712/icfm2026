@@ -154,7 +154,7 @@ function WelcomeMessage() {
       <section
         ref={sectionRef}
         className="
-          relative overflow-hidden pb-24 text-white
+          relative overflow-hidden pb-8 text-white
         "
       >
         <div
@@ -190,7 +190,7 @@ function WelcomeMessage() {
           <div
             className="
               mx-auto max-w-7xl 
-              px-6 py-14
+              py-14
             "
           >
             <div
@@ -206,7 +206,7 @@ function WelcomeMessage() {
             <div
               className="
                 mb-4 inline-flex items-center gap-2 rounded-full
-                border border-white/15 bg-white/10 px-4 py-2
+                border border-white/15 bg-white/10 md:px-4 py-2
                 text-sm font-bold text-cyan-100
                 backdrop-blur-xl
               "
@@ -217,7 +217,7 @@ function WelcomeMessage() {
 
             <h2 className="mb-5 text-white">Invitation</h2>
 
-            <p className="mx-auto max-w-4xl text-lg leading-8 px-5">
+            <p className="mx-auto max-w-4xl text-lg leading-8 md:px-5">
               Dear Colleagues,
 On behalf of the Saudi Society of Family and Community Medicine (SSFCM), we are pleased to invite you to participate in the 5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026.
 This distinguished 2-days scientific event will take place from 6–7 October 2026 with Pre-Conference Workshops on 5 October, 2026 in Riyadh, Kingdom of Saudi Arabia, bringing together leading healthcare professionals, academics, and policymakers from across the region and beyond.

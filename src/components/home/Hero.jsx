@@ -324,7 +324,7 @@ function Hero() {
 
                   <p
                     className="
-                      mt-2 text-[11px] font-bold uppercase
+                      mt-2 text-sm uppercase
                       tracking-[1.8px] text-white/58
                     "
                   >

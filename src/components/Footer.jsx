@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import footerLogo from "../assets/images/mci-alrowad.png"
+import ethicalmedtech from "../assets/images/ethicalmedtech.png"
 
 function Footer() {
   const conferenceLinks = [
@@ -13,7 +14,7 @@ function Footer() {
     <footer className="px-4 py-15 text-white/70 border-t border-white/10">
       <div className="mx-auto max-w-7xl">
         {/* Top */}
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           {/* About Conference */}
           <div>
             <p className="max-w-sm leading-8 text-white/60">
@@ -60,6 +61,16 @@ function Footer() {
                 </a>
               </p>
             </div>
+          </div>
+          <div>
+            <h5 className="mb-5 text-white">
+             Compliant with their
+            </h5>
+              <img
+                src={ethicalmedtech}
+                alt="Partner Logo"
+                className="h-10 w-auto object-contain bg-white p-2 rounded-lg"
+              />
           </div>
 
           {/* Participate */}

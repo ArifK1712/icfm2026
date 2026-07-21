@@ -97,7 +97,7 @@ function CommitteePage() {
 
       <section
         className="
-          relative overflow-hidden
+          relative overflow-clip
           bg-[#063b3d]
           pt-30 py-20 text-white
         "
@@ -106,7 +106,7 @@ function CommitteePage() {
 
         <div className="relative z-10 mx-auto max-w-7xl px-4">
           {/* Page Heading */}
-          <div className="mb-12 grid sm:flex gap-5">
+          <div className="mb-12 grid sm:flex gap-5 md:sticky top-20 py-5 z-40 backdrop-blur-3xl md:px-4">
             <div>
 
             <h2 className="mb-4">
@@ -120,13 +120,8 @@ function CommitteePage() {
             {/* Search & Filter */}
           <div
             className="
-              sticky top-24 z-30 mb-16 rounded-[32px]
-              border border-[#12c4bb]/22
-              bg-[linear-gradient(150deg,rgba(4,63,65,0.88),rgba(7,91,93,0.58))]
-              p-4
-              shadow-[0_24px_70px_rgba(0,0,0,0.30)]
+              sticky top-24 z-30
               backdrop-blur-2xl
-              md:p-5
             "
           >
             <div className="grid gap-4 lg:items-center">

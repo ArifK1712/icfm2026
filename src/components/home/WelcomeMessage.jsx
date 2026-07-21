@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { X, MailOpen, Sparkles } from "lucide-react";
+import ceoimage from "../../assets/images/ceo.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -151,10 +152,103 @@ function WelcomeMessage() {
 
   return (
     <>
+
+      
+      <div
+        className="
+          group relative mx-auto max-w-5xl overflow-hidden
+          rounded-4xl
+          border border-[#12c4bb]/25
+          p-6 text-white
+          backdrop-blur-2xl
+          md:p-8
+          mt-10
+        "
+      >
+        {/* Background Glow */}
+        <div
+          className="
+            pointer-events-none absolute -right-24 -top-24
+            h-72 w-72 rounded-full
+            bg-[radial-gradient(circle,rgba(18,196,187,0.22),transparent_70%)]
+          "
+        />
+
+        <div
+          className="
+            pointer-events-none absolute -bottom-28 -left-24
+            h-72 w-72 rounded-full
+            bg-[radial-gradient(circle,rgba(6,169,159,0.16),transparent_70%)]
+          "
+        />
+
+        <div
+          className="
+            relative z-10 grid items-center gap-8
+            lg:grid-cols-[1fr_280px]
+            lg:gap-12
+          "
+        >
+          {/* Content — Left Side */}
+          <div dir="rtl" className="order-2 text-right lg:order-1">
+            <blockquote
+              className="
+                mb-8 text-xl font-medium leading-[2]
+                text-white/90
+                md:text-2xl
+              "
+            >
+              نسعى إلى تقديم رعاية صحية متكاملة تتمحور حول الإنسان، وتعزز جودة
+              الحياة من خلال التميز المهني والابتكار والمعرفة
+            </blockquote>
+
+            <div className="border-r-4 border-[#12c4bb] pr-5">
+              <h3 className="mb-2 text-teal-400">
+                سعادة الدكتور علي بن محمد الشهري
+              </h3>
+
+              <p className="mb-0 leading-7 text-white/65">
+                المدير العام التنفيذي لمدينة الأمير سلطان الطبية العسكرية
+              </p>
+            </div>
+          </div>
+
+          {/* Person Image — Right Side */}
+          <div className="order-1 mx-auto w-full max-w-[280px] lg:order-2">
+            <div
+              className="
+                relative overflow-hidden rounded-[26px]
+                border border-[#12c4bb]/30
+                bg-[#043f41]
+                shadow-[0_24px_60px_rgba(0,0,0,0.30)]
+              "
+            >
+              <img
+                src={ceoimage}
+                loading="lazy"
+                decoding="async"
+                alt="سعادة الدكتور علي بن محمد الشهري"
+                className="
+                  aspect-square w-full object-cover
+                  transition-transform duration-500
+                  group-hover:scale-105
+                "
+              />
+
+              <div
+                className="
+                  pointer-events-none absolute inset-x-0 bottom-0 h-20
+                  bg-linear-to-t from-[#043f41]/70 to-transparent
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <section
         ref={sectionRef}
         className="
-          relative overflow-hidden pb-8 text-white
+          relative overflow-hidden py-18 text-white
         "
       >
         <div
@@ -184,24 +278,11 @@ function WelcomeMessage() {
             animate-[floatGlow_16s_ease-in-out_infinite_reverse]
           "
         />
-
+        
         {/* Teaser Content */}
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-center">
           <div
-            className="
-              mx-auto max-w-7xl 
-              py-14
-            "
-          >
-            <div
-              className="
-                mx-auto mb-6 flex h-16 w-16 items-center justify-center
-                rounded-3xl border border-white/15 bg-white/10 text-[#22d3c8]
-                shadow-[0_18px_50px_rgba(0,0,0,0.25)]
-              "
-            >
-              <MailOpen size={30} />
-            </div>
+            className="mx-auto max-w-7xl">
 
             <div
               className="
@@ -231,6 +312,7 @@ This distinguished 2-days scientific event will take place from 6–7 October 20
               Read Invitation
             </button>
           </div>
+          
         </div>
       </section>
 

@@ -1,67 +1,154 @@
+import { UserRound } from 'lucide-react'
+
 function SpeakerCard({ speaker, cardRef }) {
+  const speakerTag = speaker.categories?.[0]?.tag
+
   return (
     <div
       ref={cardRef}
       className="
-        group relative h-full overflow-hidden
-        rounded-[30px]
-        border border-[#061a35]/5
-        bg-white p-4
-        shadow-[0_18px_55px_rgba(6,26,53,0.08)]
-        transition-all duration-300
-        hover:-translate-y-2.5
-        hover:shadow-[0_28px_70px_rgba(6,26,53,0.14)]
+        group relative h-full overflow-hidden rounded-[34px]
+        border border-[#12c4bb]/90
+        bg-[linear-gradient(150deg,rgba(4,63,65,0.82),rgba(7,91,93,0.44))]
+        p-5 text-white
+        shadow-[0_28px_80px_rgba(0,0,0,0.34)]
+        backdrop-blur-2xl
+        transition-all duration-500
+        hover:-translate-y-2
+        hover:border-[#12c4bb]/55
+        hover:shadow-[0_38px_110px_rgba(0,0,0,0.45),0_0_45px_rgba(18,196,187,0.18)]
       "
     >
-      {/* Glow */}
+      {/* Top Glow */}
       <div
         className="
-          absolute -right-13.75 -top-13.75
-          h-40 w-40
-          rounded-full
-          bg-[radial-gradient(circle,rgba(0,194,184,0.13),transparent_70%)]
-          transition-all duration-300
-          group-hover:scale-150
+          absolute -right-20 -top-20 h-64 w-64 rounded-full
+          bg-[radial-gradient(circle,rgba(18,196,187,0.24),transparent_70%)]
+          transition-all duration-500
+          group-hover:scale-125
         "
       />
 
-      {/* Image */}
-      <div className="relative overflow-hidden rounded-3xl">
-        <img
-          src={speaker.image}
-          loading="lazy"
-          decoding="async"
-          alt={speaker.name}
-          className="
-            h-65 w-full object-cover
-            transition-all duration-500
-            group-hover:scale-110
-          "
-        />
+      {/* Bottom Glow */}
+      <div
+        className="
+          absolute -left-24 bottom-10 h-60 w-60 rounded-full
+          bg-[radial-gradient(circle,rgba(6,169,159,0.18),transparent_70%)]
+        "
+      />
 
-        <span
+      {/* Shine */}
+      <div
+        className="
+          pointer-events-none absolute inset-0
+          bg-[linear-gradient(135deg,rgba(255,255,255,0.10),transparent_42%,rgba(18,196,187,0.12))]
+        "
+      />
+
+      {/* Hover Sweep */}
+      <div
+        className="
+          pointer-events-none absolute inset-0 z-30
+          translate-x-[-120%] skew-x-[-18deg]
+          bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.16),rgba(18,196,187,0.18),transparent)]
+          opacity-0 blur-[1px]
+          transition-all duration-700 ease-out
+          group-hover:translate-x-[120%]
+          group-hover:opacity-100
+        "
+      />
+
+      <div className="relative z-10 flex h-full flex-col">
+        {/* Image */}
+        <div
           className="
-            absolute bottom-4 left-4
-            rounded-full bg-white/80
-            px-3 py-2
-            text-xs font-black text-teal-700
-            backdrop-blur-2xl
+            relative mx-auto mb-6 flex h-42 w-42 shrink-0
+            items-end justify-center overflow-hidden rounded-full
+            border border-[#12c4bb]/25
+            bg-[radial-gradient(circle_at_50%_30%,rgba(18,196,187,0.30),rgba(4,63,65,0.75)_58%,rgba(4,63,65,0.95))]
+            shadow-[0_22px_60px_rgba(0,0,0,0.30)]
           "
         >
-          {speaker.tag}
-        </span>
-      </div>
+          {speaker.image ? (
+            <img
+              src={speaker.image}
+              alt={speaker.name}
+              loading="lazy"
+              decoding="async"
+              className="
+                h-full w-full object-cover
+                transition-transform duration-500
+                group-hover:scale-105
+              "
+            />
+          ) : (
+            <UserRound
+              size={58}
+              className="mb-10 text-[#12c4bb]"
+            />
+          )}
 
-      {/* Content */}
-      <div className="relative z-10 p-5">
-        <h5 className="mb-1">
+          <div
+            className="
+              absolute inset-x-0 bottom-0 h-16
+              bg-linear-to-t from-[#043f41] to-transparent
+            "
+          />
+        </div>
+
+        {/* Name */}
+        <h3
+          className="
+            mb-3 text-center
+            transition-colors duration-300
+            group-hover:text-[#12c4bb]
+          "
+        >
           {speaker.name}
-        </h5>
+        </h3>
 
-        <p className="mb-0 text-slate-500">
-          {speaker.role}
-        </p>
+        {/* Tag */}
+        {speakerTag && (
+          <div className="mb-4 text-center">
+            <span
+              className="
+                inline-flex items-center justify-center rounded-full
+                border border-[#12c4bb]/35
+                bg-[#12c4bb]/12
+                px-4 py-1.5
+                font-semibold uppercase tracking-[1.4px]
+                text-[#12c4bb]
+                shadow-[0_0_24px_rgba(18,196,187,0.12)]
+                transition-all duration-300
+                group-hover:border-[#12c4bb]/60
+                group-hover:bg-[#12c4bb]/18
+              "
+            >
+              {speakerTag}
+            </span>
+          </div>
+        )}
+
+        {/* Role */}
+        {speaker.role && (
+          <p className="mb-0 text-center leading-6 text-white/68">
+            {speaker.role}
+          </p>
+        )}
       </div>
+
+      {/* Bottom Accent */}
+      <div
+        className="
+          absolute inset-x-0 bottom-0 h-1
+          bg-linear-to-r from-transparent via-[#12c4bb] to-transparent
+          opacity-60
+          transition-all duration-500
+          group-hover:h-1.5
+          group-hover:opacity-100
+          group-hover:shadow-[0_0_28px_rgba(18,196,187,0.75)]
+        "
+      />
     </div>
   )
 }

@@ -113,7 +113,7 @@ function Footer() {
               </Link>
 
               <Link 
-                to="https://l1nk.dev/26a69dd" 
+                to="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQF06C4qt4zS7AAAAZ-i9hioRfYkFBZ9bCjnNXwlh6A7wymnB1MSy5iFGDAhOM_tCLMvvd4gFNXyb9oEI80HIVy3ox1GBc8SS_v65jDyJa_573-Tnr71DCBHm3j-BGqGzgQPSu4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Finternational-family-medicine-symposium-on-family-medicine-and-home-healthcare%2F%3Flipi%3Durn%253Ali%253Apage%253Ad_flagship3_messaging_conversation_detail%253BevHdT6oqTyOzTzuizYiyyQ%253D%253D" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

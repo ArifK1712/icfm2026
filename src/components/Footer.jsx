@@ -113,7 +113,7 @@ function Footer() {
               </Link>
 
               <Link 
-                to="https://www.linkedin.com/company/international-family-medicine-symposium" 
+                to="https://www.linkedin.com/company/international-family-medicine-symposium-on-family-medicine-and-home-healthcare/?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3BevHdT6oqTyOzTzuizYiyyQ%3D%3D" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

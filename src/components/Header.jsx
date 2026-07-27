@@ -53,7 +53,7 @@ function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <ul className="hidden xl:flex items-center">
+            <ul className="hidden xl:flex items-center gap-3">
               {navItems.map((item) => (
                 <li key={item.label} className="relative group">
                   {item.dropdown ? (

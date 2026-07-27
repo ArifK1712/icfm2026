@@ -152,8 +152,6 @@ function WelcomeMessage() {
 
   return (
     <>
-
-      
       <div
         className="
           group relative mx-auto max-w-5xl overflow-hidden

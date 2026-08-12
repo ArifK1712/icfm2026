@@ -96,7 +96,7 @@ const programDays = [
         moderator: "Dr. Mishal Al Otaiba",
         topic: "Reimagining Primary Care: The Future Beyond Clinic Walls",
         details: [],
-        speakers: ["Dr. Khalid Al Qumaizi"],
+        speakers: ["Dr. Khalid I. Al Qumaizi"],
       },
       {
         time: "09:00 – 09:20",
@@ -168,7 +168,7 @@ const programDays = [
         topic:
           "Diabetes Beyond Sugar: The Rise of Cardio-Renal-Metabolic Medicine",
         details: [],
-        speakers: ["Dr. Mohammed Al Mehthel"],
+        speakers: ["TBA"],
       },
       {
         time: "13:25 – 13:45",
@@ -211,7 +211,7 @@ const programDays = [
         topic:
           "Leveraging AI & Wearables: Personalized Lifestyle Prescriptions in Family Practice",
         details: [],
-        speakers: ["Prof. Amro Jamal"],
+        speakers: ["Prof. Amr Jamal"],
       },
       {
         time: "15:30 – 15:50",

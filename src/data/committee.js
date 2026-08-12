@@ -8,6 +8,7 @@ import mashaelAlbargawi from '../assets/images/committee/mashael-albargawi.webp'
 import mervatAlAsnaj from '../assets/images/committee/mervat-al-asnaj.webp'
 import meshalAlOtaibi from '../assets/images/committee/meshal-al-otaibi.webp'
 import moawadEidAlotaibi from '../assets/images/committee/moawad-eid-alotaibi.webp'
+import medhatMaher from '../assets/images/committee/medhat-maher.webp'
 import mostafaKofi from '../assets/images/committee/mostafa-kofi.webp'
 import najlaaKhalil from '../assets/images/committee/najlaa-khalil.webp'
 import nawafAlAqeel from '../assets/images/committee/nawaf-al-aqeel.webp'
@@ -44,7 +45,8 @@ const memberImages = {
 17: noufAlTurkey,          // pageOrder: 6
 // 11: hananTaib,          // pageOrder: 7 — already defined above, do not duplicate
 23: mohammedalqahtani,     // pageOrder: 8
-20: najlaaKhalil,          // pageOrder: 9
+24: medhatMaher,           // pageOrder: 9
+20: najlaaKhalil,          // pageOrder: 10
 
 // Research Committee
 21: mervatAlAsnaj,
@@ -160,6 +162,21 @@ const committeeMembers = [
     ],
   },
   {
+    id: 24,
+    image: memberImages[24] || defaultImage,
+    name: 'Dr Medhat Maher',
+    role: 'Consultant Family and Community Medicine / Head of Quality and patient safety division.',
+    organization: 'Prince Sultan Military Medical City',
+    categories: [
+      {
+        name: 'Organizing Committee',
+        categoryOrder: 2,
+        pageOrder: 9,
+        tag: 'Member',
+      },
+    ],
+  },
+  {
     id: 20,
     image: memberImages[20] || defaultImage,
     name: 'Ms. Najlaa khalil',
@@ -171,7 +188,7 @@ const committeeMembers = [
       {
         name: 'Organizing Committee',
         categoryOrder: 2,
-        pageOrder: 9,
+        pageOrder: 10,
         tag: 'Member',
       },
     ],

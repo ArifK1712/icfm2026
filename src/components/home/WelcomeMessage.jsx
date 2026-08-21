@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { X, MailOpen, Sparkles } from "lucide-react";
 import ceoimage from "../../assets/images/ceo.png";
+import conferencePresidentImage from "../../assets/images/committee/azzam-al-odhayani.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -154,7 +155,7 @@ function WelcomeMessage() {
     <>
       <div
         className="
-          group relative mx-auto max-w-5xl overflow-hidden
+          group relative mx-auto max-w-[1245px] overflow-hidden
           rounded-4xl
           border border-[#12c4bb]/25
           p-6 text-white
@@ -278,39 +279,80 @@ function WelcomeMessage() {
         />
         
         {/* Teaser Content */}
-        <div className="relative z-10 mx-auto max-w-7xl px-4 text-center">
-          <div
-            className="mx-auto max-w-7xl">
+        <div className="relative z-10 mx-auto max-w-7xl px-4">
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(260px,0.75fr)_minmax(0,1.65fr)]">
+            {/* Conference President — Left */}
+            <div className="mx-auto w-full max-w-sm text-center lg:mx-0 rounded-4xl
+          border border-[#12c4bb]/25
+          p-6 text-white
+          backdrop-blur-2xl">
+              <div className="relative mx-auto mb-6 w-full max-w-[270px]">
+                <div className="absolute -inset-4 rounded-full bg-teal-300/10 blur-2xl" />
+                <div
+                  className="
+                    relative overflow-hidden rounded-[30px]
+                    border border-teal-200/25 bg-[#063b3d]/45
+                    shadow-[0_28px_70px_rgba(0,0,0,0.28)]
+                  "
+                >
+                  <img
+                    src={conferencePresidentImage}
+                    loading="lazy"
+                    decoding="async"
+                    alt="Dr. Azzam Al Odhayani"
+                    className="aspect-[4/5] w-full object-cover object-top"
+                  />
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-[#063b3d]/70 to-transparent" />
+                </div>
 
-            <div
-              className="
-                mb-4 inline-flex items-center gap-2 rounded-full
-                border border-white/15 bg-white/10 md:px-4 py-2
-                text-sm font-bold text-cyan-100
-                backdrop-blur-xl
-              "
-            >
-              <Sparkles size={15} className="text-[#22d3c8]" />
-              Welcome Message
+                <div className="absolute -bottom-3 -right-3 h-16 w-16 rounded-full border border-teal-200/20" />
+                <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full border border-teal-200/10" />
+              </div>
+
+              <p className="mb-2 text-xs font-bold uppercase tracking-[0.22em] text-[#7ee9e2]">
+                Conference President
+              </p>
+              <h3 className="mb-2 text-white">Dr. Azzam Al Odhayani</h3>
+              <p className="mx-auto mb-0 max-w-xs leading-6 text-white/65">
+                Director of the Family and Community Medicine Department
+              </p>
             </div>
 
-            <h2 className="mb-5 text-white">Invitation</h2>
+            {/* Existing Welcome Content — Right */}
+            <div className="text-center">
 
-            <p className="mx-auto max-w-4xl text-lg leading-8 md:px-5">
-              Dear Colleagues,
-On behalf of the Saudi Society of Family and Community Medicine (SSFCM), we are pleased to invite you to participate in the 5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026.
-This distinguished 2-days scientific event will take place from 6–7 October 2026 with Pre-Conference Workshops on 5 October, 2026 in Riyadh, Kingdom of Saudi Arabia, bringing together leading healthcare professionals, academics, and policymakers from across the region and beyond.
-            </p>
+              <div
+                className="
+                  mb-4 inline-flex items-center gap-2 rounded-full
+                  border border-white/15 bg-white/10 md:px-4 py-2
+                  text-sm font-bold text-cyan-100
+                  backdrop-blur-xl
+                "
+              >
+                <Sparkles size={15} className="text-[#22d3c8]" />
+                Welcome Message
+              </div>
 
-            <button
-              type="button"
-              onClick={openModalManually}
-              className="btn btn-main mt-8"
-            >
-              Read Invitation
-            </button>
+              <h2 className="mb-5 text-white">Invitation</h2>
+
+              <p className="mx-auto max-w-7xl text-lg leading-8 text-justify [text-align-last:center]">
+                Dear Colleagues,
+On behalf of the Department of Family and Community Medicine at Prince Sultan Military Medical City (PSMMC), in collaboration with the Saudi Society of Family and Community Medicine (SSFCM), it is my great pleasure to welcome you to the <b>5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026</b>, taking place in Riyadh, Kingdom of Saudi Arabia, on <b>6–7 October 2026</b>, with Pre-Conference Workshops on <b>5 October 2026</b>.
+This symposium brings together healthcare professionals, researchers, academics, and industry leaders from around the world to exchange knowledge, share best practices, and explore the latest advancements in family medicine and home healthcare. Through an outstanding scientific programme, interactive discussions, practical workshops, and a comprehensive healthcare exhibition, we aim to foster collaboration, innovation, and excellence in patient care.
+The Symposium also provides an exceptional platform for professional networking, multidisciplinary collaboration, and meaningful partnerships that contribute to improving healthcare outcomes and shaping the future of family medicine.
+We are honoured to welcome you to this distinguished international event and look forward to your valuable participation in Riyadh
+
+              </p>
+
+              <button
+                type="button"
+                onClick={openModalManually}
+                className="btn btn-main mt-8"
+              >
+                Read Invitation
+              </button>
+            </div>
           </div>
-          
         </div>
       </section>
 

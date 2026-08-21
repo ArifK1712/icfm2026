@@ -7,7 +7,6 @@ import abdullahAhmedAbdulmomen from '../assets/images/speakers/abdullah-ahmed-ab
 import mohammedHassaneen from '../assets/images/speakers/mohammed-hassaneen.webp'
 import saadAlBattal from '../assets/images/speakers/saad-al-battal.webp'
 import waleedAlHazzani from '../assets/images/speakers/waleed-al-hazzani.webp'
-import mohammedAlMuhthel from '../assets/images/speakers/mohammed-al-muhthel.webp'
 import jeffreyLazarus from '../assets/images/speakers/jeffrey-lazarus.webp'
 import abdulazizAlDehish from '../assets/images/speakers/abdulaziz_al_dehish.webp'
 import yasserAlHakami from '../assets/images/speakers/yasser-al-hakami.webp'
@@ -89,7 +88,7 @@ const speakers = [
   {
     id: 8,
     image: speaker1,
-    name: 'Dr. Khalid Al Qamizi',
+    name: 'Dr. Khalid I. Al Qumai',
     role: 'Assistant Professor & Dean of the College of Medicine at Al Maarefa University',
     day: 'Day 1',
     pageOrder: 1,
@@ -109,14 +108,6 @@ const speakers = [
     role: 'General Director, Research & Innovation Institute at MODHS',
     day: 'Day 1',
     pageOrder: 3,
-  },
-  {
-    id: 11,
-    image: mohammedAlMuhthel,
-    name: 'Dr. Mohammed Al Muhthel',
-    role: 'Medical Director, Obesity, Endocrine & Metabolism Center at King Fahad Medical City',
-    day: 'Day 1',
-    pageOrder: 4,
   },
   {
     id: 12,
@@ -153,7 +144,7 @@ const speakers = [
   {
     id: 16,
     image: amroJamal,
-    name: 'Dr. Amro Jamal',
+    name: 'Prof. Amr Jamal',
     role: 'Professor of Family Medicine & Clinical Informatics at King Saud University (KSU)',
     day: 'Day 1',
     pageOrder: 9,

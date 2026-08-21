@@ -11,6 +11,8 @@ import moawadEidAlotaibi from '../assets/images/committee/moawad-eid-alotaibi.we
 import medhatMaher from '../assets/images/committee/medhat-maher.webp'
 import mostafaKofi from '../assets/images/committee/mostafa-kofi.webp'
 import najlaaKhalil from '../assets/images/committee/najlaa-khalil.webp'
+import ranaSaudAlanazi from '../assets/images/committee/rana-alenezi.webp'
+import rawabiAlHulayyil from '../assets/images/committee/rawabi-al-hulayyil.webp'
 import nawafAlAqeel from '../assets/images/committee/nawaf-al-aqeel.webp'
 import nawafMohammedBasulaib from '../assets/images/committee/nawaf-mohammed-basulaib.webp'
 import noufAlTurkey from '../assets/images/committee/nouf-aiturkey.webp'
@@ -34,6 +36,7 @@ const memberImages = {
 9: safaSedra,
 10: nawafMohammedBasulaib,
 11: hananTaib,
+12: rawabiAlHulayyil,
 13: mashaelAlbargawi,
 
 // Organizing Committee - display sequence
@@ -46,7 +49,8 @@ const memberImages = {
 // 11: hananTaib,          // pageOrder: 7 — already defined above, do not duplicate
 23: mohammedalqahtani,     // pageOrder: 8
 24: medhatMaher,           // pageOrder: 9
-20: najlaaKhalil,          // pageOrder: 10
+25: ranaSaudAlanazi,       // pageOrder: 10
+20: najlaaKhalil,          // pageOrder: 11
 
 // Research Committee
 21: mervatAlAsnaj,
@@ -78,7 +82,7 @@ const committeeMembers = [
     image: memberImages[15] || defaultImage,
     name: 'Dr. Faris Alotaibi',
     role:
-      'Supervisor of Allied Health Services in Family Medicine \\ Family Medicine Consultant',
+      'Head of Allied Medical Services Division / Incharge of Wazarat Health Center in Family Medicine',
     organization: 'Prince Sultan Military Medical City',
     contactNumber: '+966 50 355 5547',
     email: 'fm-alotaibi@psmmc.med.sa',
@@ -164,7 +168,7 @@ const committeeMembers = [
   {
     id: 24,
     image: memberImages[24] || defaultImage,
-    name: 'Dr Medhat Maher',
+    name: 'Dr. Medhat Maher',
     role: 'Consultant Family and Community Medicine / Head of Quality and patient safety division.',
     organization: 'Prince Sultan Military Medical City',
     categories: [
@@ -172,6 +176,21 @@ const committeeMembers = [
         name: 'Organizing Committee',
         categoryOrder: 2,
         pageOrder: 9,
+        tag: 'Member',
+      },
+    ],
+  },
+  {
+    id: 25,
+    image: memberImages[25] || defaultImage,
+    name: 'Ms. Rana Saud Alanazi',
+    role: 'Operations Manager – Al-Wazarat Center FCM',
+    organization: 'Prince Sultan Military Medical City',
+    categories: [
+      {
+        name: 'Organizing Committee',
+        categoryOrder: 2,
+        pageOrder: 10,
         tag: 'Member',
       },
     ],
@@ -188,7 +207,7 @@ const committeeMembers = [
       {
         name: 'Organizing Committee',
         categoryOrder: 2,
-        pageOrder: 10,
+        pageOrder: 11,
         tag: 'Member',
       },
     ],
@@ -401,6 +420,21 @@ const committeeMembers = [
         name: 'Organizing Committee',
         categoryOrder: 2,
         pageOrder: 7,
+        tag: 'Member',
+      },
+    ],
+  },
+  {
+    id: 12,
+    image: memberImages[12] || defaultImage,
+    name: 'Ms. Rawabi Al Hulayyil',
+    role: 'Training Coordinator',
+    organization: 'Prince Sultan Military Medical City',
+    categories: [
+      {
+        name: 'Scientific Committee',
+        categoryOrder: 1,
+        pageOrder: 12,
         tag: 'Member',
       },
     ],

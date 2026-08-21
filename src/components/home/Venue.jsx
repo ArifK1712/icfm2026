@@ -10,7 +10,7 @@ function Venue() {
         overflow-x-hidden py-20 text-white        
       "
     >
-      <div className="min-w-[70%] max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Content */}
           <div>

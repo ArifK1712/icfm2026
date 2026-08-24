@@ -88,7 +88,7 @@ const speakers = [
   {
     id: 8,
     image: speaker1,
-    name: 'Dr. Khalid I. Al Qumai',
+    name: 'Dr. Khalid I. Al Qumaizi',
     role: 'Assistant Professor & Dean of the College of Medicine at Al Maarefa University',
     day: 'Day 1',
     pageOrder: 1,

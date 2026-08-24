@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import { X, MailOpen, Sparkles } from "lucide-react";
+import { X, MailOpen, Quote, Sparkles } from "lucide-react";
 import ceoimage from "../../assets/images/ceo.png";
 import conferencePresidentImage from "../../assets/images/committee/azzam-al-odhayani.webp";
 
@@ -155,7 +155,7 @@ function WelcomeMessage() {
     <>
       <div
         className="
-          group relative mx-auto max-w-[1245px] overflow-hidden
+          group relative mx-auto max-w-5xl overflow-hidden
           rounded-4xl
           border border-[#12c4bb]/25
           p-6 text-white
@@ -185,20 +185,33 @@ function WelcomeMessage() {
           className="
             relative z-10 grid items-center gap-8
             lg:grid-cols-[1fr_280px]
-            lg:gap-12
+            lg:gap-20
           "
         >
           {/* Content — Left Side */}
           <div dir="rtl" className="order-2 text-right lg:order-1">
             <blockquote
               className="
-                mb-8 text-xl font-medium leading-[2]
+                relative mb-8 text-xl font-medium leading-[2]
                 text-white/90
                 md:text-2xl
+                inline-block
               "
-            >
-              نسعى إلى تقديم رعاية صحية متكاملة تتمحور حول الإنسان، وتعزز جودة
-              الحياة من خلال التميز المهني والابتكار والمعرفة
+            ><Quote
+                aria-hidden="true"
+                className="pointer-events-none absolute right-1 -top-5 h-5 w-5 text-[#22d3c8]/35 md:-right-8 md:top-auto md:h-7 md:w-7"
+                size={28}
+                strokeWidth={1.7}
+              />
+              
+             نسعى إلى تقديم رعاية صحية متكاملة تتمحور حول الإنسان،<br />
+             وتعزز جودة الحياة من خلال التميز المهني والابتكار والمعرفة
+              <Quote
+                aria-hidden="true"
+                className="pointer-events-none absolute -bottom-4 left-1 mt-0 h-5 w-5 rotate-180 text-[#22d3c8]/35 md:bottom-auto md:-left-10 md:-mt-10 md:h-7 md:w-7"
+                size={28}
+                strokeWidth={1.7}
+              />
             </blockquote>
 
             <div className="border-r-4 border-[#12c4bb] pr-5">
@@ -416,7 +429,7 @@ We are honoured to welcome you to this distinguished international event and loo
                     Welcome Message
                   </p>
                   <h3 className="text-xl font-black text-white sm:text-2xl">
-                    Invitation
+                    Welcome Message
                   </h3>
                 </div>
               </div>
@@ -442,52 +455,31 @@ We are honoured to welcome you to this distinguished international event and loo
                 <p className="font-bold text-white">Dear Colleagues,</p>
 
                 <p className="text-[#d9fffb]/72">
-                  On behalf of the{" "}
+                  On behalf of the Department of Family and Community Medicine at{" "}
                   <b className="text-white">
-                    Saudi Society of Family and Community Medicine (SSFCM),
-                  </b>{" "}
-                  we are pleased to invite you to participate in the{" "}
+                    Prince Sultan Military Medical City (PSMMC)
+                  </b>, in collaboration with the{" "}
                   <b className="text-white">
-                    5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026.
+                    Saudi Society of Family and Community Medicine (SSFCM)
                   </b>
+                  , it is my great pleasure to welcome you to the{" "}
+                  <b className="text-white">
+                    5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026
+                  </b>, taking place in Riyadh, Kingdom of Saudi Arabia, on{" "}
+                  <b className="text-white">6–7 October 2026</b>, with Pre-Conference Workshops on{" "}
+                  <b className="text-white">5 October 2026</b>.
                 </p>
 
                 <p className="text-[#d9fffb]/72">
-                  This distinguished 2-days scientific event will take place from <b className="text-white">6–7 October 2026 with Pre-Conference Workshops on 5 October, 2026 in Riyadh, Kingdom of Saudi Arabia</b>, bringing together leading healthcare professionals, academics, and policymakers from across the region and beyond.
+                  This symposium brings together healthcare professionals, researchers, academics, and industry leaders from around the world to exchange knowledge, share best practices, and explore the latest advancements in family medicine and home healthcare. Through an outstanding scientific programme, interactive discussions, practical workshops, and a comprehensive healthcare exhibition, we aim to foster collaboration, innovation, and excellence in patient care.
                 </p>
 
                 <p className="text-[#d9fffb]/72">
-                  Building on the success of previous editions, the 2026 symposium aims to serve as a premier platform for the <b className="text-white">exchange of knowledge, innovation, and best practices in family medicine and home healthcare</b>. The scientific program will feature a diverse and forward-looking agenda, including:
-                </p>
-
-                <ul className="mb-4 list-disc space-y-2 pl-4 text-lg text-[#d9fffb]/72">
-                  <li>
-                    High-level scientific presentations by international and regional experts
-                  </li>
-                  <li>
-                    Interactive panel discussions addressing key challenges and future trends
-                  </li>
-                  <li>
-                    Practical, hands-on workshops designed to enhance clinical skills and healthcare delivery
-                  </li>
-                </ul>
-
-                <p className="text-[#d9fffb]/72">
-                  The symposium is expected to host <b className="text-white">over 1,000 in-person participants</b>, offering exceptional opportunities for <b className="text-white">networking, collaboration, and professional development</b> within a dynamic and engaging environment.
-                </p>
-
-                <p className="text-[#d9fffb]/72">
-                  In addition to the scientific sessions, a comprehensive exhibition will run alongside the program, showcasing the latest advancements in healthcare services, technologies, and solutions.
-                </p>
-
-                <p className="text-[#d9fffb]/72">
-                  We are pleased to confirm that <b className="text-white">MCI Saudi Arabia</b>, operating under license from <b className="text-white">Alrowad Exhibitions and Conferences Organizing Co.</b>, has been appointed by <b className="text-white">SSFCM and PSMMC</b> as the official conference organizer.
+                  The Symposium also provides an exceptional platform for professional networking, multidisciplinary collaboration, and meaningful partnerships that contribute to improving healthcare outcomes and shaping the future of family medicine.
                 </p>
 
                 <p className="mb-6 text-[#d9fffb]/72">
-                  We warmly encourage you to join us for this important event and contribute to advancing the future of family medicine and home healthcare.
-                  <br />
-                  We look forward to welcoming you in Riyadh.
+                  We are honoured to welcome you to this distinguished international event and look forward to your valuable participation in Riyadh.
                 </p>
 
                 <div
@@ -500,12 +492,13 @@ We are honoured to welcome you to this distinguished international event and loo
                   <div>
 
                     <h5 className="mb-1 text-lg font-bold text-white">
-                      Yours sincerely,<br />
-                      Organizing Committee
+                      Dr. Azzam Al Odhayani
                     </h5>
 
                     <p className="mb-0 max-w-md text-[#d9fffb]/72">
-                      5th International Family Medicine Symposium on Family Medicine and Home Health Care 2026
+                      Director of the Family and Community Medicine Department
+                      <br />
+                      <b className="text-white">Conference President</b>
                     </p>
                   </div>
 

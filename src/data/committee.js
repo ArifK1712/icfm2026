@@ -47,10 +47,10 @@ const memberImages = {
 16: meshalAlOtaibi,        // pageOrder: 5
 17: noufAlTurkey,          // pageOrder: 6
 // 11: hananTaib,          // pageOrder: 7 — already defined above, do not duplicate
-23: mohammedalqahtani,     // pageOrder: 8
 24: medhatMaher,           // pageOrder: 9
-25: ranaSaudAlanazi,       // pageOrder: 10
-20: najlaaKhalil,          // pageOrder: 11
+20: najlaaKhalil,          // pageOrder: 10
+23: mohammedalqahtani,     // pageOrder: 11
+25: ranaSaudAlanazi,       // pageOrder: 12
 
 // Research Committee
 21: mervatAlAsnaj,
@@ -190,7 +190,7 @@ const committeeMembers = [
       {
         name: 'Organizing Committee',
         categoryOrder: 2,
-        pageOrder: 10,
+        pageOrder: 12,
         tag: 'Member',
       },
     ],
@@ -207,7 +207,7 @@ const committeeMembers = [
       {
         name: 'Organizing Committee',
         categoryOrder: 2,
-        pageOrder: 11,
+        pageOrder: 10,
         tag: 'Member',
       },
     ],
@@ -224,7 +224,7 @@ const committeeMembers = [
       {
         name: 'Organizing Committee',
         categoryOrder: 2,
-        pageOrder: 8,
+        pageOrder: 11,
         tag: 'Member',
       },
     ],

@@ -312,7 +312,7 @@ function WelcomeMessage() {
                     src={conferencePresidentImage}
                     loading="lazy"
                     decoding="async"
-                    alt="Dr. Azzam Al Odhayani"
+                    alt="Dr. Azzam Alotaibi"
                     className="aspect-[4/5] w-full object-cover object-top"
                   />
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-[#063b3d]/70 to-transparent" />
@@ -322,13 +322,17 @@ function WelcomeMessage() {
                 <div className="absolute -bottom-6 -right-6 h-24 w-24 rounded-full border border-teal-200/10" />
               </div>
 
-              <p className="mb-2 text-xs font-bold uppercase tracking-[0.22em] text-[#7ee9e2]">
-                Conference President
-              </p>
-              <h3 className="mb-2 text-white">Dr. Azzam Al Odhayani</h3>
+              
+              <h3 className="mb-2 text-white">Dr. Azzam Alotaibi</h3>
               <p className="mx-auto mb-0 max-w-xs leading-6 text-white/65">
-                Director of the Family and Community Medicine Department
+                Director of Family and Community Medicine Department
               </p>
+              <span className="mt-3 inline-flex items-center gap-2 rounded-full
+                  border border-white/15 bg-white/10 md:px-4 py-2
+                  text-sm font-bold text-cyan-100
+                  backdrop-blur-xl">
+                Conference President
+              </span>
             </div>
 
             {/* Existing Welcome Content — Right */}
@@ -492,11 +496,11 @@ We are honoured to welcome you to this distinguished international event and loo
                   <div>
 
                     <h5 className="mb-1 text-lg font-bold text-white">
-                      Dr. Azzam Al Odhayani
+                      Dr. Azzam Alotaibi
                     </h5>
 
                     <p className="mb-0 max-w-lg text-[#d9fffb]/72">
-                      Director of the Family and Community Medicine Department
+                      Director of Family and Community Medicine Department
                       <br />
                       <b className="text-white">Conference President</b>
                     </p>

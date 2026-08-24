@@ -104,7 +104,7 @@ const speakers = [
   {
     id: 10,
     image: waleedAlHazzani,
-    name: 'Prof. Waleed Al Hazzani',
+    name: 'Prof. Waleed Alhazzani',
     role: 'General Director, Research & Innovation Institute at MODHS',
     day: 'Day 1',
     pageOrder: 3,

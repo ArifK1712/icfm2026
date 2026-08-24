@@ -495,7 +495,7 @@ We are honoured to welcome you to this distinguished international event and loo
                       Dr. Azzam Al Odhayani
                     </h5>
 
-                    <p className="mb-0 max-w-md text-[#d9fffb]/72">
+                    <p className="mb-0 max-w-lg text-[#d9fffb]/72">
                       Director of the Family and Community Medicine Department
                       <br />
                       <b className="text-white">Conference President</b>

@@ -128,7 +128,7 @@ const programDays = [
         moderator: "Dr. Mishal Al Otaiba",
         topic: "Building a World Class Primary Care Research Ecosystem",
         details: [],
-        speakers: ["Prof. Waleed Al Hazzan"],
+        speakers: ["Prof. Waleed Alhazzani"],
       },
       {
         time: "10:25 – 10:55",

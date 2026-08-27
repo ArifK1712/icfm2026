@@ -4,6 +4,7 @@ import Marquee from '../components/home/Marquee'
 // import StackedCardsSection from '../components/home/StackedCardsSection'
 import About from '../components/home/About'
 import WelcomeMessage from '../components/home/WelcomeMessage'
+import ConferenceGlance from '../components/home/ConferenceGlance'
 import Speakers from '../components/home/Speakers'
 import EventHighlights from '../components/home/EventHighlights'
 //import Partners from '../components/home/Partners'
@@ -18,6 +19,7 @@ function Home() {
     <Marquee />
     {/* <StackedCardsSection /> */}
     <WelcomeMessage />
+    <ConferenceGlance />
     <About />
     <WhyAttend />
     <EventHighlights />

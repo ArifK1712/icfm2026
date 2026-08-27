@@ -155,7 +155,7 @@ function WelcomeMessage() {
     <>
       <div
         className="
-          group relative mx-auto max-w-5xl overflow-hidden
+          group relative mx-auto max-w-[1250px] overflow-hidden
           rounded-4xl
           border border-[#12c4bb]/25
           p-6 text-white

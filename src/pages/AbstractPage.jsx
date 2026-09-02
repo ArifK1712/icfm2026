@@ -13,6 +13,8 @@ import {
 
 import { Link } from "react-router-dom";
 
+const abstractEnabled = false;
+
 function AbstractPage() {
   const presentationFormats = [
     {
@@ -325,13 +327,23 @@ function AbstractPage() {
       {/* 9. Abstract Submission Link */}
       <section className="relative pb-16 text-white">
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-center">
-          <Link
-            to="https://abstract.congenie.com/abstract/icfm2026/abstract/login.php"
-            target="_blank"
-            className="btn btn-main"
-          >
-            Submit Abstract
-          </Link>
+          {abstractEnabled ? (
+            <Link
+              to="https://abstract.congenie.com/abstract/icfm2026/abstract/login.php"
+              target="_blank"
+              className="btn btn-main"
+            >
+              Submit Abstract
+            </Link>
+          ) : (
+            <button
+              type="button"
+              disabled
+              className="btn btn-main cursor-not-allowed opacity-50"
+            >
+              Abstract Submission has closed
+            </button>
+          )}
         </div>
       </section>
     </>

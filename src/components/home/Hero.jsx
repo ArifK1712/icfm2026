@@ -1,10 +1,11 @@
-import { CalendarDays, Mic2 } from "lucide-react";
+import { Award, CalendarDays, Mic2 } from "lucide-react";
 import gsap from "gsap";
 import { useEffect, useState, useRef } from "react";
 
 import herologoone from "../../assets/images/hero-logo-1.png";
 import ssfcmlogowhite from "../../assets/images/ssfcm-logo-white.png";
 import modlogo from "../../assets/images/mod-logo.png";
+import scfhslogo from "../../assets/images/scfhs-logo.png";
 
 const eventDate = new Date("2026-10-05T00:00:00").getTime();
 
@@ -177,7 +178,7 @@ function Hero() {
         "
       >
         <div className="w-full text-center">
-          <div className="grid grid-cols-3 items-center justify-center gap-3">
+          <div className="grid grid-cols-4 items-center justify-center gap-3">
             <img
               src={herologoone}
               className="mb-2 max-h-15 sm:max-h-35 mx-auto"
@@ -189,10 +190,16 @@ function Hero() {
               alt="SSFCM Logo"
             />
             <img
+              src={scfhslogo}
+              className="mb-2 max-h-10 sm:max-h-22 mx-auto"
+              alt="SCFHS Logo"
+            />
+            <img
               src={modlogo}
               className="mb-2 max-h-15 sm:max-h-35 mx-auto"
               alt="Ministry of Defense Logo"
             />
+            
           </div>
           
           {/* Theme Badge */}
@@ -239,7 +246,7 @@ function Hero() {
           </div>
 
           {/* Date Cards */}
-          <div className="mt-5 grid max-w-2xl gap-3 md:grid-cols-2 mx-auto">
+          <div className="mt-5 grid max-w-[1250px] gap-3 md:grid-cols-3 mx-auto">
             <div
               className="
                 flex items-center gap-3 rounded-3xl
@@ -288,10 +295,55 @@ function Hero() {
                 </p>
               </div>
             </div>
+            {/* CME Hours */}
+          <div
+            className="flex items-center gap-3
+              rounded-3xl border border-[#22d3c8]/25
+              bg-[#043f41]/60 p-3 backdrop-blur-xl sm:gap-4 sm:px-4
+            "
+          >
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#22d3c8]/10 text-[#22d3c8]">
+              <Award size={23} strokeWidth={1.8} aria-hidden="true" />
+            </div>
+
+            <div className="grid min-w-0 flex-1 grid-cols-1 items-center xl:grid-cols-[1fr_auto_1fr] sm:gap-2.5">
+              <div className="flex items-center justify-start gap-2.5 py-1 text-left">
+                <span className="text-2xl font-black leading-none text-[#22d3c8]">
+                  12
+                </span>
+                <span className="min-w-0 leading-tight">
+                  <span className="block text-lg font-black text-white text-nowrap">
+                    CME Hours
+                  </span>
+                  <span className="mt-0.5 block text-[11px] text-white/60">
+                    Conference
+                  </span>
+                </span>
+              </div>
+
+              <div className="my-2 h-px w-full bg-linear-to-r from-transparent via-[#22d3c8]/25 to-transparent xl:my-0 sm:h-10 sm:w-px sm:bg-linear-to-b hidden xl:block" />
+
+              <div className="flex items-center justify-start gap-2.5 py-1 text-left">
+                <span className="text-2xl font-black leading-none text-[#22d3c8]">
+                  6
+                </span>
+                <span className="min-w-0 leading-tight">
+                  <span className="block text-lg font-black text-white">
+                    CME Hours
+                  </span>
+                  <span className="mt-0.5 block text-[11px] text-white/60 text-nowrap">
+                    Pre-Conference Workshops
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
           </div>
 
+          
+
           {/* Countdown */}
-          <div className="mt-6 max-w-2xl mx-auto">
+          <div className="mt-6 max-w-xl mx-auto">
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
               {[
                 { label: "Days", value: timeLeft.days },
@@ -303,8 +355,6 @@ function Hero() {
                   key={item.label}
                   className="
                     relative overflow-hidden rounded-3xl
-                    border border-white/10
-                    bg-[linear-gradient(150deg,rgba(255,255,255,0.15),rgba(255,255,255,0.05))]
                     px-3 py-5 text-center
                     transition-all duration-300
                     hover:-translate-y-1 hover:border-teal-300/35

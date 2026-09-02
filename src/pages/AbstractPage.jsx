@@ -13,7 +13,7 @@ import {
 
 import { Link } from "react-router-dom";
 
-const abstractEnabled = false;
+const abstractEnabled = true;
 
 function AbstractPage() {
   const presentationFormats = [
@@ -66,7 +66,7 @@ function AbstractPage() {
     },
     {
       title: "Submission End Date",
-      date: "01 September 2026",
+      date: "08 September 2026",
     },
     {
       title: "Abstract Acceptance Notification",
@@ -107,7 +107,7 @@ function AbstractPage() {
                 <p className="font-semibold text-white">
                   The deadline for abstracts submission:
                 </p>
-                <p className="text-[#d9fffb]/75">01 September 2026</p>
+                <p className="text-[#d9fffb]/75">08 September 2026</p>
               </div>
             </div>
           </div>

@@ -274,7 +274,7 @@ function RegistrationPage() {
                   <tr className="bg-[#062e32] text-white">
                     <th className="p-5 text-left">Registration Category</th>
                     <th className="p-5 text-left">
-                      Early Bird Until August 31, 2026
+                      Early Bird Until September 15, 2026
                     </th>
                     <th className="p-5 text-left">
                       Regular Registration September 1 to 30, 2026

@@ -70,7 +70,7 @@ function AbstractPage() {
     },
     {
       title: "Abstract Acceptance Notification",
-      date: "10 September 2026",
+      date: "18 September 2026",
     },
   ];
 

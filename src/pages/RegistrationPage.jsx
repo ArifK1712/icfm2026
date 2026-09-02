@@ -277,7 +277,7 @@ function RegistrationPage() {
                       Early Bird Until September 15, 2026
                     </th>
                     <th className="p-5 text-left">
-                      Regular Registration September 1 to 30, 2026
+                      Regular Registration September 16 to 30, 2026
                     </th>
                     <th className="p-5 text-left">
                       Late & Spot Registration October 1 – 8, 2026

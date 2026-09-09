@@ -13,7 +13,7 @@ import {
 
 import { Link } from "react-router-dom";
 
-const abstractEnabled = true;
+const abstractEnabled = false;
 
 function AbstractPage() {
   const presentationFormats = [

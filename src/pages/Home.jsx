@@ -7,7 +7,7 @@ import WelcomeMessage from '../components/home/WelcomeMessage'
 import ConferenceGlance from '../components/home/ConferenceGlance'
 import Speakers from '../components/home/Speakers'
 import EventHighlights from '../components/home/EventHighlights'
-//import Partners from '../components/home/Partners'
+import Partners from '../components/home/Partners'
 import Venue from '../components/home/Venue'
 import CTA from '../components/CTA'
 
@@ -23,7 +23,7 @@ function Home() {
     <About />
     <WhyAttend />
     <EventHighlights />
-    {/* <Partners /> */}
+    <Partners />
     <Venue />
     <CTA />
     </>

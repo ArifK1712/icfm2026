@@ -1,48 +1,21 @@
-import partner1 from "../../assets/images/sponsors/boehringer.png";
 import partner2 from "../../assets/images/sponsors/gsk.png";
 import partner3 from "../../assets/images/sponsors/lilly.png";
 import partner4 from "../../assets/images/sponsors/sanofi.png";
 import partner5 from "../../assets/images/sponsors/novo.png";
 import partner6 from "../../assets/images/sponsors/abott.png";
-import partner7 from "../../assets/images/sponsors/amboss.png";
-import partner8 from "../../assets/images/sponsors/dexcom.png";
-import partner9 from "../../assets/images/sponsors/gt-medical.png";
+import partner7 from "../../assets/images/sponsors/roche.png";
+import partner8 from "../../assets/images/sponsors/alfaisal.png";
+import partner9 from "../../assets/images/sponsors/salehiya.png";
 
 function Partners() {
   const partnerData = [
     {
-      title: "Key Sponsor",
-      cardClass: "key-sponsor-card",
-      items: [
-        {
-          image: partner1,
-          alt: "Boehringer Ingelheim",
-        },
-      ],
-    },
-
-    {
-      title: "Strategic Sponsors",
+      title: "Strategic Partners",
       cardClass: "strategic-sponsor-card",
       items: [
         {
-          image: partner2,
-          alt: "GSK",
-        },
-        {
           image: partner3,
           alt: "Lilly",
-        },
-      ],
-    },
-
-    {
-      title: "Gold Sponsors",
-      cardClass: "gold-sponsor-card",
-      items: [
-        {
-          image: partner4,
-          alt: "Sanofi",
         },
         {
           image: partner5,
@@ -52,12 +25,35 @@ function Partners() {
     },
 
     {
-      title: "Silver Sponsor",
-      cardClass: "silver-sponsor-card",
+      title: "Gold Sponsors",
+      cardClass: "gold-sponsor-card",
       items: [
+        {
+          image: partner2,
+          alt: "GSK",
+        },
+        {
+          image: partner4,
+          alt: "Sanofi",
+        },
         {
           image: partner6,
           alt: "Abbott",
+        },
+      ],
+    },
+
+    {
+      title: "Silver Sponsors",
+      cardClass: "silver-sponsor-card",
+      items: [
+        {
+          image: partner7,
+          alt: "Roche",
+        },
+        {
+          image: partner8,
+          alt: "Alfaisal University",
         },
       ],
     },
@@ -67,16 +63,8 @@ function Partners() {
       cardClass: "exhibitor-card",
       items: [
         {
-          image: partner7,
-          alt: "AMBOSS",
-        },
-        {
-          image: partner8,
-          alt: "Dexcom",
-        },
-        {
           image: partner9,
-          alt: "GT Medical",
+          alt: "Salehiya",
         },
       ],
     },

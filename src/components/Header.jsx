@@ -42,7 +42,7 @@ function Header() {
           transition-all duration-300
         "
       >
-        <div className="min-w-full max-w-7xl mx-auto px-4">
+        <div className="min-w-full max-w-7xl mx-auto px-4 2xl:px-40">
           <div className="flex items-center justify-between min-h-15 md:min-h-20">
             <Link to="/">
               <img

@@ -27,6 +27,9 @@ import abdulgaderAlJarad from '../assets/images/speakers/abdulgader-al-jarad.web
 import abdulellahAlOsaimi from '../assets/images/speakers/abdulellah-al-osaimi.webp'
 import tameemAlHameed from '../assets/images/speakers/tameem-al-hameed.webp'
 import haifaAlOtaibi from '../assets/images/speakers/haifa-al-otaibi.webp'
+import malakAlShammari from '../assets/images/speakers/malak-al-shammari.jpg'
+import hananTaib from '../assets/images/speakers/hanan-taib.jpg'
+import turkiAlHarbi from '../assets/images/speakers/turki-al-harbi.jpg'
 
 const speakers = [
   {
@@ -40,7 +43,7 @@ const speakers = [
   {
     id: 2,
     image: tarekAlSaied,
-    name: 'Prof. Tarek Al-Saied',
+    name: 'Prof. Tarek Elsaid',
     role: 'Family Medicine Consultant at Prince Sultan Military Medical City (PSMMC)',
     day: 'Day 0 Workshop',
     pageOrder: 2,
@@ -48,7 +51,7 @@ const speakers = [
   {
     id: 3,
     image: hamzaDhafer,
-    name: 'Dr. Hamza Dhafer',
+    name: 'Dr. Hamza Dhafar',
     role: 'Program Director, Sleep Medicine Fellowship at King Saud University Medical City',
     day: 'Day 0 Workshop',
     pageOrder: 3,
@@ -80,7 +83,7 @@ const speakers = [
   {
     id: 7,
     image: mohammedHassaneen,
-    name: 'Prof. Mohammed Hassaneen',
+    name: 'Prof. Mohammed Hassanien',
     role: 'Professor of Pharmacy Practice & AI Committee Chair at King Abdulaziz University',
     day: 'Day 0 Workshop',
     pageOrder: 7,
@@ -88,7 +91,7 @@ const speakers = [
   {
     id: 8,
     image: speaker1,
-    name: 'Dr. Khalid I. Al Qumaizi',
+    name: 'Dr. Khalid Alqumaizi',
     role: 'Assistant Professor & Dean of the College of Medicine at Al Maarefa University',
     day: 'Day 1',
     pageOrder: 1,
@@ -120,7 +123,7 @@ const speakers = [
   {
     id: 13,
     image: abdulazizAlDehish,
-    name: 'Dr. Abdulaziz Al Dehish',
+    name: 'Dr. Abdulaziz Aldheshi',
     role: 'Lipidologist & Cardiovascular Disease Prevention at MOH',
     day: 'Day 1',
     pageOrder: 6,
@@ -144,7 +147,7 @@ const speakers = [
   {
     id: 16,
     image: amroJamal,
-    name: 'Prof. Amr Jamal',
+    name: 'Dr. Amr Jamal',
     role: 'Professor of Family Medicine & Clinical Informatics at King Saud University (KSU)',
     day: 'Day 1',
     pageOrder: 9,
@@ -160,15 +163,23 @@ const speakers = [
   {
     id: 18,
     image: samiAlMudrae,
-    name: 'Dr. Sami Al Mudrae',
+    name: 'Dr. Sami Almudarra',
     role: 'Executive Director of Health Information at Gulf Center for Disease Prevention & Control (Gulf CDC)',
     day: 'Day 1',
     pageOrder: 11,
   },
   {
+    id: 36,
+    image: malakAlShammari,
+    name: 'Dr. Malak A. Al-Shammari',
+    role: 'Family Medicine Consultant & Associate Professor (IAU)',
+    day: 'Day 1',
+    pageOrder: 12,
+  },
+  {
     id: 19,
     image: sulimanAlKassar,
-    name: 'Dr. Suliman Al Kassar',
+    name: 'Dr. Sulaiman kassar',
     role: 'Head of Geriatrics Department at King Salman Hospital',
     day: 'Day 2',
     pageOrder: 1,
@@ -176,7 +187,7 @@ const speakers = [
   {
     id: 20,
     image: hanaAlOthiemin,
-    name: 'Dr. Hana Al Othiemin',
+    name: 'Dr. Hana ALotheimin',
     role: 'Acting Vice Dean of Research & Innovation at Princess Nourah bint Abdulrahman University',
     day: 'Day 2',
     pageOrder: 2,
@@ -192,7 +203,7 @@ const speakers = [
   {
     id: 22,
     image: ayshaAlSaqeer,
-    name: 'Dr. Aysha Al Saqeer',
+    name: 'Dr. Aeshah Alsagheir',
     role: "Family Medicine Consultant, Ada'a Health at Ministry of Health (MOH)",
     day: 'Day 2',
     pageOrder: 4,
@@ -200,7 +211,7 @@ const speakers = [
   {
     id: 23,
     image: nourAlHudaObaidallah,
-    name: 'Dr. Nour AlHuda Obaidallah',
+    name: 'Dr. Nourulhuda Obaidallah',
     role: 'Consultant in Geriatrics & Family Medicine at Taif Armed Forces Hospitals',
     day: 'Day 2',
     pageOrder: 5,
@@ -216,7 +227,7 @@ const speakers = [
   {
     id: 25,
     image: speaker1,
-    name: 'Dr. Namshah Al Hajri',
+    name: 'Dr. Namshah Alhajri',
     role: 'OB/GYN Consultant at Dr. Sulaiman Al Habib Hospital',
     day: 'Day 2',
     pageOrder: 7,
@@ -272,7 +283,7 @@ const speakers = [
   {
     id: 32,
     image: abdulellahAlOsaimi,
-    name: 'Dr. Abdulellah Al Osaimi',
+    name: 'Dr. Abdulellah Al Osaimy',
     role: 'Senior Consultant Psychiatrist at Ministry of Health (MOH)',
     day: 'Day 2',
     pageOrder: 14,
@@ -288,7 +299,7 @@ const speakers = [
   {
     id: 34,
     image: speaker1,
-    name: 'Dr. Mervat Al Asnaj',
+    name: 'Dr. Mirvat Alasnag',
     role: 'Interventional Cardiology Consultant at King Fahd Armed Forces Hospital',
     day: 'Day 2',
     pageOrder: 16,
@@ -300,6 +311,22 @@ const speakers = [
     role: 'Deputy Director, Research & Innovation Institute at Ministry of Defense Health Services',
     day: 'Day 2',
     pageOrder: 17,
+  },
+  {
+    id: 37,
+    image: hananTaib,
+    name: 'Dr. Hanan Taib',
+    role: 'Family Medicine and Diabetes Consultant at PSMMC',
+    day: 'Day 2',
+    pageOrder: 18,
+  },
+  {
+    id: 38,
+    image: turkiAlHarbi,
+    name: 'Dr. Turki Al Harbi',
+    role: 'General Supervisor of Diabetes Clinical Service MOD-HS- Consultant of Family Medicine and Diabetes at PSMMC',
+    day: 'Day 2',
+    pageOrder: 19,
   },
 ]
 

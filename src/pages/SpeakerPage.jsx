@@ -27,7 +27,7 @@ function SpeakerPage() {
     return speakers
       .filter((speaker) => {
         // Exclude these speakers on this page only; retain shared records.
-        if (speaker.id === 12 || speaker.id === 21) return false
+        if (speaker.id === 12 || speaker.id === 21 || speaker.id === 27) return false
 
         const matchesDay =
           activeDay === 'All' || speaker.day === activeDay

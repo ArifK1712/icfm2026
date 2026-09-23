@@ -15,21 +15,12 @@ const colorGuide = [
   "Breaks / Admin",
 ];
 
-const preConferencePlanning = {
-  title: "Pre-Conference Planning — Recommendations & Audience Alignment",
-  item: "Pre-Conference Survey",
-  description:
-    "A short survey sent to physicians ahead of the conference to identify preferred workshop topics.",
-  objective:
-    "Align content with audience needs and improve engagement.",
-};
-
 const programDays = [
   {
     day: "DAY 0",
     date: "Monday, 5 October 2026",
     title: "Pre-Conference Workshops",
-    subtitle: "2 Meeting Rooms for the whole day · Capacity: 25 per workshop",
+    subtitle: "",
     sessions: [
       {
         sectionHeading:
@@ -137,10 +128,9 @@ const programDays = [
         time: "09:50 – 10:10",
         theme: "Health System Transformation & the Future of Primary Care",
         moderator: "",
-        topic:
-          "Making sense of clinical guidelines: applying evidence at the point of care",
+        topic: "SSFCM: Your Voice in the Time of Change",
         details: [],
-        speakers: ["TBA"],
+        speakers: ["Dr. Malak Al-Shammari"],
       },
       {
         time: "10:15 – 10:45",
@@ -258,7 +248,8 @@ const programDays = [
     day: "DAY 2",
     date: "Wednesday, 7 October 2026",
     title: "Conference – Home Healthcare & Quality of Care",
-    subtitle: "Dr. Ahmad Al-Nashri",
+    subtitle: "",
+    headerSpeaker: "Dr. Ahmad Al-Nashri",
     sessions: [
       {
         time: "08:30 – 08:50",
@@ -331,7 +322,7 @@ const programDays = [
         moderator: "Dr. Jawharah Al Osaimi",
         topic: "Breast cancer prevention and early detection in primary care",
         details: [],
-        speakers: ["Dr. Muna Almohri"],
+        speakers: ["TBA"],
       },
       {
         time: "12:00 – 13:00",
@@ -611,37 +602,6 @@ function ProgramPage() {
             </div>
           </div>
 
-          <div className="mb-10 overflow-hidden rounded-3xl border border-[#facc15]/30 bg-[#facc15]/[0.08] backdrop-blur-2xl">
-            <div className="border-b border-[#facc15]/20 px-5 py-4 md:px-6">
-              <h3 className="text-xl font-black text-[#facc15] md:text-2xl">
-                {preConferencePlanning.title}
-              </h3>
-            </div>
-
-            <div className="grid gap-4 p-5 md:grid-cols-3 md:p-6">
-              <div>
-                <p className="mb-1 text-xs font-black uppercase tracking-[1.5px] text-white/45">
-                  Item
-                </p>
-                <p className="font-bold text-white">{preConferencePlanning.item}</p>
-              </div>
-
-              <div>
-                <p className="mb-1 text-xs font-black uppercase tracking-[1.5px] text-white/45">
-                  Description
-                </p>
-                <p className="text-white/70">{preConferencePlanning.description}</p>
-              </div>
-
-              <div>
-                <p className="mb-1 text-xs font-black uppercase tracking-[1.5px] text-white/45">
-                  Objective
-                </p>
-                <p className="text-white/70">{preConferencePlanning.objective}</p>
-              </div>
-            </div>
-          </div>
-
           <div
             className="mb-10 grid grid-cols-3 gap-3 rounded-3xl border border-[#12c4bb]/20 bg-[#043f41]/45 p-4 backdrop-blur-2xl sticky top-20 z-20"
             role="tablist"
@@ -698,7 +658,7 @@ function ProgramPage() {
                     className="
                       mb-8 flex flex-col gap-5
                       border-b border-white/10 pb-7
-                      lg:flex-row lg:items-end lg:justify-between
+                      lg:flex-row lg:items-start lg:justify-between
                     "
                   >
                     <div>
@@ -724,22 +684,44 @@ function ProgramPage() {
                       )}
                     </div>
 
-                    <div
-                      className="
-                        rounded-3xl
-                        border border-[#12c4bb]/20
-                        bg-[#043f41]/50
-                        px-5 py-4
-                        text-left
-                      "
-                    >
-                      <p className="text-sm font-bold uppercase tracking-[1.5px] text-white/45">
-                        Date
-                      </p>
+                    <div className="grid gap-3">
+                      <div
+                        className="
+                          rounded-3xl
+                          border border-[#12c4bb]/20
+                          bg-[#043f41]/50
+                          px-5 py-4
+                          text-left
+                        "
+                      >
+                        <p className="text-sm font-bold uppercase tracking-[1.5px] text-white/45">
+                          Date
+                        </p>
 
-                      <h4 className="text-xl font-black text-[#12c4bb]">
-                        {dayItem.date}
-                      </h4>
+                        <h4 className="text-xl font-black text-[#12c4bb]">
+                          {dayItem.date}
+                        </h4>
+                      </div>
+
+                      {dayItem.headerSpeaker && (
+                        <div
+                          className="
+                            rounded-3xl
+                            border border-[#12c4bb]/20
+                            bg-[#043f41]/50
+                            px-5 py-4
+                            text-left
+                          "
+                        >
+                          <p className="text-xs font-black uppercase tracking-[1.5px] text-white/45">
+                            Speaker(s)
+                          </p>
+
+                          <p className="font-semibold text-white/75">
+                            {dayItem.headerSpeaker}
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
 

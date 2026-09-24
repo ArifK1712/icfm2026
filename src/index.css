@@ -456,4 +456,8 @@
   .exhibitor-card {
     @apply border-teal-500/30;
   }
+
+  .knowledge-partner-card {
+    @apply w-full min-w-0 border-teal-500/30;
+  }
 }

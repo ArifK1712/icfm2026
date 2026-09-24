@@ -6,6 +6,10 @@ import partner6 from "../../assets/images/sponsors/abott.png";
 import partner7 from "../../assets/images/sponsors/roche.png";
 import partner8 from "../../assets/images/sponsors/alfaisal.png";
 import partner9 from "../../assets/images/sponsors/salehiya.png";
+import ssfcmLogo from "../../assets/images/sponsors/ssfcm.png";
+import scadLogo from "../../assets/images/sponsors/scad.png";
+import ajwadLogo from "../../assets/images/sponsors/ajwad.png";
+import shmcLogo from "../../assets/images/sponsors/shmc.png";
 
 function Partners() {
   const partnerData = [
@@ -65,6 +69,29 @@ function Partners() {
         {
           image: partner9,
           alt: "Salehiya",
+        },
+      ],
+    },
+
+    {
+      title: "Knowledge Partner",
+      cardClass: "knowledge-partner-card",
+      items: [
+        {
+          image: ssfcmLogo,
+          alt: "SSFCM",
+        },
+        {
+          image: scadLogo,
+          alt: "SCAD",
+        },
+        {
+          image: ajwadLogo,
+          alt: "Ajwad",
+        },
+        {
+          image: shmcLogo,
+          alt: "SHMC",
         },
       ],
     },
@@ -143,9 +170,11 @@ function Partners() {
 
               {/* Logos */}
               <div
-                className="
-                  flex flex-wrap justify-center gap-6
-                "
+                className={`
+                  ${category.cardClass === "knowledge-partner-card"
+                    ? "mx-auto grid w-full max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
+                    : "flex flex-wrap justify-center gap-6"}
+                `}
               >
                 {category.items.map((item, i) => (
                   <div

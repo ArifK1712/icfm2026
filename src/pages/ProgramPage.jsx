@@ -162,7 +162,7 @@ const programDays = [
           "Recitation from the holy Quraan",
           "Welcome & Introduction of the ICFM 2026 — Dr. Moawad Al-Otaibi, Chairperson, Scientific Committee",
           "Message from the Chairperson of the Organizing Committee Dr. Turki Al Harbi",
-          "Future Vision of the Family Medicine Department at PSMMC — Dr. Ali Al Shehri, General Executive Director of PSMMC / Lt.Col. Dr. Azzam Al-Otaibi, Chairperson of the International Conference of Family Medicine and Home Care",
+          "Future Vision of the Family Medicine Department at PSMMC — Lt.Col. Dr. Azzam Al-Otaibi, Chairperson of the International Conference of Family Medicine and Home Care",
           "Future Vision of FCM brief video",
           "Recognition Awards for Conference Committee Members Dr. Ali Al Shehri General Executive Director of PSMMC",
         ],

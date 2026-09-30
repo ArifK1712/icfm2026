@@ -30,6 +30,11 @@ import haifaAlOtaibi from '../assets/images/speakers/haifa-al-otaibi.webp'
 import malakAlShammari from '../assets/images/speakers/malak-al-shammari.jpg'
 import hananTaib from '../assets/images/speakers/hanan-taib.jpg'
 import turkiAlHarbi from '../assets/images/speakers/turki-al-harbi.jpg'
+import khalidAlqumaizi from '../assets/images/speakers/khalid-alqumaizi.jpg'
+import salehAlRajhi from '../assets/images/speakers/saleh-al-rajhi.jpg'
+import namshahAlhajri from '../assets/images/speakers/namshah-alhajri.jpg'
+import naseemAlMulla from '../assets/images/speakers/naseem-al-mulla.jpg'
+import mirvatAlasnag from '../assets/images/speakers/mirvat-alasnag.jpg'
 
 const speakers = [
   {
@@ -90,7 +95,7 @@ const speakers = [
   },
   {
     id: 8,
-    image: speaker1,
+    image: khalidAlqumaizi,
     name: 'Dr. Khalid Alqumaizi',
     role: 'Assistant Professor & Dean of the College of Medicine at Al Maarefa University',
     day: 'Day 1',
@@ -138,7 +143,7 @@ const speakers = [
   },
   {
     id: 15,
-    image: speaker1,
+    image: salehAlRajhi,
     name: 'Prof. Saleh Al-Rajhi',
     role: 'Consultant in Family, Obesity & Lifestyle Medicine at King Fahad Medical City (KFMC)',
     day: 'Day 1',
@@ -226,7 +231,7 @@ const speakers = [
   },
   {
     id: 25,
-    image: speaker1,
+    image: namshahAlhajri,
     name: 'Dr. Namshah Alhajri',
     role: 'OB/GYN Consultant at Dr. Sulaiman Al Habib Hospital',
     day: 'Day 2',
@@ -258,7 +263,7 @@ const speakers = [
   },
   {
     id: 29,
-    image: speaker1,
+    image: naseemAlMulla,
     name: 'Mrs. Naseem Al Mulla',
     role: 'Director of Outcomes Measurement at Council of Health Insurance (CHI)',
     day: 'Day 2',
@@ -298,7 +303,7 @@ const speakers = [
   },
   {
     id: 34,
-    image: speaker1,
+    image: mirvatAlasnag,
     name: 'Dr. Mirvat Alasnag',
     role: 'Interventional Cardiology Consultant at King Fahd Armed Forces Hospital',
     day: 'Day 2',

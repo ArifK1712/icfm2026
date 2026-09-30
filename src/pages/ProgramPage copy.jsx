@@ -139,19 +139,10 @@ const programDays = [
         topic: "Panel Discussion",
         details: [],
         speakers: [
-          "Dr. Khalid Alqumaizi",
-          "Dr. Saad AL Battal",
-          "Prof. Waleed Alhazzani",
-          "Dr. Malak Al-Shammari",
+          "Dr. Shabab Alghamdi",
+          "Dr. Aws Alshamsan",
+          "Dr. Abdulmohsen Alsawi",
         ],
-      },
-      {
-        time: "10:45 – 10:55",
-        theme: "Breaks / Admin",
-        moderator: "",
-        topic: "☕ Coffee Break",
-        details: [],
-        speakers: [],
       },
       {
         time: "11:00 – 12:00",
@@ -161,10 +152,9 @@ const programDays = [
         details: [
           "Recitation from the holy Quraan",
           "Welcome & Introduction of the ICFM 2026 — Dr. Moawad Al-Otaibi, Chairperson, Scientific Committee",
-          "Message from the Chairperson of the Organizing Committee Dr. Turki Al Harbi",
           "Future Vision of the Family Medicine Department at PSMMC — Dr. Ali Al Shehri, General Executive Director of PSMMC / Lt.Col. Dr. Azzam Al-Otaibi, Chairperson of the International Conference of Family Medicine and Home Care",
           "Future Vision of FCM brief video",
-          "Recognition Awards for Conference Committee Members Dr. Ali Al Shehri General Executive Director of PSMMC",
+          "Recognition Awards for Conference Committee Members — Dr. Khalid Al-Abdulkareem, Executive Director General of Health Services",
         ],
         speakers: [],
       },
@@ -200,7 +190,7 @@ const programDays = [
         moderator: "Dr. Mohammad Al Eissa",
         topic: "TBA",
         details: [],
-        speakers: ["TBA"],
+        speakers: [],
       },
       {
         sectionHeading:
@@ -247,9 +237,9 @@ const programDays = [
         theme:
           "Investing in life: KSA’s Population Health Framework & GCC’s Health Future",
         moderator: "Dr. Safa Alsedrah / Dr. Lara Al Namlah",
-        topic: "Expanding the Horizon of Weight Management with Oral GLP-1 RA",
+        topic: "TBA",
         details: [],
-        speakers: ["TBA"],
+        speakers: [],
       },
     ],
   },
@@ -330,9 +320,9 @@ const programDays = [
         time: "11:30 – 11:50",
         theme: "Women's Health Across the Lifespan: family medicine prospective",
         moderator: "Dr. Jawharah Al Osaimi",
-        topic: "Empowering Change: Transforming T2D and Obesity Care for Better Outcomes",
+        topic: "Breast cancer prevention and early detection in primary care",
         details: [],
-        speakers: ["Dr. Hanan Taib"],
+        speakers: ["TBA"],
       },
       {
         time: "12:00 – 13:00",
@@ -346,9 +336,9 @@ const programDays = [
         time: "13:00 – 13:15",
         theme: "",
         moderator: "",
-        topic: "CGM in Clinical Practice: From Integration to Expanded Use and Innovation",
+        topic: "TBA",
         details: [],
-        speakers: ["Dr. Turki Al Harbi"],
+        speakers: [],
       },
       {
         sectionHeading:
@@ -383,7 +373,7 @@ const programDays = [
         moderator: "Dr. Mashael Albargawi",
         topic: "TBA",
         details: [],
-        speakers: ["TBA"],
+        speakers: [],
       },
       {
         sectionHeading:

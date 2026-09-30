@@ -6,6 +6,7 @@ import partner6 from "../../assets/images/sponsors/abott.png";
 import partner7 from "../../assets/images/sponsors/roche.png";
 import partner8 from "../../assets/images/sponsors/alfaisal.png";
 import partner9 from "../../assets/images/sponsors/salehiya.png";
+import ambossLogo from "../../assets/images/sponsors/amboss.png";
 import ssfcmLogo from "../../assets/images/sponsors/ssfcm.png";
 import scadLogo from "../../assets/images/sponsors/scad.png";
 import ajwadLogo from "../../assets/images/sponsors/ajwad.png";
@@ -69,6 +70,10 @@ function Partners() {
         {
           image: partner9,
           alt: "Salehiya",
+        },
+        {
+          image: ambossLogo,
+          alt: "AMBOSS",
         },
       ],
     },

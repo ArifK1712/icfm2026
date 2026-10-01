@@ -120,7 +120,7 @@ const programDays = [
         theme: "Health System Transformation & the Future of Primary Care",
         moderator: "",
         topic:
-          "Making sense of clinical guidelines: applying evidence at the point of care",
+          "Building a World-Class Primary Care Research Ecosystem",
         details: [],
         speakers: ["Prof. Waleed Alhazzani"],
       },

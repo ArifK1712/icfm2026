@@ -2,7 +2,7 @@ import defaultImage from '../assets/images/committee/1.jpg'
 
 import abdulrahmanAlkhalifa from '../assets/images/committee/abdulrahman-alkhalifa.webp'
 import aymanAfifi from '../assets/images/committee/ayman-afifi.webp'
-import fahadAlromaih from '../assets/images/committee/fahad-alromaih.webp'
+import fahadAlromaih from '../assets/images/committee/fahad-alromaih.jpg'
 import hananTaib from '../assets/images/committee/hanan-taib.webp'
 import mashaelAlbargawi from '../assets/images/committee/mashael-albargawi.webp'
 import mervatAlAsnaj from '../assets/images/committee/mervat-al-asnaj.webp'
@@ -43,7 +43,7 @@ const memberImages = {
 14: turkiAlHarbi,          // pageOrder: 1
 18: nawafAlAqeel,          // pageOrder: 2
 15: farisalotaibi,         // pageOrder: 3
-19: defaultImage,          // pageOrder: 4
+19: fahadAlromaih,          // pageOrder: 4
 16: meshalAlOtaibi,        // pageOrder: 5
 17: noufAlTurkey,          // pageOrder: 6
 // 11: hananTaib,          // pageOrder: 7 — already defined above, do not duplicate

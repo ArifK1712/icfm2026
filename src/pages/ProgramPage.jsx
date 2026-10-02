@@ -120,7 +120,7 @@ const programDays = [
         theme: "Health System Transformation & the Future of Primary Care",
         moderator: "",
         topic:
-          "Building a World-Class Primary Care Research Ecosystem",
+          "Building a world class primary care research ecosystem",
         details: [],
         speakers: ["Prof. Waleed Alhazzani"],
       },
@@ -198,9 +198,9 @@ const programDays = [
         time: "13:55 – 14:10",
         theme: "Clinical Excellence in Modern Practice",
         moderator: "Dr. Mohammad Al Eissa",
-        topic: "TBA",
+        topic: "Shaping the future of Obesity care: Innovations with GLP-1RAs and Amylin analogues",
         details: [],
-        speakers: ["TBA"],
+        speakers: ["Dr. Abdullah Badawi"],
       },
       {
         sectionHeading:
@@ -247,9 +247,9 @@ const programDays = [
         theme:
           "Investing in life: KSA’s Population Health Framework & GCC’s Health Future",
         moderator: "Dr. Safa Alsedrah / Dr. Lara Al Namlah",
-        topic: "Expanding the Horizon of Weight Management with Oral GLP-1 RA",
+        topic: "Empowering Change: Transforming T2D and Obesity Care for Better Outcomes",
         details: [],
-        speakers: ["TBA"],
+        speakers: ["Dr. Raed Aldahash"],
       },
     ],
   },
@@ -330,7 +330,7 @@ const programDays = [
         time: "11:30 – 11:50",
         theme: "Women's Health Across the Lifespan: family medicine prospective",
         moderator: "Dr. Jawharah Al Osaimi",
-        topic: "Empowering Change: Transforming T2D and Obesity Care for Better Outcomes",
+        topic: "Expanding the Horizon of Weight  Management with Oral GLP-1 RA",
         details: [],
         speakers: ["Dr. Hanan Taib"],
       },
@@ -413,7 +413,7 @@ const programDays = [
       },
       {
         sectionHeading:
-          "Research Posters Showcase & Presentations · Top 3 Winning Posters — Moderator: Prof. Mustafa Kofi",
+          "Oral Presentations · Top 3 Winning Posters — Moderator: Prof. Mustafa Kofi",
         time: "16:00 – 16:20",
         theme: "Research Posters Showcase & Presentations",
         moderator: "Prof. Mustafa Kofi",

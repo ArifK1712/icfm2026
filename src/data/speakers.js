@@ -16,7 +16,6 @@ import samiAlMudrae from '../assets/images/speakers/sami-al-mudrae.webp'
 import sulimanAlKassar from '../assets/images/speakers/suliman-al-kassar.webp'
 import hanaAlOthiemin from '../assets/images/speakers/hana-al-othiemin.webp'
 import medhatMaher from '../assets/images/speakers/medhat-maher.webp'
-import ayshaAlSaqeer from '../assets/images/speakers/aysha-al-saqeer.webp'
 import nourAlHudaObaidallah from '../assets/images/speakers/nour-alhuda-obaidallah.webp'
 import fatimahAlHamlan from '../assets/images/speakers/fatimah-al-hamlan.webp'
 import mahaAlNemer from '../assets/images/speakers/maha-al-nemer.webp'
@@ -35,6 +34,8 @@ import salehAlRajhi from '../assets/images/speakers/saleh-al-rajhi.jpg'
 import namshahAlhajri from '../assets/images/speakers/namshah-alhajri.jpg'
 import naseemAlMulla from '../assets/images/speakers/naseem-al-mulla.jpg'
 import mirvatAlasnag from '../assets/images/speakers/mirvat-alasnag.jpg'
+import abdullahBadawi from '../assets/images/speakers/abdullah-badawi.jpg'
+import raedAldahash from '../assets/images/speakers/raed-aldahash.jpg'
 
 const speakers = [
   {
@@ -142,12 +143,20 @@ const speakers = [
     pageOrder: 7,
   },
   {
+    id: 39,
+    image: abdullahBadawi,
+    name: 'Dr. Abdullah Badawi',
+    role: 'Head of Medical Obesity Unit (PSMMC)',
+    day: 'Day 1',
+    pageOrder: 8,
+  },
+  {
     id: 15,
     image: salehAlRajhi,
     name: 'Prof. Saleh Al-Rajhi',
     role: 'Consultant in Family, Obesity & Lifestyle Medicine at King Fahad Medical City (KFMC)',
     day: 'Day 1',
-    pageOrder: 8,
+    pageOrder: 9,
   },
   {
     id: 16,
@@ -155,7 +164,7 @@ const speakers = [
     name: 'Dr. Amr Jamal',
     role: 'Professor of Family Medicine & Clinical Informatics at King Saud University (KSU)',
     day: 'Day 1',
-    pageOrder: 9,
+    pageOrder: 10,
   },
   {
     id: 17,
@@ -163,7 +172,7 @@ const speakers = [
     name: 'Dr. Abdullah Al Arifi',
     role: 'Preventive Medicine Consultant at Ministry of Health (MOH)',
     day: 'Day 1',
-    pageOrder: 10,
+    pageOrder: 11,
   },
   {
     id: 18,
@@ -171,7 +180,15 @@ const speakers = [
     name: 'Dr. Sami Almudarra',
     role: 'Executive Director of Health Information at Gulf Center for Disease Prevention & Control (Gulf CDC)',
     day: 'Day 1',
-    pageOrder: 11,
+    pageOrder: 12,
+  },
+  {
+    id: 40,
+    image: raedAldahash,
+    name: 'Dr. Raed Aldahash',
+    role: 'Consultant Endocrinologist – King Abdulaziz Medical City, National Guard',
+    day: 'Day 1',
+    pageOrder: 13,
   },
   {
     id: 36,
@@ -179,7 +196,7 @@ const speakers = [
     name: 'Dr. Malak A. Al-Shammari',
     role: 'Family Medicine Consultant & Associate Professor (IAU)',
     day: 'Day 1',
-    pageOrder: 12,
+    pageOrder: 14,
   },
   {
     id: 19,
@@ -204,14 +221,6 @@ const speakers = [
     role: 'Urology Consultant at Prince Sultan Military Medical City (PSMMC)',
     day: 'Day 2',
     pageOrder: 3,
-  },
-  {
-    id: 22,
-    image: ayshaAlSaqeer,
-    name: 'Dr. Aeshah Alsagheir',
-    role: "Family Medicine Consultant, Ada'a Health at Ministry of Health (MOH)",
-    day: 'Day 2',
-    pageOrder: 4,
   },
   {
     id: 23,

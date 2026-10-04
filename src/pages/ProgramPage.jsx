@@ -84,7 +84,7 @@ const programDays = [
         time: "13:00 – 16:00",
         theme: "AI in Primary Care",
         moderator:
-          "Dr. Moawad Al-Otaibi / Prof. Ayman Afify / Dr. Lina Alolaiwi",
+          "Dr. Moawad Al-Otaibi / Prof. Ayman Afify / Dr. Lina Alolaiwi / Dr. Mishal Alotaibi",
         topic:
           "Leveraging AI for Continuous Professional Development and Workplace-Based Learning in Primary Care",
         details: [],
@@ -287,7 +287,6 @@ const programDays = [
           "Panel discussion: Home Healthcare 2035: Shaping the Future of Home Health Care & Integrated Care",
         details: [],
         speakers: [
-          "Dr. Aeshah Alsagheir",
           "Dr. Ahmad Alnashri",
           "Dr. Nourulhuda Obaidallah",
         ],

@@ -16,7 +16,7 @@ function Header() {
       label: "Scientific Information",
       dropdown: [
         {
-          label: "Preliminary Timetable",
+          label: "Scientific Program",
           path: "/program",
         },
         {

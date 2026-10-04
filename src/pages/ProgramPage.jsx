@@ -723,7 +723,7 @@ function ProgramPage() {
                           "
                         >
                           <p className="text-xs font-black uppercase tracking-[1.5px] text-white/45">
-                            Speaker(s)
+                            Moderator
                           </p>
 
                           <p className="font-semibold text-white/75">

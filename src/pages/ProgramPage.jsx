@@ -182,9 +182,9 @@ const programDays = [
         time: "13:00 – 13:20",
         theme: "Clinical Excellence in Modern Practice",
         moderator: "Dr. Mohammad Al Eissa",
-        topic: "Not just LDL: the new conversation in lipids",
+        topic: "Expanding the Horizon of Weight Management with Oral GLP-1 RA",
         details: [],
-        speakers: ["Dr. Abdulaziz Aldheshi"],
+        speakers: ["Dr. Hanan Taib"],
       },
       {
         time: "13:25 – 13:50",
@@ -329,9 +329,9 @@ const programDays = [
         time: "11:30 – 11:50",
         theme: "Women's Health Across the Lifespan: family medicine prospective",
         moderator: "Dr. Jawharah Al Osaimi",
-        topic: "Expanding the Horizon of Weight  Management with Oral GLP-1 RA",
+        topic: "TBA",
         details: [],
-        speakers: ["Dr. Hanan Taib"],
+        speakers: ["TBA"],
       },
       {
         time: "12:00 – 13:00",

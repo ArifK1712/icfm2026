@@ -180,7 +180,7 @@ const programDays = [
       },
       {
         sectionHeading:
-          "Clinical Excellence in Modern Practice — Moderator: Dr. Mohammad Al Eissa",
+          "Clinical Excellence in Modern Practice — Moderator: Dr. Mezoun Almuhaimeed",
         time: "13:00 – 13:20",
         theme: "Clinical Excellence in Modern Practice",
         moderator: "Dr. Mohammad Al Eissa",

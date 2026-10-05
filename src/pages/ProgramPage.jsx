@@ -133,16 +133,18 @@ const programDays = [
         speakers: ["Dr. Malak Al-Shammari"],
       },
       {
-        time: "10:15 – 10:45",
+        time: "10:15 - 10:40",
         theme: "Health System Transformation & the Future of Primary Care",
-        moderator: "",
-        topic: "Panel Discussion",
+        moderator: "Dr. Mohammad Al Eissa",
+        topic: "Interactive Panel Discussion Financing Primary Care: Aligning Health Insurance with the Future of Family Medicine",
         details: [],
+        speakersLabel: "Panelist(s)",
         speakers: [
-          "Dr. Khalid Alqumaizi",
-          "Dr. Saad AL Battal",
-          "Prof. Waleed Alhazzani",
-          "Dr. Malak Al-Shammari",
+          // "Dr. Khalid Alqumaizi",
+          // "Dr. Saad AL Battal",
+          // "Prof. Waleed Alhazzani",
+          // "Dr. Malak Al-Shammari",
+          "Dr. Ibrahim Aljuffali"
         ],
       },
       {

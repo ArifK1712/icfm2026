@@ -36,6 +36,7 @@ import naseemAlMulla from '../assets/images/speakers/naseem-al-mulla.jpg'
 import mirvatAlasnag from '../assets/images/speakers/mirvat-alasnag.jpg'
 import abdullahBadawi from '../assets/images/speakers/abdullah-badawi.jpg'
 import raedAldahash from '../assets/images/speakers/raed-aldahash.jpg'
+import ibrahimAljuffali from '../assets/images/speakers/ibrahim-aljuffali.jpg'
 
 const speakers = [
   {
@@ -93,6 +94,14 @@ const speakers = [
     role: 'Professor of Pharmacy Practice & AI Committee Chair at King Abdulaziz University',
     day: 'Day 0 Workshop',
     pageOrder: 7,
+  },
+  {
+    id: 37,
+    image: hananTaib,
+    name: 'Dr. Hanan Taib',
+    role: 'Family Medicine and Diabetes Consultant at PSMMC',
+    day: 'Day 1',
+    pageOrder: 1,
   },
   {
     id: 8,
@@ -197,6 +206,14 @@ const speakers = [
     role: 'Family Medicine Consultant & Associate Professor (IAU)',
     day: 'Day 1',
     pageOrder: 14,
+  },
+  {
+    id: 41,
+    image: ibrahimAljuffali,
+    name: 'Dr. Ibrahim Aljuffali',
+    role: 'Assistant Secretary General for Enablement & Compliance, Council of Health Insurance',
+    day: 'Day 1',
+    pageOrder: 15,
   },
   {
     id: 19,
@@ -325,14 +342,6 @@ const speakers = [
     role: 'Deputy Director, Research & Innovation Institute at Ministry of Defense Health Services',
     day: 'Day 2',
     pageOrder: 17,
-  },
-  {
-    id: 37,
-    image: hananTaib,
-    name: 'Dr. Hanan Taib',
-    role: 'Family Medicine and Diabetes Consultant at PSMMC',
-    day: 'Day 2',
-    pageOrder: 18,
   },
   {
     id: 38,

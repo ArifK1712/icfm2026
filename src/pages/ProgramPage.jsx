@@ -183,7 +183,7 @@ const programDays = [
           "Clinical Excellence in Modern Practice — Moderator: Dr. Mezoun Almuhaimeed",
         time: "13:00 – 13:20",
         theme: "Clinical Excellence in Modern Practice",
-        moderator: "Dr. Mohammad Al Eissa",
+        moderator: "Dr. Mezoun Almuhaimeed",
         topic: "Expanding the Horizon of Weight Management with Oral GLP-1 RA",
         details: [],
         speakers: ["Dr. Hanan Taib"],
@@ -191,7 +191,7 @@ const programDays = [
       {
         time: "13:25 – 13:50",
         theme: "Clinical Excellence in Modern Practice",
-        moderator: "Dr. Mohammad Al Eissa",
+        moderator: "Dr. Mezoun Almuhaimeed",
         topic: "Diabetic Osteopathy: Uncovering Hidden Bone Fragility in Clinical Practice",
         details: [],
         speakers: ["Dr. Yasser Al-Hakami"],
@@ -199,7 +199,7 @@ const programDays = [
       {
         time: "13:55 – 14:10",
         theme: "Clinical Excellence in Modern Practice",
-        moderator: "Dr. Mohammad Al Eissa",
+        moderator: "Dr. Mezoun Almuhaimeed",
         topic: "Shaping the future of Obesity care: Innovations with GLP-1RAs and Amylin analogues",
         details: [],
         speakers: ["Dr. Abdullah Badawi"],
